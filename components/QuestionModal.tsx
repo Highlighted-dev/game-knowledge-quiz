@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useGameStore } from '@/lib/store';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Check, Sparkles, Phone, Globe } from 'lucide-react';
+import { X, Check, Sparkles, Phone, Globe, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { cn } from '@/lib/utils';
@@ -45,6 +45,7 @@ export default function QuestionModal() {
 
   const showOptions = lifelineActive?.type === 'abcd';
   const showPhoneHint = lifelineActive?.type === 'phone';
+  const showStealHint = lifelineActive?.type === 'steal';
 
   const t = {
     showAnswer: language === 'pl' ? 'Pokaż Odpowiedź' : 'Reveal Answer',
@@ -53,6 +54,8 @@ export default function QuestionModal() {
     phoneUsed: language === 'pl' ? 'Telefon użyty' : 'Phone used',
     phoneHint: language === 'pl' ? 'Drużyna może teraz zadzwonić do przyjaciela!' : 'Team can now call a friend!',
     phoneTimer: language === 'pl' ? 'Host: Daj 30 sekund na rozmowę.' : 'Host: Give 30 seconds for the call.',
+    stealUsed: language === 'pl' ? 'Kradzież użyta' : 'Steal used',
+    stealHint: language === 'pl' ? 'Drużyna może przejąć pytanie!' : 'Team can steal this question!',
   };
 
   return (
@@ -94,6 +97,18 @@ export default function QuestionModal() {
                        )}
                      >
                        <Phone className="h-3 w-3" />
+                     </button>
+                     <button
+                       onClick={() => team.hasLifelineSteal && useLifeline(team.id, 'steal')}
+                       disabled={!team.hasLifelineSteal || lifelineActive !== null}
+                       title={`${team.name} - Steal`}
+                       className={cn(
+                         "w-7 h-7 rounded flex items-center justify-center text-xs transition-all",
+                         team.id === 'team1' ? "bg-blue-900/50 hover:bg-blue-800" : "bg-red-900/50 hover:bg-red-800",
+                         (!team.hasLifelineSteal || lifelineActive !== null) && "opacity-30 cursor-not-allowed"
+                       )}
+                     >
+                       <Zap className="h-3 w-3" />
                      </button>
                    </div>
                  ))}
@@ -141,6 +156,7 @@ export default function QuestionModal() {
               )}>
                 {lifelineActive.type === 'abcd' && <><Sparkles className="h-4 w-4" /> {t.abcdUsed}</>}
                 {lifelineActive.type === 'phone' && <><Phone className="h-4 w-4" /> {t.phoneUsed}</>}
+                {lifelineActive.type === 'steal' && <><Zap className="h-4 w-4" /> {t.stealUsed}</>}
                 <span className="opacity-60">({teams.find(t => t.id === lifelineActive.teamId)?.name})</span>
               </div>
             )}
@@ -166,6 +182,14 @@ export default function QuestionModal() {
                 <Phone className="h-6 w-6 mx-auto mb-2 text-yellow-500" />
                 <p className="text-zinc-400 text-sm">{t.phoneHint}</p>
                 <p className="text-zinc-600 text-xs mt-1">{t.phoneTimer}</p>
+              </div>
+            )}
+
+            {/* Steal hint */}
+            {showStealHint && (
+              <div className="bg-zinc-900 border border-orange-500/30 rounded-lg p-4 text-center max-w-md">
+                <Zap className="h-6 w-6 mx-auto mb-2 text-orange-500" />
+                <p className="text-zinc-400 text-sm">{t.stealHint}</p>
               </div>
             )}
 

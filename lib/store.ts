@@ -27,6 +27,7 @@ export type Team = {
   score: number;
   hasLifelineABCD: boolean;
   hasLifelinePhone: boolean;
+  hasLifelineSteal: boolean;
 };
 
 export type GameState = {
@@ -34,7 +35,7 @@ export type GameState = {
   categories: Category[];
   activeQuestion: Question | null;
   activeCategory: string | null;
-  lifelineActive: { teamId: string; type: 'abcd' | 'phone' } | null;
+  lifelineActive: { teamId: string; type: 'abcd' | 'phone' | 'steal' } | null;
   awardedBingos: string[];
   language: 'pl' | 'en';
   bingoNotification: string | null;
@@ -47,7 +48,7 @@ export type GameState = {
   markQuestionAnswered: (categoryId: string, questionId: string, answeredBy: string | null) => void;
   resetGame: () => void;
   loadCategories: (categories: Category[]) => void;
-  useLifeline: (teamId: string, type: 'abcd' | 'phone') => void;
+  useLifeline: (teamId: string, type: 'abcd' | 'phone' | 'steal') => void;
   clearLifeline: () => void;
   checkAndAwardBingo: () => void;
   setLanguage: (lang: 'pl' | 'en') => void;
@@ -55,8 +56,8 @@ export type GameState = {
 };
 
 const INITIAL_TEAMS: [Team, Team] = [
-  { id: 'team1', name: 'Drużyna 1', score: 0, hasLifelineABCD: true, hasLifelinePhone: true },
-  { id: 'team2', name: 'Drużyna 2', score: 0, hasLifelineABCD: true, hasLifelinePhone: true },
+  { id: 'team1', name: 'Drużyna 1', score: 0, hasLifelineABCD: true, hasLifelinePhone: true, hasLifelineSteal: true },
+  { id: 'team2', name: 'Drużyna 2', score: 0, hasLifelineABCD: true, hasLifelinePhone: true, hasLifelineSteal: true },
 ];
 
 export const useGameStore = create<GameState>()(
@@ -110,6 +111,7 @@ export const useGameStore = create<GameState>()(
             if (t.id !== teamId) return t;
             if (type === 'abcd') return { ...t, hasLifelineABCD: false };
             if (type === 'phone') return { ...t, hasLifelinePhone: false };
+            if (type === 'steal') return { ...t, hasLifelineSteal: false };
             return t;
           }) as [Team, Team],
           lifelineActive: { teamId, type },

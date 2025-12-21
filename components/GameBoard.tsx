@@ -6,6 +6,7 @@ import { loadCategoriesFromFile } from '@/lib/mock-data';
 import { cn } from '@/lib/utils';
 import { RotateCcw, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function GameBoard() {
   const { 
@@ -56,14 +57,41 @@ export default function GameBoard() {
   }
 
   return (
-    <div className="w-full flex flex-col gap-8">
+    <div className="w-full flex flex-col gap-4">
       
-      {/* Bingo Notification - Subtle Toast */}
-      {bingoNotification && (
-        <div className="fixed top-4 right-4 z-50 bg-zinc-900 border border-yellow-500/50 text-yellow-400 font-bold px-6 py-3 rounded-lg shadow-lg animate-pulse">
-          🎯 {bingoNotification}
-        </div>
-      )}
+      {/* Bingo Notification - Premium Overlay */}
+      <AnimatePresence>
+        {bingoNotification && (
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 1.1, filter: 'blur(10px)' }}
+            className="fixed inset-0 z-[100] flex items-center justify-center pointer-events-none"
+          >
+            <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+            <motion.div 
+              initial={{ y: 20 }}
+              animate={{ y: 0 }}
+              className="relative bg-zinc-900/90 border border-yellow-500/30 p-12 rounded-3xl flex flex-col items-center shadow-[0_0_100px_rgba(234,179,8,0.2)] text-center max-w-2xl mx-4"
+            >
+              <motion.div 
+                animate={{ rotate: [0, 10, -10, 0] }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="text-6xl mb-6"
+              >
+                🏆
+              </motion.div>
+              <h2 className="text-6xl font-black text-white tracking-tighter mb-4 uppercase italic">
+                BINGO!
+              </h2>
+              <div className="h-1 w-32 bg-yellow-500 rounded-full mb-6" />
+              <p className="text-2xl font-medium text-yellow-400">
+                {bingoNotification.replace('BINGO! ', '')}
+              </p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
       
       {/* Header Actions */}
       <div className="flex justify-end gap-2 px-2">
@@ -90,12 +118,12 @@ export default function GameBoard() {
       </div>
 
       {/* Grid Container */}
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-2 md:gap-4">
         {categories.map((cat) => (
           <div key={cat.id} className="flex flex-col gap-4">
             {/* Category Header */}
-            <div className="h-16 flex items-center justify-center text-center border-b border-white/10 mx-4 md:mx-0">
-               <h3 className="font-medium text-sm text-zinc-400 uppercase tracking-widest">{cat.name}</h3>
+            <div className="h-12 flex items-center justify-center text-center border-b border-white/10 mx-4 md:mx-0">
+               <h3 className="font-medium text-xs text-zinc-400 uppercase tracking-widest leading-tight">{cat.name}</h3>
             </div>
 
             {/* Questions Column */}
@@ -111,7 +139,7 @@ export default function GameBoard() {
                             onClick={() => !q.isAnswered && openQuestion(cat.id, q.id)}
                             disabled={q.isAnswered}
                             className={cn(
-                            "group relative h-16 md:h-24 rounded-lg flex flex-col items-center justify-center transition-all duration-200 border",
+                            "group relative h-14 md:h-20 rounded-lg flex flex-col items-center justify-center transition-all duration-200 border",
                             q.isAnswered 
                                 ? cn(
                                     "cursor-default",

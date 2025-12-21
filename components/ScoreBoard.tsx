@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useGameStore } from '@/lib/store';
 import { Input } from '@/components/ui/input';
-import { Sparkles, Phone } from 'lucide-react';
+import { Sparkles, Phone, Zap } from 'lucide-react';
 
 export default function ScoreBoard() {
   const { teams, setTeamName } = useGameStore();
@@ -24,6 +24,7 @@ export default function ScoreBoard() {
              <div className="flex gap-1">
                {teams[0].hasLifelineABCD && <Sparkles className="h-3 w-3 text-yellow-500" />}
                {teams[0].hasLifelinePhone && <Phone className="h-3 w-3 text-yellow-500" />}
+               {teams[0].hasLifelineSteal && <Zap className="h-3 w-3 text-yellow-500" />}
              </div>
            </div>
            <div className="flex items-baseline gap-4">
@@ -58,6 +59,7 @@ export default function ScoreBoard() {
              <div className="flex gap-1">
                {teams[1].hasLifelineABCD && <Sparkles className="h-3 w-3 text-yellow-500" />}
                {teams[1].hasLifelinePhone && <Phone className="h-3 w-3 text-yellow-500" />}
+               {teams[1].hasLifelineSteal && <Zap className="h-3 w-3 text-yellow-500" />}
              </div>
              <span className="text-xs uppercase tracking-widest text-zinc-500">Team 02</span>
            </div>
