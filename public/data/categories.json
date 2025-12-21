@@ -1,0 +1,268 @@
+{
+  "categories": [
+    {
+      "id": "cat_witcher",
+      "name": "Wiedźmin",
+      "questions": [
+        {
+          "id": "q_w_100",
+          "points": 100,
+          "type": "OPEN",
+          "question": "Kto jest głównym bohaterem serii Wiedźmin?",
+          "answer": "Geralt z Rivii",
+          "isAnswered": false
+        },
+        {
+          "id": "q_w_200",
+          "points": 200,
+          "type": "ABCD",
+          "question": "Jak nazywa się biologiczny ojciec Ciri?",
+          "options": [
+            "Emhyr var Emreis",
+            "Foltest",
+            "Vizimir",
+            "Radovid"
+          ],
+          "answer": "Emhyr var Emreis",
+          "isAnswered": false
+        },
+        {
+          "id": "q_w_300",
+          "points": 300,
+          "type": "OPEN",
+          "question": "Z jakiej szkoły pochodzi Geralt?",
+          "answer": "Szkoła Wilka",
+          "isAnswered": false
+        },
+        {
+          "id": "q_w_400",
+          "points": 400,
+          "type": "IMAGE",
+          "question": "Zidentyfikuj tego potwora.",
+          "mediaUrl": "https://static.wikia.nocookie.net/wiedzmin/images/5/53/G_SS_Gryf.png",
+          "answer": "Gryf",
+          "isAnswered": false
+        },
+        {
+          "id": "q_w_500",
+          "points": 500,
+          "type": "AUDIO",
+          "question": "Podaj tytuł tego utworu.",
+          "mediaUrl": "/witcher1.mp3",
+          "answer": "Srebro na Potwory",
+          "isAnswered": false
+        }
+      ]
+    },
+    {
+      "id": "cat_1766358014380",
+      "name": "League Of Legends",
+      "questions": [
+        {
+          "id": "q_1766358014380_100",
+          "points": 100,
+          "type": "OPEN",
+          "question": "Jaki jest główny cel drużyny w League of Legends, aby wygrać mecz?",
+          "answer": "Zniszczyć Nexus.",
+          "isAnswered": false
+        },
+        {
+          "id": "q_1766358014380_200",
+          "points": 200,
+          "type": "ABCD",
+          "question": "Który z tych bohaterów jest typowym dżunglerem, znanym z szybkiego czyszczenia potworów w lesie?",
+          "options": [
+            "Annie",
+            "Master Yi",
+            "Soraka",
+            "Jinx"
+          ],
+          "answer": "Master Yi",
+          "isAnswered": false
+        },
+        {
+          "id": "q_1766358014380_300",
+          "points": 300,
+          "type": "OPEN",
+          "question": "Jak nazywa się umiejętność ostateczna (R) bohatera Veigar, zadająca ogromne obrażenia pojedynczemu celowi?",
+          "answer": "Złowroga Nawałnica.",
+          "isAnswered": false
+        },
+        {
+          "id": "q_1766358014380_400",
+          "points": 400,
+          "type": "OPEN",
+          "question": "Jaki unikalny efekt daje bohaterom przedmiot 'Pogromca Krakenów' po trzech kolejnych atakach na ten sam cel?",
+          "answer": "Zadaje obrażenia nieuchronne.",
+          "isAnswered": false
+        },
+        {
+          "id": "q_1766358014380_500",
+          "points": 500,
+          "type": "OPEN",
+          "question": "W jakim regionie Runeterry odbyła się Bitwa pod Placidium, kluczowy moment w wojnie z Noxusem?",
+          "answer": "Ionia.",
+          "isAnswered": false
+        }
+      ]
+    },
+    {
+      "id": "cat_nintendo",
+      "name": "Nintendo",
+      "questions": [
+        {
+          "id": "q_n_100",
+          "points": 100,
+          "type": "OPEN",
+          "question": "Kto jest bratem Mario?",
+          "answer": "Luigi",
+          "isAnswered": false
+        },
+        {
+          "id": "q_n_200",
+          "points": 200,
+          "type": "ABCD",
+          "question": "W której grze występuje Link?",
+          "options": [
+            "Metroid",
+            "Zelda",
+            "Star Fox",
+            "Kirby"
+          ],
+          "answer": "Zelda",
+          "isAnswered": false
+        },
+        {
+          "id": "q_n_300",
+          "points": 300,
+          "type": "OPEN",
+          "question": "Jak nazywa się królestwo w grach Mario?",
+          "answer": "Królestwo Grzybów",
+          "isAnswered": false
+        },
+        {
+          "id": "q_n_400",
+          "points": 400,
+          "type": "AUDIO",
+          "question": "Zidentyfikuj ten dźwięk.",
+          "mediaUrl": "/coin.mp3",
+          "answer": "Dźwięk monety",
+          "isAnswered": false
+        },
+        {
+          "id": "q_n_500",
+          "points": 500,
+          "type": "OPEN",
+          "question": "W którym roku NES zadebiutował w Ameryce Północnej?",
+          "answer": "1985",
+          "isAnswered": false
+        }
+      ]
+    },
+    {
+      "id": "cat_souls",
+      "name": "Soulslike",
+      "questions": [
+        {
+          "id": "q_s_100",
+          "points": 100,
+          "type": "OPEN",
+          "question": "Jaka jest waluta w Dark Souls?",
+          "answer": "Dusze",
+          "isAnswered": false
+        },
+        {
+          "id": "q_s_200",
+          "points": 200,
+          "type": "ABCD",
+          "question": "Którą grę stworzyło FromSoftware?",
+          "options": [
+            "Nioh",
+            "Bloodborne",
+            "The Surge",
+            "Hollow Knight"
+          ],
+          "answer": "Bloodborne",
+          "isAnswered": false
+        },
+        {
+          "id": "q_s_300",
+          "points": 300,
+          "type": "OPEN",
+          "question": "Chwal ____!",
+          "answer": "Słońce",
+          "isAnswered": false
+        },
+        {
+          "id": "q_s_400",
+          "points": 400,
+          "type": "IMAGE",
+          "question": "Zidentyfikuj tego bossa.",
+          "mediaUrl": "https://i1.sndcdn.com/artworks-000245086151-zrs6z7-t500x500.jpgg",
+          "answer": "Ornstein i Smough",
+          "isAnswered": false
+        },
+        {
+          "id": "q_s_500",
+          "points": 500,
+          "type": "OPEN",
+          "question": "Przedmiot przywracający człowieczeństwo w Dark Souls 1?",
+          "answer": "Człowieczeństwo",
+          "isAnswered": false
+        }
+      ]
+    },
+    {
+      "id": "cat_1766357335447",
+      "name": "Minecraft",
+      "questions": [
+        {
+          "id": "q_1766357335447_100",
+          "points": 100,
+          "type": "OPEN",
+          "question": "Z jakiego podstawowego surowca buduje się pierwsze narzędzia w Minecraft?",
+          "answer": "Drewno",
+          "isAnswered": false
+        },
+        {
+          "id": "q_1766357335447_200",
+          "points": 200,
+          "type": "ABCD",
+          "question": "Które z tych stworzeń NIE pojawia się tylko w nocy lub w ciemnych miejscach?",
+          "options": [
+            "Zombie",
+            "Creeper",
+            "Świnia",
+            "Szkielet"
+          ],
+          "answer": "Świnia",
+          "isAnswered": false
+        },
+        {
+          "id": "q_1766357335447_300",
+          "points": 300,
+          "type": "OPEN",
+          "question": "Jak nazywa się blok, którego używa się do transportowania przedmiotów na odległość?",
+          "answer": "Lej",
+          "isAnswered": false
+        },
+        {
+          "id": "q_1766357335447_400",
+          "points": 400,
+          "type": "OPEN",
+          "question": "Jaki specjalny przedmiot jest wymagany do stworzenia Portalu do Kresu (End Portal)?",
+          "answer": "Oko Kresu",
+          "isAnswered": false
+        },
+        {
+          "id": "q_1766357335447_500",
+          "points": 500,
+          "type": "OPEN",
+          "question": "Jaką nazwę nosi unikalny biom w Netherze, gdzie rosną purpurowe grzyby i latają ghasty?",
+          "answer": "Dolina Piaskowców Dusz",
+          "isAnswered": false
+        }
+      ]
+    }
+  ]
+}
