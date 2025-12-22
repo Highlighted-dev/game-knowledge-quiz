@@ -496,6 +496,7 @@
           },
           "id": "q_fn_400",
           "isAnswered": false,
+          "mediaUrl": "/fort2.jpg",
           "options": {
             "en": ["Kevin", "Bob", "Steve", "Larry"],
             "pl": ["Kevin", "Bob", "Steve", "Larry"]
@@ -505,7 +506,7 @@
             "en": "What is the community nickname for the purple cube?",
             "pl": "Jaki jest społecznościowy przydomek fioletowego sześcianu?"
           },
-          "type": "ABCD"
+          "type": "IMAGE"
         },
         {
           "answer": {
@@ -595,8 +596,8 @@
           },
           "points": 200,
           "question": {
-            "en": "What is the strongest bloon in Bloons TD 6?",
-            "pl": "Jaki jest najsilniejszy balon w Bloons TD 6?"
+            "en": "What is the strongest bloon in Bloons TD 6 (standard)?",
+            "pl": "Jaki jest najsilniejszy balon w Bloons TD 6 (standardowy)?"
           },
           "type": "ABCD"
         },
