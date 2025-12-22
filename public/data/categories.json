@@ -1,734 +1,813 @@
 {
   "categories": [
     {
-      "id": "cat_witcher",
-      "name": "Wiedźmin",
+      "id": "cat_lethal",
+      "name": "Lethal Company",
       "questions": [
         {
-          "id": "q_w_100",
-          "points": 100,
-          "type": "ABCD",
-          "question": {
-            "pl": "Kto jest głównym bohaterem serii Wiedźmin?",
-            "en": "Who is the main protagonist of The Witcher series?"
-          },
-          "options": {
-            "pl": ["Geralt z Rivii", "Vesemir", "Lambert", "Eskel"],
-            "en": ["Geralt of Rivia", "Vesemir", "Lambert", "Eskel"]
-          },
           "answer": {
-            "pl": "Geralt z Rivii",
-            "en": "Geralt of Rivia"
+            "en": "Hoarding Bug",
+            "pl": "Hoarding Bug"
           },
-          "isAnswered": false
-        },
-        {
-          "id": "q_w_200",
-          "points": 200,
-          "type": "ABCD",
-          "question": {
-            "pl": "Jak nazywa się biologiczny ojciec Ciri?",
-            "en": "What is the name of Ciri's biological father?"
-          },
+          "id": "q_lc_100",
+          "isAnswered": false,
           "options": {
-            "pl": ["Emhyr var Emreis", "Foltest", "Vizimir", "Radovid"],
-            "en": ["Emhyr var Emreis", "Foltest", "Vizimir", "Radovid"]
-          },
-          "answer": {
-            "pl": "Emhyr var Emreis",
-            "en": "Emhyr var Emreis"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_w_300",
-          "points": 300,
-          "type": "ABCD",
-          "question": {
-            "pl": "Z jakiej szkoły pochodzi Geralt?",
-            "en": "Which school is Geralt from?"
-          },
-          "options": {
-            "pl": [
-              "Szkoła Wilka",
-              "Szkoła Kota",
-              "Szkoła Gryfa",
-              "Szkoła Niedźwiedzia"
-            ],
             "en": [
-              "School of the Wolf",
-              "School of the Cat",
-              "School of the Griffin",
-              "School of the Bear"
+              "Hoarding Bug",
+              "Snare Flea",
+              "Bunker Spider",
+              "Spore Lizard"
+            ],
+            "pl": [
+              "Hoarding Bug",
+              "Snare Flea",
+              "Bunker Spider",
+              "Spore Lizard"
             ]
           },
-          "answer": {
-            "pl": "Szkoła Wilka",
-            "en": "School of the Wolf"
+          "points": 100,
+          "question": {
+            "en": "Which creature collects and hoards scrap items?",
+            "pl": "Które stworzenie zapierdala złom?"
           },
-          "isAnswered": false
+          "type": "ABCD"
         },
         {
-          "id": "q_w_400",
-          "points": 400,
-          "type": "IMAGE",
-          "question": {
-            "pl": "Zidentyfikuj tego potwora.",
-            "en": "Identify this monster."
-          },
-          "mediaUrl": "https://static.wikia.nocookie.net/wiedzmin/images/5/53/G_SS_Gryf.png",
           "answer": {
-            "pl": "Gryf",
-            "en": "Griffin"
+            "en": "Bracken",
+            "pl": "Bracken"
           },
-          "isAnswered": false
-        },
-        {
-          "id": "q_w_500",
-          "points": 500,
-          "type": "AUDIO",
-          "question": {
-            "pl": "Podaj tytuł tego utworu.",
-            "en": "Name this track."
-          },
-          "mediaUrl": "/witcher1.mp3",
-          "answer": {
-            "pl": "Srebro na Potwory",
-            "en": "Silver for Monsters"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_w_600",
-          "points": 600,
-          "type": "ABCD",
-          "question": {
-            "pl": "Jak nazywa się legendarny miecz Geralta wykuty przez krasnoludy?",
-            "en": "What is the name of Geralt's legendary sword forged by dwarves?"
-          },
+          "id": "q_lc_200",
+          "isAnswered": false,
           "options": {
-            "pl": ["Aerondight", "Zireael", "Sihil", "Mahakaman"],
-            "en": ["Aerondight", "Zireael", "Sihil", "Mahakaman"]
+            "en": ["Bracken", "Coil-Head", "Jester", "Thumper"],
+            "pl": ["Bracken", "Coil-Head", "Jester", "Thumper"]
           },
+          "points": 200,
+          "question": {
+            "en": "Which monster attacks you when you look at it for too long?",
+            "pl": "Który potwór atakuje gdy patrzysz na niego zbyt długo?"
+          },
+          "type": "ABCD"
+        },
+        {
           "answer": {
-            "pl": "Aerondight",
-            "en": "Aerondight"
+            "en": "Jester",
+            "pl": "Jester"
           },
-          "isAnswered": false
+          "id": "q_lc_300",
+          "isAnswered": false,
+          "mediaUrl": "/lethalcompany1.webp",
+          "options": {
+            "en": ["Jester", "Nutcracker", "Masked", "Ghost Girl"],
+            "pl": ["Jester", "Nutcracker", "Masked", "Ghost Girl"]
+          },
+          "points": 300,
+          "question": {
+            "en": "Identify this monster.",
+            "pl": "Zidentyfikuj tego potwora."
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "3 days",
+            "pl": "3 dni"
+          },
+          "id": "q_lc_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["3 days", "5 days", "7 days", "1 day"],
+            "pl": ["3 dni", "5 dni", "7 dni", "1 dzień"]
+          },
+          "points": 400,
+          "question": {
+            "en": "How many days do you have to meet the quota by default?",
+            "pl": "Ile dni masz domyślnie na spełnienie kwoty?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Teleporter",
+            "pl": "Teleporter"
+          },
+          "id": "q_lc_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Teleporter",
+              "Radar Booster",
+              "Flashlight",
+              "Walkie-Talkie"
+            ],
+            "pl": [
+              "Teleporter",
+              "Wzmacniacz Radaru",
+              "Latarka",
+              "Krótkofalówka"
+            ]
+          },
+          "points": 500,
+          "question": {
+            "en": "Which ship upgrade can instantly bring a player back to the ship?",
+            "pl": "Które ulepszenie statku może natychmiast przenieść gracza na statek?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "130",
+            "pl": "130"
+          },
+          "id": "q_lc_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["130", "100", "150", "200"],
+            "pl": ["130", "100", "150", "200"]
+          },
+          "points": 600,
+          "question": {
+            "en": "What is the starting quota you need to meet?",
+            "pl": "Jaka jest początkowa kwota, którą musisz spełnić?"
+          },
+          "type": "ABCD"
         }
       ]
     },
     {
-      "id": "cat_lol",
-      "name": "League Of Legends",
+      "id": "cat_wow",
+      "name": "WoW",
       "questions": [
         {
-          "id": "q_lol_100",
+          "answer": {
+            "en": "Azeroth",
+            "pl": "Azeroth"
+          },
+          "id": "q_wow_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["Azeroth", "Outland", "Draenor", "Argus"],
+            "pl": ["Azeroth", "Outland", "Draenor", "Argus"]
+          },
           "points": 100,
-          "type": "ABCD",
           "question": {
-            "pl": "Jaki jest główny cel drużyny w League of Legends?",
-            "en": "What is the main objective in League of Legends?"
+            "en": "What is the name of the main planet in World of Warcraft?",
+            "pl": "Jak nazywa się główna planeta w World of Warcraft?"
           },
-          "options": {
-            "pl": [
-              "Zniszczyć Nexus",
-              "Zabić Barona",
-              "Zniszczyć wieże",
-              "Pokonać smoka"
-            ],
-            "en": [
-              "Destroy the Nexus",
-              "Kill Baron",
-              "Destroy towers",
-              "Defeat the Dragon"
-            ]
-          },
-          "answer": {
-            "pl": "Zniszczyć Nexus",
-            "en": "Destroy the Nexus"
-          },
-          "isAnswered": false
+          "type": "ABCD"
         },
         {
-          "id": "q_lol_200",
+          "answer": {
+            "en": "Arthas Menethil",
+            "pl": "Arthas Menethil"
+          },
+          "id": "q_wow_200",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Arthas Menethil",
+              "Illidan Stormrage",
+              "Thrall",
+              "Sylvanas Windrunner"
+            ],
+            "pl": [
+              "Arthas Menethil",
+              "Illidan Stormrage",
+              "Thrall",
+              "Sylvanas Windrunner"
+            ]
+          },
           "points": 200,
-          "type": "ABCD",
           "question": {
-            "pl": "Który bohater jest znany z szybkiego czyszczenia dżungli?",
-            "en": "Which champion is known for fast jungle clearing?"
+            "en": "What is the name of the Lich King?",
+            "pl": "Jak anzywa się Król Licz?"
           },
-          "options": {
-            "pl": ["Master Yi", "Soraka", "Jinx", "Lux"],
-            "en": ["Master Yi", "Soraka", "Jinx", "Lux"]
-          },
-          "answer": {
-            "pl": "Master Yi",
-            "en": "Master Yi"
-          },
-          "isAnswered": false
+          "type": "ABCD"
         },
         {
-          "id": "q_lol_300",
-          "points": 300,
-          "type": "ABCD",
-          "question": {
-            "pl": "Jak nazywa się ultimate Veigara?",
-            "en": "What is Veigar's ultimate ability called?"
+          "answer": {
+            "en": "Lich King",
+            "pl": "Król Licz"
           },
+          "id": "q_wow_300",
+          "isAnswered": false,
+          "mediaUrl": "/wow1.webp",
           "options": {
-            "pl": [
-              "Złowroga Nawałnica",
-              "Mroczna Materia",
-              "Horyzont Zdarzeń",
-              "Uderzenie Zła"
-            ],
+            "en": ["Lich King", "Deathwing", "Illidan", "Ragnaros"],
+            "pl": ["Król Licz", "Deathwing", "Illidan", "Ragnaros"]
+          },
+          "points": 300,
+          "question": {
+            "en": "Identify this character.",
+            "pl": "Zidentyfikuj tę postać."
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Hearthstone",
+            "pl": "Kamień powrotu"
+          },
+          "id": "q_wow_400",
+          "isAnswered": false,
+          "options": {
             "en": [
-              "Primordial Burst",
-              "Dark Matter",
-              "Event Horizon",
-              "Baleful Strike"
+              "Hearthstone",
+              "Portal Stone",
+              "Town Portal",
+              "Recall Stone"
+            ],
+            "pl": [
+              "Kamień powrotu",
+              "Kamień portalu",
+              "Portal do miasta",
+              "Kamień teleportacji"
             ]
           },
-          "answer": {
-            "pl": "Złowroga Nawałnica",
-            "en": "Primordial Burst"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_lol_400",
           "points": 400,
-          "type": "ABCD",
           "question": {
-            "pl": "Co robi 'Pogromca Krakenów' co trzeci atak?",
-            "en": "What does 'Kraken Slayer' do every third attack?"
+            "en": "What item teleports you to your home inn?",
+            "pl": "Jaki przedmiot teleportuje cię do gospody?"
           },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Icecrown Citadel",
+            "pl": "Cytadela Lodowej Korony"
+          },
+          "id": "q_wow_500",
+          "isAnswered": false,
           "options": {
+            "en": ["Icecrown Citadel", "Naxxramas", "Ulduar", "Black Temple"],
             "pl": [
-              "Zadaje nieuchronne obrażenia",
-              "Leczy",
-              "Omdlewa",
-              "Spowalnia"
-            ],
-            "en": ["Deals true damage", "Heals", "Stuns", "Slows"]
+              "Cytadela Lodowej Korony",
+              "Naxxramas",
+              "Ulduar",
+              "Czarna Świątynia"
+            ]
           },
-          "answer": {
-            "pl": "Zadaje nieuchronne obrażenia",
-            "en": "Deals true damage"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_lol_500",
           "points": 500,
-          "type": "ABCD",
           "question": {
-            "pl": "W jakim regionie odbyła się Bitwa pod Placidium?",
-            "en": "In which region did the Battle of the Placidium take place?"
+            "en": "In which raid do you fight the Lich King?",
+            "pl": "W którym rajdzie walczysz z Królem Liczem?"
           },
-          "options": {
-            "pl": ["Ionia", "Noxus", "Demacia", "Freljord"],
-            "en": ["Ionia", "Noxus", "Demacia", "Freljord"]
-          },
-          "answer": {
-            "pl": "Ionia",
-            "en": "Ionia"
-          },
-          "isAnswered": false
+          "type": "ABCD"
         },
         {
-          "id": "q_lol_600",
-          "points": 600,
-          "type": "ABCD",
-          "question": {
-            "pl": "W którym roku powstała firma Riot Games?",
-            "en": "In what year was Riot Games founded?"
-          },
-          "options": {
-            "pl": ["2006", "2008", "2009", "2011"],
-            "en": ["2006", "2008", "2009", "2011"]
-          },
           "answer": {
-            "pl": "2006",
-            "en": "2006"
+            "en": "Orc",
+            "pl": "Ork"
           },
-          "isAnswered": false
+          "id": "q_wow_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["Orc", "Night Elf", "Human", "Draenei"],
+            "pl": ["Ork", "Nocny Elf", "Człowiek", "Draenei"]
+          },
+          "points": 600,
+          "question": {
+            "en": "Which race is NOT part of the Alliance faction?",
+            "pl": "Która rasa NIE należy do frakcji Przymierza?"
+          },
+          "type": "ABCD"
         }
       ]
     },
     {
-      "id": "cat_nintendo",
-      "name": "Nintendo",
+      "id": "cat_helldivers",
+      "name": "Helldivers",
       "questions": [
         {
-          "id": "q_n_100",
-          "points": 100,
-          "type": "ABCD",
-          "question": {
-            "pl": "Kto jest bratem Mario?",
-            "en": "Who is Mario's brother?"
+          "answer": {
+            "en": "Federation of Super Earth ",
+            "pl": "Federacja Super Ziemia"
           },
+          "id": "q_hd_100",
+          "isAnswered": false,
           "options": {
-            "pl": ["Luigi", "Wario", "Yoshi", "Toad"],
-            "en": ["Luigi", "Wario", "Yoshi", "Toad"]
-          },
-          "answer": {
-            "pl": "Luigi",
-            "en": "Luigi"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_n_200",
-          "points": 200,
-          "type": "ABCD",
-          "question": {
-            "pl": "W której grze występuje Link?",
-            "en": "In which game does Link appear?"
-          },
-          "options": {
-            "pl": ["Zelda", "Metroid", "Star Fox", "Kirby"],
-            "en": ["Zelda", "Metroid", "Star Fox", "Kirby"]
-          },
-          "answer": {
-            "pl": "Zelda",
-            "en": "Zelda"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_n_300",
-          "points": 300,
-          "type": "ABCD",
-          "question": {
-            "pl": "Jak nazywa się królestwo w grach Mario?",
-            "en": "What is the name of the kingdom in Mario games?"
-          },
-          "options": {
-            "pl": ["Królestwo Grzybów", "Hyrule", "Kanto", "Dreamland"],
-            "en": ["Mushroom Kingdom", "Hyrule", "Kanto", "Dreamland"]
-          },
-          "answer": {
-            "pl": "Królestwo Grzybów",
-            "en": "Mushroom Kingdom"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_n_400",
-          "points": 400,
-          "type": "AUDIO",
-          "question": {
-            "pl": "Zidentyfikuj ten dźwięk.",
-            "en": "Identify this sound."
-          },
-          "mediaUrl": "/coin.mp3",
-          "answer": {
-            "pl": "Dźwięk monety",
-            "en": "Coin sound"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_n_500",
-          "points": 500,
-          "type": "ABCD",
-          "question": {
-            "pl": "W którym roku NES zadebiutował w Ameryce Północnej?",
-            "en": "In what year did the NES debut in North America?"
-          },
-          "options": {
-            "pl": ["1985", "1983", "1989", "1991"],
-            "en": ["1985", "1983", "1989", "1991"]
-          },
-          "answer": {
-            "pl": "1985",
-            "en": "1985"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_n_600",
-          "points": 600,
-          "type": "ABCD",
-          "question": {
-            "pl": "Która postać jest głównym antagonistą w Metroid?",
-            "en": "Which character is the main antagonist in Metroid?"
-          },
-          "options": {
-            "pl": ["Ridley", "Ganondorf", "King K. Rool", "Mother Brain"],
-            "en": ["Ridley", "Ganondorf", "King K. Rool", "Mother Brain"]
-          },
-          "answer": {
-            "pl": "Ridley",
-            "en": "Ridley"
-          },
-          "isAnswered": false
-        }
-      ]
-    },
-    {
-      "id": "cat_souls",
-      "name": "Soulslike",
-      "questions": [
-        {
-          "id": "q_s_100",
-          "points": 100,
-          "type": "ABCD",
-          "question": {
-            "pl": "Jaka jest waluta w Dark Souls?",
-            "en": "What is the currency in Dark Souls?"
-          },
-          "options": {
-            "pl": ["Dusze", "Złoto", "Runy", "Krew"],
-            "en": ["Souls", "Gold", "Runes", "Blood"]
-          },
-          "answer": {
-            "pl": "Dusze",
-            "en": "Souls"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_s_200",
-          "points": 200,
-          "type": "ABCD",
-          "question": {
-            "pl": "Którą grę stworzyło FromSoftware?",
-            "en": "Which game was created by FromSoftware?"
-          },
-          "options": {
-            "pl": ["Bloodborne", "Nioh", "The Surge", "Hollow Knight"],
-            "en": ["Bloodborne", "Nioh", "The Surge", "Hollow Knight"]
-          },
-          "answer": {
-            "pl": "Bloodborne",
-            "en": "Bloodborne"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_s_300",
-          "points": 300,
-          "type": "ABCD",
-          "question": {
-            "pl": "Dokończ cytat: Chwal ____!",
-            "en": "Complete the quote: Praise the ____!"
-          },
-          "options": {
-            "pl": ["Słońce", "Księżyc", "Ogień", "Ciemność"],
-            "en": ["Sun", "Moon", "Fire", "Darkness"]
-          },
-          "answer": {
-            "pl": "Słońce",
-            "en": "Sun"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_s_400",
-          "points": 400,
-          "type": "IMAGE",
-          "question": {
-            "pl": "Zidentyfikuj tego bossa.",
-            "en": "Identify this boss."
-          },
-          "mediaUrl": "https://i1.sndcdn.com/artworks-000245086151-zrs6z7-t500x500.jpgg",
-          "answer": {
-            "pl": "Ornstein i Smough",
-            "en": "Ornstein and Smough"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_s_500",
-          "points": 500,
-          "type": "ABCD",
-          "question": {
-            "pl": "Który przedmiot przywraca człowieczeństwo w Dark Souls 1?",
-            "en": "Which item restores humanity in Dark Souls 1?"
-          },
-          "options": {
-            "pl": ["Człowieczeństwo", "Żar", "Kamień", "Kukła"],
-            "en": ["Humanity", "Ember", "Stone", "Effigy"]
-          },
-          "answer": {
-            "pl": "Człowieczeństwo",
-            "en": "Humanity"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_s_600",
-          "points": 600,
-          "type": "ABCD",
-          "question": {
-            "pl": "Który boss jest opcjonalny w Dark Souls 1?",
-            "en": "Which boss is optional in Dark Souls 1?"
-          },
-          "options": {
-            "pl": ["Sif", "Ornstein i Smough", "Gwyn", "Czterej Królowie"],
-            "en": ["Sif", "Ornstein and Smough", "Gwyn", "Four Kings"]
-          },
-          "answer": {
-            "pl": "Sif",
-            "en": "Sif"
-          },
-          "isAnswered": false
-        }
-      ]
-    },
-    {
-      "id": "cat_minecraft",
-      "name": "Minecraft",
-      "questions": [
-        {
-          "id": "q_m_100",
-          "points": 100,
-          "type": "ABCD",
-          "question": {
-            "pl": "Z jakiego surowca robi się pierwsze narzędzia?",
-            "en": "What material are the first tools made of?"
-          },
-          "options": {
-            "pl": ["Drewno", "Kamień", "Ziemia", "Piasek"],
-            "en": ["Wood", "Stone", "Dirt", "Sand"]
-          },
-          "answer": {
-            "pl": "Drewno",
-            "en": "Wood"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_m_200",
-          "points": 200,
-          "type": "ABCD",
-          "question": {
-            "pl": "Które stworzenie nie jest wrogie w dzień?",
-            "en": "Which creature is not hostile during the day?"
-          },
-          "options": {
-            "pl": ["Świnia", "Zombie", "Creeper", "Szkielet"],
-            "en": ["Pig", "Zombie", "Creeper", "Skeleton"]
-          },
-          "answer": {
-            "pl": "Świnia",
-            "en": "Pig"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_m_300",
-          "points": 300,
-          "type": "ABCD",
-          "question": {
-            "pl": "Jaki blok transportuje przedmioty?",
-            "en": "Which block transports items?"
-          },
-          "options": {
-            "pl": ["Lej", "Skrzynia", "Piec", "Dozownik"],
-            "en": ["Hopper", "Chest", "Furnace", "Dispenser"]
-          },
-          "answer": {
-            "pl": "Lej",
-            "en": "Hopper"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_m_400",
-          "points": 400,
-          "type": "ABCD",
-          "question": {
-            "pl": "Co jest potrzebne do aktywacji Portalu Kresu?",
-            "en": "What is needed to activate the End Portal?"
-          },
-          "options": {
-            "pl": ["Oko Kresu", "Perła Kresu", "Płomienna Różdżka", "Diament"],
-            "en": ["Eye of Ender", "Ender Pearl", "Blaze Rod", "Diamond"]
-          },
-          "answer": {
-            "pl": "Oko Kresu",
-            "en": "Eye of Ender"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_m_500",
-          "points": 500,
-          "type": "ABCD",
-          "question": {
-            "pl": "Gdzie naturalnie występują Ghasty?",
-            "en": "Where do Ghasts naturally spawn?"
-          },
-          "options": {
-            "pl": ["Nether", "Overworld", "End", "Jaskinie"],
-            "en": ["Nether", "Overworld", "End", "Caves"]
-          },
-          "answer": {
-            "pl": "Nether",
-            "en": "Nether"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_m_600",
-          "points": 600,
-          "type": "ABCD",
-          "question": {
-            "pl": "Ile maksymalnie poziomów może mieć zaklęcie w enchanting table?",
-            "en": "What is the maximum enchantment level possible with an enchanting table?"
-          },
-          "options": {
-            "pl": ["30", "50", "100", "64"],
-            "en": ["30", "50", "100", "64"]
-          },
-          "answer": {
-            "pl": "30",
-            "en": "30"
-          },
-          "isAnswered": false
-        }
-      ]
-    },
-    {
-      "id": "cat_tes",
-      "name": "The Elder Scrolls",
-      "questions": [
-        {
-          "id": "q_tes_100",
-          "points": 100,
-          "type": "ABCD",
-          "question": {
-            "pl": "W jakiej prowincji rozgrywa się Skyrim?",
-            "en": "In which province does Skyrim take place?"
-          },
-          "options": {
-            "pl": ["Skyrim", "Cyrodiil", "Morrowind", "Hammerfell"],
-            "en": ["Skyrim", "Cyrodiil", "Morrowind", "Hammerfell"]
-          },
-          "answer": {
-            "pl": "Skyrim",
-            "en": "Skyrim"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_tes_200",
-          "points": 200,
-          "type": "ABCD",
-          "question": {
-            "pl": "Jak nazywa się główny bohater w Skyrim?",
-            "en": "What is the main hero called in Skyrim?"
-          },
-          "options": {
-            "pl": ["Dovahkiin", "Nerevarine", "Warden", "Champion"],
-            "en": ["Dovahkiin", "Nerevarine", "Warden", "Champion"]
-          },
-          "answer": {
-            "pl": "Dovahkiin",
-            "en": "Dovahkiin"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_tes_300",
-          "points": 300,
-          "type": "ABCD",
-          "question": {
-            "pl": "Które miasto jest stolicą Cesarstwa w TES?",
-            "en": "Which city is the capital of the Empire in TES?"
-          },
-          "options": {
-            "pl": ["Imperial City", "Solitude", "Windhelm", "Whiterun"],
-            "en": ["Imperial City", "Solitude", "Windhelm", "Whiterun"]
-          },
-          "answer": {
-            "pl": "Imperial City",
-            "en": "Imperial City"
-          },
-          "isAnswered": false
-        },
-        {
-          "id": "q_tes_400",
-          "points": 400,
-          "type": "ABCD",
-          "question": {
-            "pl": "Jak nazywa się organizacja skrytobójców w TES?",
-            "en": "What is the assassin organization called in TES?"
-          },
-          "options": {
-            "pl": [
-              "Dark Brotherhood",
-              "Morag Tong",
-              "Thieves Guild",
-              "Companions"
-            ],
             "en": [
-              "Dark Brotherhood",
-              "Morag Tong",
-              "Thieves Guild",
-              "Companions"
+              "Federation of Super Earth",
+              "Earth Federation",
+              "United Nations",
+              "Terran Republic"
+            ],
+            "pl": [
+              "Federacja Super Ziemia",
+              "Federacja Ziemi",
+              "Narody Zjednoczone",
+              "Republika Terrańska"
             ]
           },
-          "answer": {
-            "pl": "Dark Brotherhood",
-            "en": "Dark Brotherhood"
+          "points": 100,
+          "question": {
+            "en": "What government do the Helldivers serve?",
+            "pl": "Jakiemu rządowi służą Helldiverzy?"
           },
-          "isAnswered": false
+          "type": "ABCD"
         },
         {
-          "id": "q_tes_500",
+          "answer": {
+            "en": "Terminids",
+            "pl": "Terminidy"
+          },
+          "id": "q_hd_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["Terminids", "Automatons", "Illuminate", "Cyborgs"],
+            "pl": ["Terminidy", "Automatony", "Iluminaci", "Cyborgi"]
+          },
+          "points": 200,
+          "question": {
+            "en": "What is the name of the bug-like enemy faction in Helldivers 2?",
+            "pl": "Jak nazywa się frakcja wrogów przypominających robaki w Helldivers 2?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Stratagem",
+            "pl": "Stratagem"
+          },
+          "id": "q_hd_300",
+          "isAnswered": false,
+          "options": {
+            "en": ["Stratagem", "Loadout", "Ability", "Power-up"],
+            "pl": ["Stratagem", "Wyposażenie", "Umiejętność", "Bonus"]
+          },
+          "points": 300,
+          "question": {
+            "en": "What is the name of the special abilities activated by button codes?",
+            "pl": "Jak nazywają się specjalne zdolności aktywowane kodami przycisków?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Automaton",
+            "pl": "Automaton"
+          },
+          "id": "q_hd_400",
+          "isAnswered": false,
+          "mediaUrl": "/hd1.jpg",
+          "options": {
+            "en": ["Automaton", "Terminid", "Illuminate", "Cyborg"],
+            "pl": ["Automaton", "Terminid", "Iluminat", "Cyborg"]
+          },
+          "points": 400,
+          "question": {
+            "en": "Identify this enemy faction.",
+            "pl": "Zidentyfikuj tę frakcję wroga."
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Pelican-1",
+            "pl": "Pelican-1"
+          },
+          "id": "q_hd_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["Pelican-1", "Eagle-1", "Destroyer", "Shuttle"],
+            "pl": ["Pelican-1", "Eagle-1", "Niszczyciel", "Prom"]
+          },
           "points": 500,
-          "type": "ABCD",
           "question": {
-            "pl": "Który Daedric Prince jest panem szaleństwa?",
-            "en": "Which Daedric Prince is the lord of madness?"
+            "en": "What is the name of the ship used to extract Helldivers?",
+            "pl": "Jak nazywa się statek używany do ewakuacji Helldiverów?"
           },
-          "options": {
-            "pl": [
-              "Sheogorath",
-              "Mehrunes Dagon",
-              "Molag Bal",
-              "Hermaeus Mora"
-            ],
-            "en": ["Sheogorath", "Mehrunes Dagon", "Molag Bal", "Hermaeus Mora"]
-          },
-          "answer": {
-            "pl": "Sheogorath",
-            "en": "Sheogorath"
-          },
-          "isAnswered": false
+          "type": "ABCD"
         },
         {
-          "id": "q_tes_600",
-          "points": 600,
-          "type": "ABCD",
-          "question": {
-            "pl": "Jak nazywa się słynna fraza wykrzyczana przez strażników w Skyrim?",
-            "en": "What is the famous phrase shouted by guards in Skyrim?"
+          "answer": {
+            "en": "Requisition Slips",
+            "pl": "Kupony Rekwizycyjne"
           },
+          "id": "q_hd_600",
+          "isAnswered": false,
           "options": {
-            "pl": [
-              "Strzała w kolano",
-              "Fus Ro Dah",
-              "Hail Sithis",
-              "Talos guide you"
-            ],
             "en": [
-              "Arrow to the knee",
-              "Fus Ro Dah",
-              "Hail Sithis",
-              "Talos guide you"
+              "Requisition Slips",
+              "Liberty Credits",
+              "Democracy Tokens",
+              "War Bonds"
+            ],
+            "pl": [
+              "Kupony Rekwizycyjne",
+              "Kredyty Wolności",
+              "Tokeny Demokracji",
+              "Obligacje Wojenne"
             ]
           },
-          "answer": {
-            "pl": "Strzała w kolano",
-            "en": "Arrow to the knee"
+          "points": 600,
+          "question": {
+            "en": "What is the name of the currency used to unlock stratagems?",
+            "pl": "Jak nazywa się waluta używana do odblokowywania stratagemów?"
           },
-          "isAnswered": false
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_fortnite",
+      "name": "Fortnite",
+      "questions": [
+        {
+          "answer": {
+            "en": "Battle Royale",
+            "pl": "Battle Royale"
+          },
+          "id": "q_fn_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Battle Royale",
+              "Deathmatch",
+              "Capture the Flag",
+              "Team Deathmatch"
+            ],
+            "pl": [
+              "Battle Royale",
+              "Deathmatch",
+              "Zdobądź flagę",
+              "Team Deathmatch"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "What is the main game mode in Fortnite?",
+            "pl": "Jaki jest główny tryb gry w Fortnite?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "V-Bucks",
+            "pl": "V-Bucksy"
+          },
+          "id": "q_fn_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["V-Bucks", "Coins", "Gems", "Credits"],
+            "pl": ["V-Bucksy", "Monety", "Klejnoty", "Kredyty"]
+          },
+          "points": 200,
+          "question": {
+            "en": "What is the premium currency in Fortnite?",
+            "pl": "Jaka jest waluta premium w Fortnite?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Tilted Towers",
+            "pl": "Tilted Towers"
+          },
+          "id": "q_fn_300",
+          "isAnswered": false,
+          "mediaUrl": "/fort.webp",
+          "options": {
+            "en": [
+              "Tilted Towers",
+              "Pleasant Park",
+              "Retail Row",
+              "Salty Springs"
+            ],
+            "pl": [
+              "Tilted Towers",
+              "Pleasant Park",
+              "Retail Row",
+              "Salty Springs"
+            ]
+          },
+          "points": 300,
+          "question": {
+            "en": "Identify this iconic location.",
+            "pl": "Zidentyfikuj tę kultową lokację."
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Kevin",
+            "pl": "Kevin"
+          },
+          "id": "q_fn_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Kevin", "Bob", "Steve", "Larry"],
+            "pl": ["Kevin", "Bob", "Steve", "Larry"]
+          },
+          "points": 400,
+          "question": {
+            "en": "What is the community nickname for the purple cube?",
+            "pl": "Jaki jest społecznościowy przydomek fioletowego sześcianu?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Chapter 2",
+            "pl": "Rozdział 2"
+          },
+          "id": "q_fn_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Chapter 2",
+              "Season 11",
+              "Chapter 1.5",
+              "The New Beginning"
+            ],
+            "pl": ["Rozdział 2", "Sezon 11", "Rozdział 1.5", "Nowy Początek"]
+          },
+          "points": 500,
+          "question": {
+            "en": "What came after the Black Hole event in Fortnite?",
+            "pl": "Co nastąpiło po wydarzeniu Czarnej Dziury w Fortnite?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "The End",
+            "pl": "Koniec"
+          },
+          "id": "q_fn_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["The End", "The Final Showdown", "Zero Point", "Collision"],
+            "pl": ["Koniec", "Ostateczna Konfrontacja", "Punkt Zero", "Kolizja"]
+          },
+          "points": 600,
+          "question": {
+            "en": "What was the name of the Chapter 1 Season X live event that caused the Black Hole?",
+            "pl": "Jak nazywało się wydarzenie live z Rozdziału 1 Sezonu X, które wywołało Czarną Dziurę?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_bloons",
+      "name": "Bloons TD",
+      "questions": [
+        {
+          "answer": {
+            "en": "Dart Monkey",
+            "pl": "Małpa z Rzutką"
+          },
+          "id": "q_btd_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Dart Monkey",
+              "Tack Shooter",
+              "Ninja Monkey",
+              "Super Monkey"
+            ],
+            "pl": [
+              "Małpa z Rzutką",
+              "Tack Shooter",
+              "Małpa Ninja",
+              "Super Małpa"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "What is the cheapest and most basic tower in Bloons TD?",
+            "pl": "Jaka jest najtańsza i najbardziej podstawowa wieża w Bloons TD?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "B.A.D.",
+            "pl": "B.A.D."
+          },
+          "id": "q_btd_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["B.A.D.", "Z.O.M.G.", "M.O.A.B.", "D.D.T."],
+            "pl": ["B.A.D.", "Z.O.M.G.", "M.O.A.B.", "D.D.T."]
+          },
+          "points": 200,
+          "question": {
+            "en": "What is the strongest bloon in Bloons TD 6?",
+            "pl": "Jaki jest najsilniejszy balon w Bloons TD 6?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Super Monkey",
+            "pl": "Super Małpa"
+          },
+          "id": "q_btd_300",
+          "isAnswered": false,
+          "mediaUrl": "/bloons1.webp",
+          "options": {
+            "en": [
+              "Super Monkey",
+              "Ninja Monkey",
+              "Wizard Monkey",
+              "Boomerang Monkey"
+            ],
+            "pl": [
+              "Super Małpa",
+              "Małpa Ninja",
+              "Małpa Czarodziej",
+              "Małpa z Bumerangiem"
+            ]
+          },
+          "points": 300,
+          "question": {
+            "en": "Identify this tower.",
+            "pl": "Zidentyfikuj tę wieżę."
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Bloonarius",
+            "pl": "Bloonarius"
+          },
+          "id": "q_btd_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Bloonarius", "Lych", "Vortex", "Dreadbloon"],
+            "pl": ["Bloonarius", "Lych", "Vortex", "Dreadbloon"]
+          },
+          "points": 400,
+          "question": {
+            "en": "What is the name of the first boss bloon introduced in BTD6?",
+            "pl": "Jak nazywa się pierwszy boss balon wprowadzony w BTD6?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Banana Farm",
+            "pl": "Farma Bananów"
+          },
+          "id": "q_btd_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Banana Farm",
+              "Monkey Village",
+              "Monkey Bank",
+              "Trade Empire"
+            ],
+            "pl": [
+              "Farma Bananów",
+              "Wioska Małp",
+              "Bank Małp",
+              "Imperium Handlowe"
+            ]
+          },
+          "points": 500,
+          "question": {
+            "en": "Which tower generates income over time?",
+            "pl": "Która wieża generuje dochód w czasie?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Ninja Kiwi",
+            "pl": "Ninja Kiwi"
+          },
+          "id": "q_btd_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["Ninja Kiwi", "Supercell", "King", "Rovio"],
+            "pl": ["Ninja Kiwi", "Supercell", "King", "Rovio"]
+          },
+          "points": 600,
+          "question": {
+            "en": "Which company developed Bloons TD?",
+            "pl": "Która firma stworzyła Bloons TD?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_payday",
+      "name": "Payday",
+      "questions": [
+        {
+          "answer": {
+            "en": "Dallas",
+            "pl": "Dallas"
+          },
+          "id": "q_pd_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["Dallas", "Chains", "Wolf", "Houston"],
+            "pl": ["Dallas", "Chains", "Wolf", "Houston"]
+          },
+          "points": 100,
+          "question": {
+            "en": "Who is the leader of the Payday Gang?",
+            "pl": "Kto jest liderem gangu Payday?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Bain",
+            "pl": "Bain"
+          },
+          "id": "q_pd_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["Bain", "Vlad", "Hector", "The Elephant"],
+            "pl": ["Bain", "Vlad", "Hector", "Słoń"]
+          },
+          "points": 200,
+          "question": {
+            "en": "Who provides mission briefings and guidance through an earpiece?",
+            "pl": "Kto dostarcza odpraw misyjnych i wskazówek przez słuchawkę?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Cloaker",
+            "pl": "Cloaker"
+          },
+          "id": "q_pd_300",
+          "isAnswered": false,
+          "mediaUrl": "/payday2.mp3",
+          "options": {
+            "en": ["Cloaker", "Bulldozer", "Taser", "Shield"],
+            "pl": ["Cloaker", "Bulldozer", "Taser", "Tarczownik"]
+          },
+          "points": 300,
+          "question": {
+            "en": "Which special enemy makes this sound?",
+            "pl": "Który specjalny wróg wydaje ten dźwięk?"
+          },
+          "type": "AUDIO"
+        },
+        {
+          "answer": {
+            "en": "Wolf",
+            "pl": "Wolf"
+          },
+          "id": "q_pd_400",
+          "isAnswered": false,
+          "mediaUrl": "/payday1.webp",
+          "options": {
+            "en": ["Wolf", "Dallas", "Chains", "Hoxton"],
+            "pl": ["Wolf", "Dallas", "Chains", "Hoxton"]
+          },
+          "points": 400,
+          "question": {
+            "en": "Identify this heister.",
+            "pl": "Zidentyfikuj tego złodzieja."
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Bulldozer",
+            "pl": "Bulldozer"
+          },
+          "id": "q_pd_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["Bulldozer", "Captain Winters", "Medic", "Sniper"],
+            "pl": ["Bulldozer", "Kapitan Winters", "Medyk", "Snajper"]
+          },
+          "points": 500,
+          "question": {
+            "en": "Which heavily armored enemy wears a distinctive visor helmet?",
+            "pl": "Który ciężko opancerzony wróg nosi charakterystyczny hełm z przyłbicą?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Crime.net",
+            "pl": "Crime.net"
+          },
+          "id": "q_pd_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["Crime.net", "Heist.net", "Dark.net", "Job.net"],
+            "pl": ["Crime.net", "Heist.net", "Dark.net", "Job.net"]
+          },
+          "points": 600,
+          "question": {
+            "en": "What is the name of the network used to find heists?",
+            "pl": "Jak nazywa się sieć używana do znajdowania napadów?"
+          },
+          "type": "ABCD"
         }
       ]
     }

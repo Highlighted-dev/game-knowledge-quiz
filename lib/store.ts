@@ -39,6 +39,7 @@ export type GameState = {
   awardedBingos: string[];
   language: "pl" | "en";
   bingoNotification: string | null;
+  doublePointQuestions: string[]; // Array of question IDs that give 2x points
 
   // Actions
   setTeamName: (teamId: string, name: string) => void;
@@ -57,6 +58,8 @@ export type GameState = {
   checkAndAwardBingo: () => void;
   setLanguage: (lang: "pl" | "en") => void;
   clearBingoNotification: () => void;
+  initializeDoublePoints: () => void;
+  isDoublePoints: (questionId: string) => boolean;
 };
 
 const INITIAL_TEAMS: [Team, Team] = [
@@ -163,6 +166,25 @@ export const useGameStore = create<GameState>()(
           activeQuestion: null,
           lifelineActive: null,
         }),
+      doublePointQuestions: [],
+
+      initializeDoublePoints: () => {
+        const state = get();
+        const allQuestionIds: string[] = [];
+        for (const cat of state.categories) {
+          for (const q of cat.questions) {
+            allQuestionIds.push(q.id);
+          }
+        }
+        // Randomly pick 2 unique questions
+        const shuffled = [...allQuestionIds].sort(() => Math.random() - 0.5);
+        const selected = shuffled.slice(0, 2);
+        set({ doublePointQuestions: selected });
+      },
+
+      isDoublePoints: (questionId) => {
+        return get().doublePointQuestions.includes(questionId);
+      },
       language: "pl",
       lifelineActive: null,
 
@@ -187,6 +209,11 @@ export const useGameStore = create<GameState>()(
           };
         });
         set({ categories: mergedCategories });
+
+        // Initialize double points if not already set
+        if (state.doublePointQuestions.length === 0) {
+          get().initializeDoublePoints();
+        }
       },
 
       markQuestionAnswered: (categoryId, questionId, answeredBy) =>
@@ -216,7 +243,7 @@ export const useGameStore = create<GameState>()(
           };
         }),
 
-      resetGame: () =>
+      resetGame: () => {
         set({
           activeQuestion: null,
           awardedBingos: [],
@@ -229,9 +256,13 @@ export const useGameStore = create<GameState>()(
               isAnswered: false,
             })),
           })),
+          doublePointQuestions: [],
           lifelineActive: null,
           teams: INITIAL_TEAMS,
-        }),
+        });
+        // Re-initialize double points for new game
+        get().initializeDoublePoints();
+      },
 
       setLanguage: (lang) => set({ language: lang }),
 
@@ -267,6 +298,7 @@ export const useGameStore = create<GameState>()(
       partialize: (state) => ({
         awardedBingos: state.awardedBingos,
         categories: state.categories,
+        doublePointQuestions: state.doublePointQuestions,
         language: state.language,
         teams: state.teams,
       }),

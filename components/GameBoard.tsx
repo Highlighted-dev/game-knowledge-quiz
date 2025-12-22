@@ -20,6 +20,7 @@ export default function GameBoard() {
     clearBingoNotification,
     language,
     setLanguage,
+    isDoublePoints,
   } = useGameStore();
 
   useEffect(() => {
@@ -135,6 +136,7 @@ export default function GameBoard() {
                 const answeredTeam = getTeamInfo(q.answeredBy);
                 const isTeam1 = q.answeredBy === "team1";
                 const isTeam2 = q.answeredBy === "team2";
+                const isDouble = isDoublePoints(q.id);
 
                 return (
                   <button
@@ -173,7 +175,12 @@ export default function GameBoard() {
                               isTeam2 && "text-red-300",
                             )}
                           >
-                            +{q.points}
+                            +{isDouble ? q.points * 2 : q.points}
+                            {isDouble && (
+                              <span className="text-yellow-400 text-xs ml-1">
+                                2x
+                              </span>
+                            )}
                           </span>
                         </div>
                       ) : (

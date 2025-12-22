@@ -21,6 +21,7 @@ export default function QuestionModal() {
     clearLifeline,
     language,
     setLanguage,
+    isDoublePoints,
   } = useGameStore();
   const [isRevealed, setIsRevealed] = useState(false);
 
@@ -32,9 +33,14 @@ export default function QuestionModal() {
 
   if (!activeQuestion) return null;
 
+  const isDouble = isDoublePoints(activeQuestion.id);
+  const effectivePoints = isDouble
+    ? activeQuestion.points * 2
+    : activeQuestion.points;
+
   const handleResolve = (teamId: string | null) => {
     if (teamId) {
-      updateScore(teamId, activeQuestion.points);
+      updateScore(teamId, effectivePoints);
     }
     if (activeCategory) {
       markQuestionAnswered(activeCategory, activeQuestion.id, teamId);
@@ -78,14 +84,22 @@ export default function QuestionModal() {
       >
         <DialogTitle className="sr-only">{activeCategory} Question</DialogTitle>
 
-        {/* Header Bar - Fixed */}
         <div className="h-14 flex items-center justify-between px-6 border-b border-white/10 bg-zinc-950 flex-shrink-0">
           <div className="flex items-center gap-4">
-            <span className="text-xs font-mono text-zinc-500 uppercase">
-              {activeQuestion.points} PTS
+            <span
+              className={cn(
+                "text-xs font-mono uppercase flex items-center gap-2",
+                isDouble ? "text-yellow-400" : "text-zinc-500",
+              )}
+            >
+              {effectivePoints} PTS
+              {isDouble && (
+                <span className="bg-yellow-500 text-black text-[10px] font-bold px-1.5 py-0.5 rounded-full">
+                  2x
+                </span>
+              )}
             </span>
 
-            {/* Compact Lifeline Buttons */}
             <div className="flex gap-2">
               {teams.map((team) => (
                 <div className="flex gap-1" key={team.id}>
@@ -163,14 +177,12 @@ export default function QuestionModal() {
           </div>
         </div>
 
-        {/* Content Area - Scrollable */}
         <div className="p-6 md:p-12 flex flex-col items-center justify-start overflow-y-auto flex-1 min-h-0">
           {activeQuestion.type === "IMAGE" && activeQuestion.mediaUrl && (
-            <div className="mb-6 relative w-full max-h-64 bg-zinc-900 border border-white/5 rounded-lg overflow-hidden">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
+            <div className="mb-6 relative w-full max-w-lg bg-zinc-900 border border-white/5 rounded-lg overflow-hidden flex items-center justify-center">
               <img
                 alt="Question"
-                className="w-full h-full object-contain"
+                className="max-w-full max-h-[50vh] object-contain"
                 src={activeQuestion.mediaUrl}
               />
             </div>
@@ -190,7 +202,6 @@ export default function QuestionModal() {
             {activeQuestion.question[language]}
           </h2>
 
-          {/* Lifeline Used Notification */}
           {lifelineActive && (
             <div
               className={cn(
@@ -221,7 +232,6 @@ export default function QuestionModal() {
             </div>
           )}
 
-          {/* ABCD Options */}
           {showOptions && activeQuestion.options && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full max-w-2xl mx-auto">
               {activeQuestion.options[language].map((option, idx) => (
@@ -243,7 +253,6 @@ export default function QuestionModal() {
             </div>
           )}
 
-          {/* Phone hint */}
           {showPhoneHint && (
             <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4 text-center max-w-md">
               <Phone className="h-6 w-6 mx-auto mb-2 text-yellow-500" />
@@ -252,7 +261,6 @@ export default function QuestionModal() {
             </div>
           )}
 
-          {/* Steal hint */}
           {showStealHint && (
             <div className="bg-zinc-900 border border-orange-500/30 rounded-lg p-4 text-center max-w-md">
               <Zap className="h-6 w-6 mx-auto mb-2 text-orange-500" />
@@ -260,7 +268,6 @@ export default function QuestionModal() {
             </div>
           )}
 
-          {/* Answer Reveal */}
           <AnimatePresence>
             {isRevealed && (
               <motion.div
@@ -276,7 +283,6 @@ export default function QuestionModal() {
           </AnimatePresence>
         </div>
 
-        {/* Footer Actions - Fixed */}
         <div className="p-4 border-t border-white/10 bg-zinc-950 flex flex-col items-center flex-shrink-0">
           {!isRevealed ? (
             <Button
