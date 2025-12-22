@@ -93,7 +93,6 @@ export default function GameBoard() {
         )}
       </AnimatePresence>
       
-      {/* Header Actions */}
       <div className="flex justify-end gap-2 px-2">
         <Button 
           variant="outline" 
@@ -117,16 +116,13 @@ export default function GameBoard() {
         </Button>
       </div>
 
-      {/* Grid Container */}
       <div className="grid grid-cols-1 md:grid-cols-5 gap-2 md:gap-4">
         {categories.map((cat) => (
           <div key={cat.id} className="flex flex-col gap-4">
-            {/* Category Header */}
             <div className="h-12 flex items-center justify-center text-center border-b border-white/10 mx-4 md:mx-0">
                <h3 className="font-medium text-xs text-zinc-400 uppercase tracking-widest leading-tight">{cat.name}</h3>
             </div>
 
-            {/* Questions Column */}
             <div className="grid grid-cols-5 md:flex md:flex-col gap-3 px-2 md:px-0">
                 {cat.questions.map((q) => {
                     const answeredTeam = getTeamInfo(q.answeredBy);

@@ -7,10 +7,10 @@ export type Question = {
   id: string;
   points: number;
   type: QuestionType;
-  question: string;
-  answer: string;
-  options?: string[];
-  mediaUrl?: string;
+  question: { pl: string; en: string };
+  answer: { pl: string; en: string };
+  options?: { pl: string[]; en: string[] }; // For ABCD
+  mediaUrl?: string; // For IMAGE/AUDIO
   isAnswered: boolean;
   answeredBy?: string | null;
 };

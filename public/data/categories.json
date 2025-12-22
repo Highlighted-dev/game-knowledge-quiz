@@ -7,101 +7,181 @@
         {
           "id": "q_w_100",
           "points": 100,
-          "type": "OPEN",
-          "question": "Kto jest głównym bohaterem serii Wiedźmin?",
-          "answer": "Geralt z Rivii",
+          "type": "ABCD",
+          "question": {
+            "pl": "Kto jest głównym bohaterem serii Wiedźmin?",
+            "en": "Who is the main protagonist of The Witcher series?"
+          },
+          "options": {
+            "pl": ["Geralt z Rivii", "Vesemir", "Lambert", "Eskel"],
+            "en": ["Geralt of Rivia", "Vesemir", "Lambert", "Eskel"]
+          },
+          "answer": {
+            "pl": "Geralt z Rivii",
+            "en": "Geralt of Rivia"
+          },
           "isAnswered": false
         },
         {
           "id": "q_w_200",
           "points": 200,
           "type": "ABCD",
-          "question": "Jak nazywa się biologiczny ojciec Ciri?",
-          "options": [
-            "Emhyr var Emreis",
-            "Foltest",
-            "Vizimir",
-            "Radovid"
-          ],
-          "answer": "Emhyr var Emreis",
+          "question": {
+            "pl": "Jak nazywa się biologiczny ojciec Ciri?",
+            "en": "What is the name of Ciri's biological father?"
+          },
+          "options": {
+            "pl": ["Emhyr var Emreis", "Foltest", "Vizimir", "Radovid"],
+            "en": ["Emhyr var Emreis", "Foltest", "Vizimir", "Radovid"]
+          },
+          "answer": {
+            "pl": "Emhyr var Emreis",
+            "en": "Emhyr var Emreis"
+          },
           "isAnswered": false
         },
         {
           "id": "q_w_300",
           "points": 300,
-          "type": "OPEN",
-          "question": "Z jakiej szkoły pochodzi Geralt?",
-          "answer": "Szkoła Wilka",
+          "type": "ABCD",
+          "question": {
+            "pl": "Z jakiej szkoły pochodzi Geralt?",
+            "en": "Which school is Geralt from?"
+          },
+          "options": {
+            "pl": ["Szkoła Wilka", "Szkoła Kota", "Szkoła Gryfa", "Szkoła Niedźwiedzia"],
+            "en": ["School of the Wolf", "School of the Cat", "School of the Griffin", "School of the Bear"]
+          },
+          "answer": {
+            "pl": "Szkoła Wilka",
+            "en": "School of the Wolf"
+          },
           "isAnswered": false
         },
         {
           "id": "q_w_400",
           "points": 400,
           "type": "IMAGE",
-          "question": "Zidentyfikuj tego potwora.",
+          "question": {
+            "pl": "Zidentyfikuj tego potwora.",
+            "en": "Identify this monster."
+          },
           "mediaUrl": "https://static.wikia.nocookie.net/wiedzmin/images/5/53/G_SS_Gryf.png",
-          "answer": "Gryf",
+          "answer": {
+            "pl": "Gryf",
+            "en": "Griffin"
+          },
           "isAnswered": false
         },
         {
           "id": "q_w_500",
           "points": 500,
           "type": "AUDIO",
-          "question": "Podaj tytuł tego utworu.",
+          "question": {
+            "pl": "Podaj tytuł tego utworu.",
+            "en": "Name this track."
+          },
           "mediaUrl": "/witcher1.mp3",
-          "answer": "Srebro na Potwory",
+          "answer": {
+            "pl": "Srebro na Potwory",
+            "en": "Silver for Monsters"
+          },
           "isAnswered": false
         }
       ]
     },
     {
-      "id": "cat_1766358014380",
+      "id": "cat_lol",
       "name": "League Of Legends",
       "questions": [
         {
-          "id": "q_1766358014380_100",
+          "id": "q_lol_100",
           "points": 100,
-          "type": "OPEN",
-          "question": "Jaki jest główny cel drużyny w League of Legends, aby wygrać mecz?",
-          "answer": "Zniszczyć Nexus.",
+          "type": "ABCD",
+          "question": {
+            "pl": "Jaki jest główny cel drużyny w League of Legends?",
+            "en": "What is the main objective in League of Legends?"
+          },
+          "options": {
+            "pl": ["Zniszczyć Nexus", "Zabić Barona", "Zniszczyć wieże", "Pokonać smoka"],
+            "en": ["Destroy the Nexus", "Kill Baron", "Destroy towers", "Defeat the Dragon"]
+          },
+          "answer": {
+            "pl": "Zniszczyć Nexus",
+            "en": "Destroy the Nexus"
+          },
           "isAnswered": false
         },
         {
-          "id": "q_1766358014380_200",
+          "id": "q_lol_200",
           "points": 200,
           "type": "ABCD",
-          "question": "Który z tych bohaterów jest typowym dżunglerem, znanym z szybkiego czyszczenia potworów w lesie?",
-          "options": [
-            "Annie",
-            "Master Yi",
-            "Soraka",
-            "Jinx"
-          ],
-          "answer": "Master Yi",
+          "question": {
+            "pl": "Który bohater jest znany z szybkiego czyszczenia dżungli?",
+            "en": "Which champion is known for fast jungle clearing?"
+          },
+          "options": {
+            "pl": ["Master Yi", "Soraka", "Jinx", "Lux"],
+            "en": ["Master Yi", "Soraka", "Jinx", "Lux"]
+          },
+          "answer": {
+            "pl": "Master Yi",
+            "en": "Master Yi"
+          },
           "isAnswered": false
         },
         {
-          "id": "q_1766358014380_300",
+          "id": "q_lol_300",
           "points": 300,
-          "type": "OPEN",
-          "question": "Jak nazywa się umiejętność ostateczna (R) bohatera Veigar, zadająca ogromne obrażenia pojedynczemu celowi?",
-          "answer": "Złowroga Nawałnica.",
+          "type": "ABCD",
+          "question": {
+            "pl": "Jak nazywa się ultimate Veigara?",
+            "en": "What is Veigar's ultimate ability called?"
+          },
+          "options": {
+            "pl": ["Złowroga Nawałnica", "Mroczna Materia", "Horyzont Zdarzeń", "Uderzenie Zła"],
+            "en": ["Primordial Burst", "Dark Matter", "Event Horizon", "Baleful Strike"]
+          },
+          "answer": {
+            "pl": "Złowroga Nawałnica",
+            "en": "Primordial Burst"
+          },
           "isAnswered": false
         },
         {
-          "id": "q_1766358014380_400",
+          "id": "q_lol_400",
           "points": 400,
-          "type": "OPEN",
-          "question": "Jaki unikalny efekt daje bohaterom przedmiot 'Pogromca Krakenów' po trzech kolejnych atakach na ten sam cel?",
-          "answer": "Zadaje obrażenia nieuchronne.",
+          "type": "ABCD",
+          "question": {
+            "pl": "Co robi 'Pogromca Krakenów' co trzeci atak?",
+            "en": "What does 'Kraken Slayer' do every third attack?"
+          },
+          "options": {
+            "pl": ["Zadaje nieuchronne obrażenia", "Leczy", "Omdlewa", "Spowalnia"],
+            "en": ["Deals true damage", "Heals", "Stuns", "Slows"]
+          },
+          "answer": {
+            "pl": "Zadaje nieuchronne obrażenia",
+            "en": "Deals true damage"
+          },
           "isAnswered": false
         },
         {
-          "id": "q_1766358014380_500",
+          "id": "q_lol_500",
           "points": 500,
-          "type": "OPEN",
-          "question": "W jakim regionie Runeterry odbyła się Bitwa pod Placidium, kluczowy moment w wojnie z Noxusem?",
-          "answer": "Ionia.",
+          "type": "ABCD",
+          "question": {
+            "pl": "W jakim regionie odbyła się Bitwa pod Placidium?",
+            "en": "In which region did the Battle of the Placidium take place?"
+          },
+          "options": {
+            "pl": ["Ionia", "Noxus", "Demacia", "Freljord"],
+            "en": ["Ionia", "Noxus", "Demacia", "Freljord"]
+          },
+          "answer": {
+            "pl": "Ionia",
+            "en": "Ionia"
+          },
           "isAnswered": false
         }
       ]
@@ -113,48 +193,88 @@
         {
           "id": "q_n_100",
           "points": 100,
-          "type": "OPEN",
-          "question": "Kto jest bratem Mario?",
-          "answer": "Luigi",
+          "type": "ABCD",
+          "question": {
+            "pl": "Kto jest bratem Mario?",
+            "en": "Who is Mario's brother?"
+          },
+          "options": {
+             "pl": ["Luigi", "Wario", "Yoshi", "Toad"],
+             "en": ["Luigi", "Wario", "Yoshi", "Toad"]
+          },
+          "answer": {
+            "pl": "Luigi",
+            "en": "Luigi"
+          },
           "isAnswered": false
         },
         {
           "id": "q_n_200",
           "points": 200,
           "type": "ABCD",
-          "question": "W której grze występuje Link?",
-          "options": [
-            "Metroid",
-            "Zelda",
-            "Star Fox",
-            "Kirby"
-          ],
-          "answer": "Zelda",
+          "question": {
+            "pl": "W której grze występuje Link?",
+            "en": "In which game does Link appear?"
+          },
+          "options": {
+            "pl": ["Zelda", "Metroid", "Star Fox", "Kirby"],
+            "en": ["Zelda", "Metroid", "Star Fox", "Kirby"]
+          },
+          "answer": {
+            "pl": "Zelda",
+            "en": "Zelda"
+          },
           "isAnswered": false
         },
         {
           "id": "q_n_300",
           "points": 300,
-          "type": "OPEN",
-          "question": "Jak nazywa się królestwo w grach Mario?",
-          "answer": "Królestwo Grzybów",
+          "type": "ABCD",
+          "question": {
+            "pl": "Jak nazywa się królestwo w grach Mario?",
+            "en": "What is the name of the kingdom in Mario games?"
+          },
+          "options": {
+             "pl": ["Królestwo Grzybów", "Hyrule", "Kanto", "Dreamland"],
+             "en": ["Mushroom Kingdom", "Hyrule", "Kanto", "Dreamland"]
+          },
+          "answer": {
+            "pl": "Królestwo Grzybów",
+            "en": "Mushroom Kingdom"
+          },
           "isAnswered": false
         },
         {
           "id": "q_n_400",
           "points": 400,
           "type": "AUDIO",
-          "question": "Zidentyfikuj ten dźwięk.",
+          "question": {
+            "pl": "Zidentyfikuj ten dźwięk.",
+            "en": "Identify this sound."
+          },
           "mediaUrl": "/coin.mp3",
-          "answer": "Dźwięk monety",
+          "answer": {
+            "pl": "Dźwięk monety",
+            "en": "Coin sound"
+          },
           "isAnswered": false
         },
         {
           "id": "q_n_500",
           "points": 500,
-          "type": "OPEN",
-          "question": "W którym roku NES zadebiutował w Ameryce Północnej?",
-          "answer": "1985",
+          "type": "ABCD",
+          "question": {
+            "pl": "W którym roku NES zadebiutował w Ameryce Północnej?",
+            "en": "In what year did the NES debut in North America?"
+          },
+          "options": {
+             "pl": ["1985", "1983", "1989", "1991"],
+             "en": ["1985", "1983", "1989", "1991"]
+          },
+          "answer": {
+            "pl": "1985",
+            "en": "1985"
+          },
           "isAnswered": false
         }
       ]
@@ -166,100 +286,184 @@
         {
           "id": "q_s_100",
           "points": 100,
-          "type": "OPEN",
-          "question": "Jaka jest waluta w Dark Souls?",
-          "answer": "Dusze",
+          "type": "ABCD",
+          "question": {
+            "pl": "Jaka jest waluta w Dark Souls?",
+            "en": "What is the currency in Dark Souls?"
+          },
+          "options": {
+             "pl": ["Dusze", "Złoto", "Runy", "Krew"],
+             "en": ["Souls", "Gold", "Runes", "Blood"]
+          },
+          "answer": {
+            "pl": "Dusze",
+            "en": "Souls"
+          },
           "isAnswered": false
         },
         {
           "id": "q_s_200",
           "points": 200,
           "type": "ABCD",
-          "question": "Którą grę stworzyło FromSoftware?",
-          "options": [
-            "Nioh",
-            "Bloodborne",
-            "The Surge",
-            "Hollow Knight"
-          ],
-          "answer": "Bloodborne",
+          "question": {
+            "pl": "Którą grę stworzyło FromSoftware?",
+            "en": "Which game was created by FromSoftware?"
+          },
+          "options": {
+             "pl": ["Bloodborne", "Nioh", "The Surge", "Hollow Knight"],
+             "en": ["Bloodborne", "Nioh", "The Surge", "Hollow Knight"]
+          },
+          "answer": {
+            "pl": "Bloodborne",
+            "en": "Bloodborne"
+          },
           "isAnswered": false
         },
         {
           "id": "q_s_300",
           "points": 300,
-          "type": "OPEN",
-          "question": "Chwal ____!",
-          "answer": "Słońce",
+          "type": "ABCD",
+          "question": {
+            "pl": "Dokończ cytat: Chwal ____!",
+            "en": "Complete the quote: Praise the ____!"
+          },
+          "options": {
+             "pl": ["Słońce", "Księżyc", "Ogień", "Ciemność"],
+             "en": ["Sun", "Moon", "Fire", "Darkness"]
+          },
+          "answer": {
+            "pl": "Słońce",
+            "en": "Sun"
+          },
           "isAnswered": false
         },
         {
           "id": "q_s_400",
           "points": 400,
           "type": "IMAGE",
-          "question": "Zidentyfikuj tego bossa.",
+          "question": {
+            "pl": "Zidentyfikuj tego bossa.",
+            "en": "Identify this boss."
+          },
           "mediaUrl": "https://i1.sndcdn.com/artworks-000245086151-zrs6z7-t500x500.jpgg",
-          "answer": "Ornstein i Smough",
+          "answer": {
+            "pl": "Ornstein i Smough",
+            "en": "Ornstein and Smough"
+          },
           "isAnswered": false
         },
         {
           "id": "q_s_500",
           "points": 500,
-          "type": "OPEN",
-          "question": "Przedmiot przywracający człowieczeństwo w Dark Souls 1?",
-          "answer": "Człowieczeństwo",
+          "type": "ABCD",
+          "question": {
+            "pl": "Który przedmiot przywraca człowieczeństwo w Dark Souls 1?",
+            "en": "Which item restores humanity in Dark Souls 1?"
+          },
+          "options": {
+             "pl": ["Człowieczeństwo", "Żar", "Kamień", "Kukła"],
+             "en": ["Humanity", "Ember", "Stone", "Effigy"]
+          },
+          "answer": {
+            "pl": "Człowieczeństwo",
+            "en": "Humanity"
+          },
           "isAnswered": false
         }
       ]
     },
     {
-      "id": "cat_1766357335447",
+      "id": "cat_minecraft",
       "name": "Minecraft",
       "questions": [
         {
-          "id": "q_1766357335447_100",
+          "id": "q_m_100",
           "points": 100,
-          "type": "OPEN",
-          "question": "Z jakiego podstawowego surowca buduje się pierwsze narzędzia w Minecraft?",
-          "answer": "Drewno",
+          "type": "ABCD",
+          "question": {
+            "pl": "Z jakiego surowca robi się pierwsze narzędzia?",
+            "en": "What material are the first tools made of?"
+          },
+          "options": {
+             "pl": ["Drewno", "Kamień", "Ziemia", "Piasek"],
+             "en": ["Wood", "Stone", "Dirt", "Sand"]
+          },
+          "answer": {
+            "pl": "Drewno",
+            "en": "Wood"
+          },
           "isAnswered": false
         },
         {
-          "id": "q_1766357335447_200",
+          "id": "q_m_200",
           "points": 200,
           "type": "ABCD",
-          "question": "Które z tych stworzeń NIE pojawia się tylko w nocy lub w ciemnych miejscach?",
-          "options": [
-            "Zombie",
-            "Creeper",
-            "Świnia",
-            "Szkielet"
-          ],
-          "answer": "Świnia",
+          "question": {
+            "pl": "Które stworzenie nie jest wrogie w dzień?",
+            "en": "Which creature is not hostile during the day?"
+          },
+          "options": {
+             "pl": ["Świnia", "Zombie", "Creeper", "Szkielet"],
+             "en": ["Pig", "Zombie", "Creeper", "Skeleton"]
+          },
+          "answer": {
+            "pl": "Świnia",
+            "en": "Pig"
+          },
           "isAnswered": false
         },
         {
-          "id": "q_1766357335447_300",
+          "id": "q_m_300",
           "points": 300,
-          "type": "OPEN",
-          "question": "Jak nazywa się blok, którego używa się do transportowania przedmiotów na odległość?",
-          "answer": "Lej",
+          "type": "ABCD",
+          "question": {
+            "pl": "Jaki blok transportuje przedmioty?",
+            "en": "Which block transports items?"
+          },
+          "options": {
+             "pl": ["Lej", "Skrzynia", "Piec", "Dozownik"],
+             "en": ["Hopper", "Chest", "Furnace", "Dispenser"]
+          },
+          "answer": {
+            "pl": "Lej",
+            "en": "Hopper"
+          },
           "isAnswered": false
         },
         {
-          "id": "q_1766357335447_400",
+          "id": "q_m_400",
           "points": 400,
-          "type": "OPEN",
-          "question": "Jaki specjalny przedmiot jest wymagany do stworzenia Portalu do Kresu (End Portal)?",
-          "answer": "Oko Kresu",
+          "type": "ABCD",
+          "question": {
+             "pl": "Co jest potrzebne do aktywacji Portalu Kresu?",
+             "en": "What is needed to activate the End Portal?"
+          },
+          "options": {
+             "pl": ["Oko Kresu", "Perła Kresu", "Płomienna Różdżka", "Diament"],
+             "en": ["Eye of Ender", "Ender Pearl", "Blaze Rod", "Diamond"]
+          },
+          "answer": {
+            "pl": "Oko Kresu",
+            "en": "Eye of Ender"
+          },
           "isAnswered": false
         },
         {
-          "id": "q_1766357335447_500",
+          "id": "q_m_500",
           "points": 500,
-          "type": "OPEN",
-          "question": "Jaką nazwę nosi unikalny biom w Netherze, gdzie rosną purpurowe grzyby i latają ghasty?",
-          "answer": "Dolina Piaskowców Dusz",
+          "type": "ABCD",
+          "question": {
+            "pl": "Gdzie naturalnie występują Ghasty?",
+            "en": "Where do Ghasts naturally spawn?"
+          },
+          "options": {
+             "pl": ["Nether", "Overworld", "End", "Jaskinie"],
+             "en": ["Nether", "Overworld", "End", "Caves"]
+          },
+          "answer": {
+            "pl": "Nether",
+            "en": "Nether"
+          },
           "isAnswered": false
         }
       ]

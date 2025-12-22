@@ -17,7 +17,6 @@ export default function ScoreBoard() {
     <div className="fixed bottom-0 left-0 right-0 z-50 flex justify-center border-t border-white/10 bg-black/80 backdrop-blur-md">
       <div className="w-full max-w-4xl flex items-center justify-between px-6 py-4">
         
-        {/* Team 1 */}
         <div className="flex flex-col items-start gap-1">
            <div className="flex items-center gap-2">
              <span className="text-xs uppercase tracking-widest text-zinc-500">Team 01</span>
@@ -32,14 +31,15 @@ export default function ScoreBoard() {
                     <Input 
                         value={teams[0].name} 
                         onChange={(e) => handleNameChange(teams[0].id, e.target.value)} 
-                        className="w-40 h-8 text-2xl font-bold bg-transparent border-none p-0 focus-visible:ring-0 text-white"
+                        className="w-auto min-w-[120px] h-8  border-none bg-transparent text-2xl font-bold text-white focus-visible:ring-0 focus-visible:ring-offset-0"
                         onBlur={() => setEditing(null)}
                         autoFocus
                     />
                 ) : (
                     <h2 
-                        className="text-2xl font-bold text-white cursor-pointer hover:text-zinc-300 transition-colors"
+                        className="text-2xl font-bold text-white cursor-pointer hover:text-zinc-300 transition-colors truncate max-w-[200px]"
                         onClick={() => setEditing(teams[0].id)}
+                        title="Click to rename"
                     >
                         {teams[0].name}
                     </h2>
@@ -50,10 +50,8 @@ export default function ScoreBoard() {
            </div>
         </div>
 
-        {/* Divider */}
         <div className="h-8 w-[1px] bg-zinc-800 hidden md:block" />
 
-        {/* Team 2 */}
         <div className="flex flex-col items-end gap-1">
            <div className="flex items-center gap-2">
              <div className="flex gap-1">
@@ -68,14 +66,15 @@ export default function ScoreBoard() {
                     <Input 
                         value={teams[1].name} 
                         onChange={(e) => handleNameChange(teams[1].id, e.target.value)} 
-                        className="w-40 h-8 text-2xl font-bold text-right bg-transparent border-none p-0 focus-visible:ring-0 text-white"
+                        className="w-auto min-w-[120px] h-8 p-0 border-none bg-transparent text-right text-2xl font-bold text-white focus-visible:ring-0 focus-visible:ring-offset-0"
                         onBlur={() => setEditing(null)}
                         autoFocus
                     />
                 ) : (
                     <h2 
-                        className="text-2xl font-bold text-white cursor-pointer hover:text-zinc-300 transition-colors"
+                        className="text-2xl font-bold text-white cursor-pointer hover:text-zinc-300 transition-colors truncate max-w-[200px]"
                         onClick={() => setEditing(teams[1].id)}
+                        title="Click to rename"
                     >
                         {teams[1].name}
                     </h2>

@@ -145,7 +145,7 @@ export default function QuestionModal() {
             )}
 
             <h2 className="text-2xl md:text-4xl font-bold text-center tracking-tight leading-tight mb-8">
-              {activeQuestion.question}
+              {activeQuestion.question[language]}
             </h2>
 
             {/* Lifeline Used Notification */}
@@ -164,9 +164,9 @@ export default function QuestionModal() {
             {/* ABCD Options */}
             {showOptions && activeQuestion.options && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full max-w-2xl mx-auto">
-                {activeQuestion.options.map((option, idx) => (
+                {activeQuestion.options[language].map((option, idx) => (
                   <button key={idx} className={`p-3 rounded-md text-base font-medium text-left border transition-all
-                    ${isRevealed && option === activeQuestion.answer 
+                    ${isRevealed && option === activeQuestion.answer[language] 
                       ? 'bg-white text-black border-white' 
                       : 'bg-zinc-900 border-zinc-800 hover:bg-zinc-800 text-zinc-300'}`}>
                     <span className="mr-2 text-zinc-500 font-mono">{String.fromCharCode(65 + idx)}.</span>
@@ -201,7 +201,7 @@ export default function QuestionModal() {
                         animate={{ opacity: 1, y: 0 }}
                         className="mt-6 px-6 py-2 bg-white/10 rounded-full border border-white/10"
                     >
-                        <span className="text-emerald-400 font-mono text-lg">{activeQuestion.answer}</span>
+                        <span className="text-emerald-400 font-mono text-lg">{activeQuestion.answer[language]}</span>
                     </motion.div>
                 )}
             </AnimatePresence>
