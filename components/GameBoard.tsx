@@ -21,6 +21,7 @@ export default function GameBoard() {
     language,
     setLanguage,
     isDoublePoints,
+    changeQuestionResult,
   } = useGameStore();
 
   useEffect(() => {
@@ -144,17 +145,40 @@ export default function GameBoard() {
                       "group relative h-14 md:h-20 rounded-lg flex flex-col items-center justify-center transition-all duration-200 border",
                       q.isAnswered
                         ? cn(
-                            "cursor-default",
-                            isTeam1 && "bg-blue-950/50 border-blue-500/50",
-                            isTeam2 && "bg-red-950/50 border-red-500/50",
+                            "cursor-pointer",
+                            isTeam1 &&
+                              "bg-blue-950/50 border-blue-500/50 hover:border-blue-400",
+                            isTeam2 &&
+                              "bg-red-950/50 border-red-500/50 hover:border-red-400",
                             !q.answeredBy &&
-                              "bg-zinc-900/30 border-dashed border-zinc-800",
+                              "bg-zinc-900/30 border-dashed border-zinc-800 hover:border-zinc-600",
                           )
                         : "bg-black border-zinc-800 hover:border-white/50 text-white hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] cursor-pointer",
                     )}
-                    disabled={q.isAnswered}
                     key={q.id}
-                    onClick={() => !q.isAnswered && openQuestion(cat.id, q.id)}
+                    onClick={() => {
+                      if (!q.isAnswered) {
+                        openQuestion(cat.id, q.id);
+                      } else {
+                        // Cycle through: team1 -> team2 -> null -> team1
+                        const oldAnsweredBy = q.answeredBy;
+                        let newAnsweredBy: string | null;
+                        if (oldAnsweredBy === "team1") {
+                          newAnsweredBy = "team2";
+                        } else if (oldAnsweredBy === "team2") {
+                          newAnsweredBy = null;
+                        } else {
+                          newAnsweredBy = "team1";
+                        }
+                        changeQuestionResult(
+                          cat.id,
+                          q.id,
+                          newAnsweredBy,
+                          oldAnsweredBy ?? null,
+                          q.points,
+                        );
+                      }
+                    }}
                   >
                     {q.isAnswered ? (
                       q.answeredBy ? (

@@ -1,0 +1,791 @@
+{
+  "categories": [
+    {
+      "id": "cat_fifa",
+      "name": "Fifa",
+      "questions": [
+        {
+          "answer": {
+            "en": "EA Sports",
+            "pl": "EA Sports"
+          },
+          "id": "q_fifa_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["EA Sports", "2K Games", "Konami", "Ubisoft"],
+            "pl": ["EA Sports", "2K Games", "Konami", "Ubisoft"]
+          },
+          "points": 100,
+          "question": {
+            "en": "Which company publishes the FIFA video game series?",
+            "pl": "Która firma wydaje serię gier FIFA?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "EA FC",
+            "pl": "EA FC"
+          },
+          "id": "q_fifa_200",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "EA FC",
+              "EA Football",
+              "FIFA Ultimate",
+              "Pro Evolution Soccer"
+            ],
+            "pl": [
+              "EA FC",
+              "EA Football",
+              "FIFA Ultimate",
+              "Pro Evolution Soccer"
+            ]
+          },
+          "points": 200,
+          "question": {
+            "en": "What is the FIFA game series called now after the rebranding?",
+            "pl": "Jak teraz nazywa się seria gier FIFA po rebrandingu?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Thierry Henry",
+            "pl": "Thierry Henry"
+          },
+          "id": "q_fifa_300",
+          "isAnswered": false,
+          "mediaUrl": "/fifa1.jpg",
+          "options": {
+            "en": [
+              "Wayne Rooney",
+              "Thierry Henry",
+              "Łukasz Piszczek",
+              "Neymar Jr"
+            ],
+            "pl": [
+              "Wayne Rooney",
+              "Thierry Henry",
+              "Łukasz Piszczek",
+              "Neymar Jr"
+            ]
+          },
+          "points": 300,
+          "question": {
+            "en": "Who is this football player featured on FIFA cover?",
+            "pl": "Co to za piłkarz z okładki FIFA?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "FIFA 09",
+            "pl": "FIFA 09"
+          },
+          "id": "q_fifa_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["FIFA 09", "FIFA 10", "FIFA 11", "FIFA 12"],
+            "pl": ["FIFA 09", "FIFA 10", "FIFA 11", "FIFA 12"]
+          },
+          "points": 400,
+          "question": {
+            "en": "In which FIFA game was Ultimate Team first introduced?",
+            "pl": "W której grze FIFA po raz pierwszy wprowadzono tryb Ultimate Team?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Wayne Rooney",
+            "pl": "Wayne Rooney"
+          },
+          "id": "q_fifa_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Lionel Messi",
+              "Wayne Rooney",
+              "Cristiano Ronaldo",
+              "Ronaldinho"
+            ],
+            "pl": [
+              "Lionel Messi",
+              "Wayne Rooney",
+              "Cristiano Ronaldo",
+              "Ronaldinho"
+            ]
+          },
+          "points": 500,
+          "question": {
+            "en": "Which player has appeared on the most global FIFA covers (7 times)?",
+            "pl": "Który piłkarz pojawił się na największej liczbie globalnych okładek FIFA (7 razy)?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Chemstyles",
+            "pl": "Chemstyles"
+          },
+          "id": "q_fifa_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["Chemstyles", "Attributes", "Traits", "Skill Moves"],
+            "pl": ["Chemstyles", "Atrybuty", "Cechy", "Skill Moves"]
+          },
+          "points": 600,
+          "question": {
+            "en": "What is the name of consumable items that modify player stats based on chemistry links?",
+            "pl": "Jak nazywają się przedmioty zużywalne modyfikujące statystyki w zależności od połączeń chemii?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_ea",
+      "name": "EA (studio)",
+      "questions": [
+        {
+          "answer": {
+            "en": "Electronic Arts",
+            "pl": "Electronic Arts"
+          },
+          "id": "q_ea_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Electronic Arts",
+              "Entertainment Arts",
+              "Elite Arts",
+              "Extreme Arts"
+            ],
+            "pl": [
+              "Electronic Arts",
+              "Entertainment Arts",
+              "Elite Arts",
+              "Extreme Arts"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "What does EA stand for?",
+            "pl": "Co oznacza skrót EA?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "The Sims",
+            "pl": "The Sims"
+          },
+          "id": "q_ea_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["The Sims", "SimCity", "Battlefield", "Mass Effect"],
+            "pl": ["The Sims", "SimCity", "Battlefield", "Mass Effect"]
+          },
+          "points": 200,
+          "question": {
+            "en": "Which life simulation game franchise is one of EA's best-selling series?",
+            "pl": "Która seria gier symulacyjnych życia jest jedną z najlepiej sprzedających się serii EA?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Mass Effect",
+            "pl": "Mass Effect"
+          },
+          "id": "q_ea_300",
+          "isAnswered": false,
+          "mediaUrl": "/ea1.jpg",
+          "options": {
+            "en": [
+              "Mass Effect",
+              "Dead Space",
+              "Dragon Age",
+              "Star Wars: KOTOR"
+            ],
+            "pl": [
+              "Mass Effect",
+              "Dead Space",
+              "Dragon Age",
+              "Star Wars: KOTOR"
+            ]
+          },
+          "points": 300,
+          "question": {
+            "en": "Which EA game series is this character from?",
+            "pl": "Z jakiej serii gier EA pochodzi ta postać?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "BioWare",
+            "pl": "BioWare"
+          },
+          "id": "q_ea_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["BioWare", "DICE", "Respawn", "Maxis"],
+            "pl": ["BioWare", "DICE", "Respawn", "Maxis"]
+          },
+          "points": 400,
+          "question": {
+            "en": "Which EA-owned studio developed Dragon Age and Mass Effect?",
+            "pl": "Które studio należące do EA stworzyło Dragon Age i Mass Effect?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "1994",
+            "pl": "1994"
+          },
+          "id": "q_ea_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["1994", "1997", "2000", "1992"],
+            "pl": ["1994", "1997", "2000", "1992"]
+          },
+          "points": 500,
+          "question": {
+            "en": "In what year was the first Need for Speed game released?",
+            "pl": "W którym roku wydano pierwszą grę Need for Speed?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Trip Hawkins",
+            "pl": "Trip Hawkins"
+          },
+          "id": "q_ea_600",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Trip Hawkins",
+              "John Riccitiello",
+              "Larry Probst",
+              "Andrew Wilson"
+            ],
+            "pl": [
+              "Trip Hawkins",
+              "John Riccitiello",
+              "Larry Probst",
+              "Andrew Wilson"
+            ]
+          },
+          "points": 600,
+          "question": {
+            "en": "Who founded Electronic Arts in 1982?",
+            "pl": "Kto założył Electronic Arts w 1982 roku?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_monsterhunter",
+      "name": "Monster Hunter",
+      "questions": [
+        {
+          "answer": {
+            "en": "Capcom",
+            "pl": "Capcom"
+          },
+          "id": "q_mh_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["Capcom", "Bandai Namco", "Koei Tecmo", "Square Enix"],
+            "pl": ["Capcom", "Bandai Namco", "Koei Tecmo", "Square Enix"]
+          },
+          "points": 100,
+          "question": {
+            "en": "Which company develops Monster Hunter?",
+            "pl": "Która firma tworzy Monster Hunter?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Palico",
+            "pl": "Koleżkot"
+          },
+          "id": "q_mh_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["Palico", "Palamute", "Poogie", "Handler"],
+            "pl": ["Koleżkot", "Koteczki", "Koleżkowie", "Kotowcy"]
+          },
+          "points": 200,
+          "question": {
+            "en": "What are the cat-like companions called in Monster Hunter?",
+            "pl": "Jak nazywają się kociowaci towarzysze w Monster Hunter?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Rathalos",
+            "pl": "Rathalos"
+          },
+          "id": "q_mh_300",
+          "isAnswered": false,
+          "mediaUrl": "/mh1.webp",
+          "options": {
+            "en": ["Rathalos", "Rathian", "Tigrex", "Nergigante"],
+            "pl": ["Rathalos", "Rathian", "Tigrex", "Nergigante"]
+          },
+          "points": 300,
+          "question": {
+            "en": "Identify this iconic monster.",
+            "pl": "Zidentyfikuj tego kultowego potwora."
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Iceborne",
+            "pl": "Iceborne"
+          },
+          "id": "q_mh_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Iceborne", "Sunbreak", "Rise", "Frontier"],
+            "pl": ["Iceborne", "Sunbreak", "Rise", "Frontier"]
+          },
+          "points": 400,
+          "question": {
+            "en": "What is the name of Monster Hunter World's major expansion?",
+            "pl": "Jak nazywa się główny dodatek do Monster Hunter World?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "14",
+            "pl": "14"
+          },
+          "id": "q_mh_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["14", "12", "16", "10"],
+            "pl": ["14", "12", "16", "10"]
+          },
+          "points": 500,
+          "question": {
+            "en": "How many different weapon types are available in Monster Hunter World?",
+            "pl": "Ile różnych typów broni jest dostępnych w Monster Hunter World?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Fatalis",
+            "pl": "Fatalis"
+          },
+          "id": "q_mh_600",
+          "isAnswered": false,
+          "mediaUrl": "/mh1.mp3",
+          "options": {
+            "en": ["Fatalis", "Alatreon", "Safi'jiiva", "Shara Ishvalda"],
+            "pl": ["Fatalis", "Alatreon", "Safi'jiiva", "Shara Ishvalda"]
+          },
+          "points": 600,
+          "question": {
+            "en": "Which legendary Black Dragon makes this roar?",
+            "pl": "Który legendarny Czarny Smok wydaje ten ryk?"
+          },
+          "type": "AUDIO"
+        }
+      ]
+    },
+    {
+      "id": "cat_lol",
+      "name": "League of Legends",
+      "questions": [
+        {
+          "answer": {
+            "en": "2009",
+            "pl": "2009"
+          },
+          "id": "q_lol_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["2009", "2010", "2008", "2011"],
+            "pl": ["2009", "2010", "2008", "2011"]
+          },
+          "points": 100,
+          "question": {
+            "en": "In what year was League of Legends released?",
+            "pl": "W którym roku wydano League of Legends?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Nexus",
+            "pl": "Nexus"
+          },
+          "id": "q_lol_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["Nexus", "Core", "Ancient", "Throne"],
+            "pl": ["Nexus", "Rdzeń", "Ancient", "Tron"]
+          },
+          "points": 200,
+          "question": {
+            "en": "What is the main structure you must destroy to win a game?",
+            "pl": "Jaką główną strukturę musisz zniszczyć, aby wygrać grę?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Teemo",
+            "pl": "Teemo"
+          },
+          "id": "q_lol_300",
+          "isAnswered": false,
+          "mediaUrl": "/lol1.jpg",
+          "options": {
+            "en": ["Teemo", "Gnar", "Kennen", "Rumble"],
+            "pl": ["Teemo", "Gnar", "Kennen", "Rumble"]
+          },
+          "points": 300,
+          "question": {
+            "en": "Identify this champion.",
+            "pl": "Zidentyfikuj tego bohatera."
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Faker",
+            "pl": "Faker"
+          },
+          "id": "q_lol_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Faker", "Caps", "Showmaker", "Chovy"],
+            "pl": ["Faker", "Caps", "Showmaker", "Chovy"]
+          },
+          "points": 400,
+          "question": {
+            "en": "Which player has won the most World Championship titles (6)?",
+            "pl": "Który gracz zdobył najwięcej tytułów Mistrzostw Świata (6)?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "2009",
+            "pl": "2009"
+          },
+          "id": "q_lol_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["2009", "2010", "2011", "2012"],
+            "pl": ["2009", "2010", "2011", "2012"]
+          },
+          "points": 500,
+          "question": {
+            "en": "In what year was Anivia released?",
+            "pl": "W którym roku wyszła Anivia?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Zoe",
+            "pl": "Zoe"
+          },
+          "id": "q_lol_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["Zoe", "Aurelion Sol", "Bard", "Kindred"],
+            "pl": ["Zoe", "Aurelion Sol", "Bard", "Kindred"]
+          },
+          "points": 600,
+          "question": {
+            "en": "Which champion is known as the 'Aspect of Twilight'?",
+            "pl": "Który bohater jest znany jako 'Aspekt Zmierzchu'?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_batman",
+      "name": "Batman: Arkham",
+      "questions": [
+        {
+          "answer": {
+            "en": "Gotham City",
+            "pl": "Gotham City"
+          },
+          "id": "q_batman_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["Gotham City", "Metropolis", "New York", "Star City"],
+            "pl": ["Gotham City", "Metropolis", "Nowy Jork", "Star City"]
+          },
+          "points": 100,
+          "question": {
+            "en": "In which city does the Batman: Arkham series take place?",
+            "pl": "W jakim mieście rozgrywa się seria Batman: Arkham?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Joker",
+            "pl": "Joker"
+          },
+          "id": "q_batman_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["Joker", "Riddler", "Scarecrow", "Two-Face"],
+            "pl": ["Joker", "Riddler", "Strach na Wróble", "Dwie-Twarze"]
+          },
+          "points": 200,
+          "question": {
+            "en": "Who is the main antagonist in Batman: Arkham Asylum?",
+            "pl": "Kto jest głównym antagonistą w Batman: Arkham Asylum?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "The Batmobile",
+            "pl": "Batmobil"
+          },
+          "id": "q_batman_300",
+          "isAnswered": false,
+          "options": {
+            "en": ["The Batmobile", "The Batwing", "Gliding", "Fast Travel"],
+            "pl": ["Batmobil", "Batwing", "Szybowanie", "Szybka podróż"]
+          },
+          "points": 300,
+          "question": {
+            "en": "What new vehicle was introduced as a major gameplay element in Arkham Knight?",
+            "pl": "Jaki nowy pojazd został wprowadzony jako główny element rozgrywki w Arkham Knight?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Scarecrow",
+            "pl": "Strach na Wróble"
+          },
+          "id": "q_batman_400",
+          "isAnswered": false,
+          "mediaUrl": "/batman1.webp",
+          "options": {
+            "en": ["Scarecrow", "Bane", "Killer Croc", "Mad Hatter"],
+            "pl": [
+              "Strach na Wróble",
+              "Bane",
+              "Killer Croc",
+              "Szalony Kapelusznik"
+            ]
+          },
+          "points": 400,
+          "question": {
+            "en": "Identify this villain from the Arkham series.",
+            "pl": "Zidentyfikuj tego złoczyńcę z serii Arkham."
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Detective Mode",
+            "pl": "Tryb Detektywa"
+          },
+          "id": "q_batman_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Detective Mode",
+              "Bat Vision",
+              "Vigilante Mode",
+              "Night Vision"
+            ],
+            "pl": [
+              "Tryb Detektywa",
+              "Wizja Nietoperza",
+              "Tryb Strażnika",
+              "Noktowizja"
+            ]
+          },
+          "points": 500,
+          "question": {
+            "en": "What special vision mode does Batman use to investigate crime scenes and find clues?",
+            "pl": "Jakiego specjalnego trybu wizji używa Batman do badania miejsc zbrodni i znajdowania wskazówek?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Mark Hamill",
+            "pl": "Mark Hamill"
+          },
+          "id": "q_batman_600",
+          "isAnswered": false,
+          "mediaUrl": "/batman2.mp3",
+          "options": {
+            "en": [
+              "Mark Hamill",
+              "Troy Baker",
+              "Kevin Conroy",
+              "John DiMaggio"
+            ],
+            "pl": ["Mark Hamill", "Troy Baker", "Kevin Conroy", "John DiMaggio"]
+          },
+          "points": 600,
+          "question": {
+            "en": "Which actor voices the Joker in this laugh from Arkham Asylum?",
+            "pl": "Który aktor użycza głosu Jokerowi w tym śmiechu z Arkham Asylum?"
+          },
+          "type": "AUDIO"
+        }
+      ]
+    },
+    {
+      "id": "cat_fighters",
+      "name": "Fighter Games",
+      "questions": [
+        {
+          "answer": {
+            "en": "Super Smash Bros",
+            "pl": "Super Smash Bros"
+          },
+          "id": "q_fg_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Super Smash Bros",
+              "Mortal Kombat",
+              "Street Fighter",
+              "Tekken"
+            ],
+            "pl": [
+              "Super Smash Bros",
+              "Mortal Kombat",
+              "Street Fighter",
+              "Tekken"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "Which Nintendo fighting game features characters like Mario, Link, and Pikachu?",
+            "pl": "W której grze walki Nintendo występują postacie takie jak Mario, Link i Pikachu?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Fatality",
+            "pl": "Fatality"
+          },
+          "id": "q_fg_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["Fatality", "Finishing Move", "Ultra Combo", "Final Strike"],
+            "pl": [
+              "Fatality",
+              "Wykańczający Ruch",
+              "Ultra Combo",
+              "Ostateczne Uderzenie"
+            ]
+          },
+          "points": 200,
+          "question": {
+            "en": "What is the name of the brutal finishing move in Mortal Kombat?",
+            "pl": "Jak nazywa się brutalny ruch wykańczający w Mortal Kombat?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Tekken",
+            "pl": "Tekken"
+          },
+          "id": "q_fg_300",
+          "isAnswered": false,
+          "mediaUrl": "/fighter.webp",
+          "options": {
+            "en": ["Tekken", "Dead or Alive", "Virtua Fighter", "SoulCalibur"],
+            "pl": ["Tekken", "Dead or Alive", "Virtua Fighter", "SoulCalibur"]
+          },
+          "points": 300,
+          "question": {
+            "en": "Which fighting game series is this character from?",
+            "pl": "Z której serii gier walki pochodzi ta postać?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Hadouken",
+            "pl": "Hadouken"
+          },
+          "id": "q_fg_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Hadouken", "Shoryuken", "Tatsumaki", "Sonic Boom"],
+            "pl": ["Hadouken", "Shoryuken", "Tatsumaki", "Sonic Boom"]
+          },
+          "points": 400,
+          "question": {
+            "en": "What is the name of Ryu's iconic fireball attack in Street Fighter?",
+            "pl": "Jak nazywa się kultowy atak kulą ognia Ryu w Street Fighter?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Guilty Gear",
+            "pl": "Guilty Gear"
+          },
+          "id": "q_fg_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["Guilty Gear", "BlazBlue", "Under Night", "Melty Blood"],
+            "pl": ["Guilty Gear", "BlazBlue", "Under Night", "Melty Blood"]
+          },
+          "points": 500,
+          "question": {
+            "en": "Which Arc System Works fighting game features Sol Badguy as the protagonist?",
+            "pl": "W której grze walki Arc System Works głównym bohaterem jest Sol Badguy?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Tokido",
+            "pl": "Tokido"
+          },
+          "id": "q_fg_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["Tokido", "Daigo", "Momochi", "Punk"],
+            "pl": ["Tokido", "Daigo", "Momochi", "Punk"]
+          },
+          "points": 600,
+          "question": {
+            "en": "Which Japanese player won EVO 2017 Street Fighter V after his famous losers' bracket run?",
+            "pl": "Który japoński gracz wygrał EVO 2017 Street Fighter V po słynnej drodze przez drabinkę przegranych?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    }
+  ]
+}

@@ -51,6 +51,13 @@ export type GameState = {
     questionId: string,
     answeredBy: string | null,
   ) => void;
+  changeQuestionResult: (
+    categoryId: string,
+    questionId: string,
+    newAnsweredBy: string | null,
+    oldAnsweredBy: string | null,
+    points: number,
+  ) => void;
   resetGame: () => void;
   loadCategories: (categories: Category[]) => void;
   useLifeline: (teamId: string, type: "abcd" | "phone" | "steal") => void;
@@ -89,6 +96,100 @@ export const useGameStore = create<GameState>()(
       awardedBingos: [],
       bingoNotification: null,
       categories: [],
+
+      changeQuestionResult: (
+        categoryId,
+        questionId,
+        newAnsweredBy,
+        oldAnsweredBy,
+        points,
+      ) =>
+        set((state) => {
+          // Calculate points to adjust (considering double points)
+          const isDouble = state.doublePointQuestions.includes(questionId);
+          const actualPoints = isDouble ? points * 2 : points;
+
+          // Create updated categories first
+          const updatedCategories = state.categories.map((c) =>
+            c.id === categoryId
+              ? {
+                  ...c,
+                  questions: c.questions.map((q) =>
+                    q.id === questionId
+                      ? { ...q, answeredBy: newAnsweredBy }
+                      : q,
+                  ),
+                }
+              : c,
+          );
+
+          // Check which bingos are now broken and should be removed
+          const bingosToRemove: { key: string; teamId: string }[] = [];
+
+          for (const bingoKey of state.awardedBingos) {
+            // Parse bingo key: "h-{catIdx}-{teamId}" or "v-{rowIdx}-{teamId}"
+            const parts = bingoKey.split("-");
+            const type = parts[0];
+            const idx = Number.parseInt(parts[1], 10);
+            const teamId = parts[2];
+
+            let isBroken = false;
+
+            if (type === "h") {
+              // Horizontal bingo - check if all questions in category still answered by same team
+              const cat = updatedCategories[idx];
+              if (cat) {
+                const answers = cat.questions.map((q) => q.answeredBy);
+                const allSameTeam = answers.every((a) => a === teamId);
+                if (!allSameTeam) {
+                  isBroken = true;
+                }
+              }
+            } else if (type === "v") {
+              // Vertical bingo - check if all questions in row still answered by same team
+              const rowAnswers = updatedCategories.map(
+                (cat) => cat.questions[idx]?.answeredBy,
+              );
+              const allSameTeam = rowAnswers.every((a) => a === teamId);
+              if (!allSameTeam) {
+                isBroken = true;
+              }
+            }
+
+            if (isBroken) {
+              bingosToRemove.push({ key: bingoKey, teamId });
+            }
+          }
+
+          // Calculate team score changes
+          const teamScoreChanges: Record<string, number> = {};
+
+          // Points from question change
+          if (oldAnsweredBy) {
+            teamScoreChanges[oldAnsweredBy] =
+              (teamScoreChanges[oldAnsweredBy] || 0) - actualPoints;
+          }
+          if (newAnsweredBy) {
+            teamScoreChanges[newAnsweredBy] =
+              (teamScoreChanges[newAnsweredBy] || 0) + actualPoints;
+          }
+
+          // Remove bingo bonus points (600 each)
+          for (const { teamId } of bingosToRemove) {
+            teamScoreChanges[teamId] = (teamScoreChanges[teamId] || 0) - 600;
+          }
+
+          return {
+            awardedBingos: state.awardedBingos.filter(
+              (key) => !bingosToRemove.some((b) => b.key === key),
+            ),
+            categories: updatedCategories,
+            teams: state.teams.map((t) => ({
+              ...t,
+              score: t.score + (teamScoreChanges[t.id] || 0),
+            })) as [Team, Team],
+          };
+        }),
 
       checkAndAwardBingo: () => {
         const state = get();
