@@ -1,0 +1,87 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.3.8/schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on",
+        "useSortedAttributes": "on",
+        "useSortedKeys": "on"
+      }
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": [
+      "**",
+      "!/node_modules",
+      "!**/.*.js",
+      "!**/node_modules/**",
+      "!**/postcss.config.mjs",
+      "!**/tailwind.config.ts",
+      "!**/next.config.js",
+      "!**/.next/**",
+      "!**/.turbo/**",
+      "!**/dist/**",
+      "!**/next-env.d.ts",
+      "!**/public/",
+      "!**/index.d.ts",
+      "!**/test-results/",
+      "!**/playwright-report",
+      "!**/blob-report/",
+      "!**/playwright/.cache/",
+      "!**/coverage/**"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80
+  },
+  "javascript": {
+    "formatter": { "quoteStyle": "double" },
+    "globals": ["React", "JSX"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "complexity": {
+        "noUselessTypeConstraint": "error",
+        "useLiteralKeys": "error",
+        "useOptionalChain": "error"
+      },
+      "correctness": {
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
+      },
+      "recommended": false,
+      "style": {
+        "noInferrableTypes": "error",
+        "noNamespace": "error",
+        "useArrayLiterals": "off",
+        "useAsConstAssertion": "error",
+        "useBlockStatements": "off",
+        "useConsistentArrayType": "off",
+        "useForOf": "error",
+        "useShorthandFunctionType": "error"
+      },
+      "suspicious": {
+        "noEmptyBlockStatements": "error",
+        "noExplicitAny": "error",
+        "noExtraNonNullAssertion": "error",
+        "noMisleadingInstantiator": "error",
+        "noUnsafeDeclarationMerging": "error",
+        "useAwait": "off",
+        "useNamespaceKeyword": "error"
+      }
+    }
+  },
+  "overrides": [{ "includes": ["!**/node_modules/**"] }],
+  "vcs": { "clientKind": "git", "enabled": true, "useIgnoreFile": false }
+}

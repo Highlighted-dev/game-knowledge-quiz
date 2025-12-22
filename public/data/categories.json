@@ -49,8 +49,18 @@
             "en": "Which school is Geralt from?"
           },
           "options": {
-            "pl": ["Szkoła Wilka", "Szkoła Kota", "Szkoła Gryfa", "Szkoła Niedźwiedzia"],
-            "en": ["School of the Wolf", "School of the Cat", "School of the Griffin", "School of the Bear"]
+            "pl": [
+              "Szkoła Wilka",
+              "Szkoła Kota",
+              "Szkoła Gryfa",
+              "Szkoła Niedźwiedzia"
+            ],
+            "en": [
+              "School of the Wolf",
+              "School of the Cat",
+              "School of the Griffin",
+              "School of the Bear"
+            ]
           },
           "answer": {
             "pl": "Szkoła Wilka",
@@ -87,6 +97,24 @@
             "en": "Silver for Monsters"
           },
           "isAnswered": false
+        },
+        {
+          "id": "q_w_600",
+          "points": 600,
+          "type": "ABCD",
+          "question": {
+            "pl": "Jak nazywa się legendarny miecz Geralta wykuty przez krasnoludy?",
+            "en": "What is the name of Geralt's legendary sword forged by dwarves?"
+          },
+          "options": {
+            "pl": ["Aerondight", "Zireael", "Sihil", "Mahakaman"],
+            "en": ["Aerondight", "Zireael", "Sihil", "Mahakaman"]
+          },
+          "answer": {
+            "pl": "Aerondight",
+            "en": "Aerondight"
+          },
+          "isAnswered": false
         }
       ]
     },
@@ -103,8 +131,18 @@
             "en": "What is the main objective in League of Legends?"
           },
           "options": {
-            "pl": ["Zniszczyć Nexus", "Zabić Barona", "Zniszczyć wieże", "Pokonać smoka"],
-            "en": ["Destroy the Nexus", "Kill Baron", "Destroy towers", "Defeat the Dragon"]
+            "pl": [
+              "Zniszczyć Nexus",
+              "Zabić Barona",
+              "Zniszczyć wieże",
+              "Pokonać smoka"
+            ],
+            "en": [
+              "Destroy the Nexus",
+              "Kill Baron",
+              "Destroy towers",
+              "Defeat the Dragon"
+            ]
           },
           "answer": {
             "pl": "Zniszczyć Nexus",
@@ -139,8 +177,18 @@
             "en": "What is Veigar's ultimate ability called?"
           },
           "options": {
-            "pl": ["Złowroga Nawałnica", "Mroczna Materia", "Horyzont Zdarzeń", "Uderzenie Zła"],
-            "en": ["Primordial Burst", "Dark Matter", "Event Horizon", "Baleful Strike"]
+            "pl": [
+              "Złowroga Nawałnica",
+              "Mroczna Materia",
+              "Horyzont Zdarzeń",
+              "Uderzenie Zła"
+            ],
+            "en": [
+              "Primordial Burst",
+              "Dark Matter",
+              "Event Horizon",
+              "Baleful Strike"
+            ]
           },
           "answer": {
             "pl": "Złowroga Nawałnica",
@@ -157,7 +205,12 @@
             "en": "What does 'Kraken Slayer' do every third attack?"
           },
           "options": {
-            "pl": ["Zadaje nieuchronne obrażenia", "Leczy", "Omdlewa", "Spowalnia"],
+            "pl": [
+              "Zadaje nieuchronne obrażenia",
+              "Leczy",
+              "Omdlewa",
+              "Spowalnia"
+            ],
             "en": ["Deals true damage", "Heals", "Stuns", "Slows"]
           },
           "answer": {
@@ -183,6 +236,24 @@
             "en": "Ionia"
           },
           "isAnswered": false
+        },
+        {
+          "id": "q_lol_600",
+          "points": 600,
+          "type": "ABCD",
+          "question": {
+            "pl": "W którym roku powstała firma Riot Games?",
+            "en": "In what year was Riot Games founded?"
+          },
+          "options": {
+            "pl": ["2006", "2008", "2009", "2011"],
+            "en": ["2006", "2008", "2009", "2011"]
+          },
+          "answer": {
+            "pl": "2006",
+            "en": "2006"
+          },
+          "isAnswered": false
         }
       ]
     },
@@ -199,8 +270,8 @@
             "en": "Who is Mario's brother?"
           },
           "options": {
-             "pl": ["Luigi", "Wario", "Yoshi", "Toad"],
-             "en": ["Luigi", "Wario", "Yoshi", "Toad"]
+            "pl": ["Luigi", "Wario", "Yoshi", "Toad"],
+            "en": ["Luigi", "Wario", "Yoshi", "Toad"]
           },
           "answer": {
             "pl": "Luigi",
@@ -235,8 +306,8 @@
             "en": "What is the name of the kingdom in Mario games?"
           },
           "options": {
-             "pl": ["Królestwo Grzybów", "Hyrule", "Kanto", "Dreamland"],
-             "en": ["Mushroom Kingdom", "Hyrule", "Kanto", "Dreamland"]
+            "pl": ["Królestwo Grzybów", "Hyrule", "Kanto", "Dreamland"],
+            "en": ["Mushroom Kingdom", "Hyrule", "Kanto", "Dreamland"]
           },
           "answer": {
             "pl": "Królestwo Grzybów",
@@ -268,12 +339,30 @@
             "en": "In what year did the NES debut in North America?"
           },
           "options": {
-             "pl": ["1985", "1983", "1989", "1991"],
-             "en": ["1985", "1983", "1989", "1991"]
+            "pl": ["1985", "1983", "1989", "1991"],
+            "en": ["1985", "1983", "1989", "1991"]
           },
           "answer": {
             "pl": "1985",
             "en": "1985"
+          },
+          "isAnswered": false
+        },
+        {
+          "id": "q_n_600",
+          "points": 600,
+          "type": "ABCD",
+          "question": {
+            "pl": "Która postać jest głównym antagonistą w Metroid?",
+            "en": "Which character is the main antagonist in Metroid?"
+          },
+          "options": {
+            "pl": ["Ridley", "Ganondorf", "King K. Rool", "Mother Brain"],
+            "en": ["Ridley", "Ganondorf", "King K. Rool", "Mother Brain"]
+          },
+          "answer": {
+            "pl": "Ridley",
+            "en": "Ridley"
           },
           "isAnswered": false
         }
@@ -292,8 +381,8 @@
             "en": "What is the currency in Dark Souls?"
           },
           "options": {
-             "pl": ["Dusze", "Złoto", "Runy", "Krew"],
-             "en": ["Souls", "Gold", "Runes", "Blood"]
+            "pl": ["Dusze", "Złoto", "Runy", "Krew"],
+            "en": ["Souls", "Gold", "Runes", "Blood"]
           },
           "answer": {
             "pl": "Dusze",
@@ -310,8 +399,8 @@
             "en": "Which game was created by FromSoftware?"
           },
           "options": {
-             "pl": ["Bloodborne", "Nioh", "The Surge", "Hollow Knight"],
-             "en": ["Bloodborne", "Nioh", "The Surge", "Hollow Knight"]
+            "pl": ["Bloodborne", "Nioh", "The Surge", "Hollow Knight"],
+            "en": ["Bloodborne", "Nioh", "The Surge", "Hollow Knight"]
           },
           "answer": {
             "pl": "Bloodborne",
@@ -328,8 +417,8 @@
             "en": "Complete the quote: Praise the ____!"
           },
           "options": {
-             "pl": ["Słońce", "Księżyc", "Ogień", "Ciemność"],
-             "en": ["Sun", "Moon", "Fire", "Darkness"]
+            "pl": ["Słońce", "Księżyc", "Ogień", "Ciemność"],
+            "en": ["Sun", "Moon", "Fire", "Darkness"]
           },
           "answer": {
             "pl": "Słońce",
@@ -361,12 +450,30 @@
             "en": "Which item restores humanity in Dark Souls 1?"
           },
           "options": {
-             "pl": ["Człowieczeństwo", "Żar", "Kamień", "Kukła"],
-             "en": ["Humanity", "Ember", "Stone", "Effigy"]
+            "pl": ["Człowieczeństwo", "Żar", "Kamień", "Kukła"],
+            "en": ["Humanity", "Ember", "Stone", "Effigy"]
           },
           "answer": {
             "pl": "Człowieczeństwo",
             "en": "Humanity"
+          },
+          "isAnswered": false
+        },
+        {
+          "id": "q_s_600",
+          "points": 600,
+          "type": "ABCD",
+          "question": {
+            "pl": "Który boss jest opcjonalny w Dark Souls 1?",
+            "en": "Which boss is optional in Dark Souls 1?"
+          },
+          "options": {
+            "pl": ["Sif", "Ornstein i Smough", "Gwyn", "Czterej Królowie"],
+            "en": ["Sif", "Ornstein and Smough", "Gwyn", "Four Kings"]
+          },
+          "answer": {
+            "pl": "Sif",
+            "en": "Sif"
           },
           "isAnswered": false
         }
@@ -385,8 +492,8 @@
             "en": "What material are the first tools made of?"
           },
           "options": {
-             "pl": ["Drewno", "Kamień", "Ziemia", "Piasek"],
-             "en": ["Wood", "Stone", "Dirt", "Sand"]
+            "pl": ["Drewno", "Kamień", "Ziemia", "Piasek"],
+            "en": ["Wood", "Stone", "Dirt", "Sand"]
           },
           "answer": {
             "pl": "Drewno",
@@ -403,8 +510,8 @@
             "en": "Which creature is not hostile during the day?"
           },
           "options": {
-             "pl": ["Świnia", "Zombie", "Creeper", "Szkielet"],
-             "en": ["Pig", "Zombie", "Creeper", "Skeleton"]
+            "pl": ["Świnia", "Zombie", "Creeper", "Szkielet"],
+            "en": ["Pig", "Zombie", "Creeper", "Skeleton"]
           },
           "answer": {
             "pl": "Świnia",
@@ -421,8 +528,8 @@
             "en": "Which block transports items?"
           },
           "options": {
-             "pl": ["Lej", "Skrzynia", "Piec", "Dozownik"],
-             "en": ["Hopper", "Chest", "Furnace", "Dispenser"]
+            "pl": ["Lej", "Skrzynia", "Piec", "Dozownik"],
+            "en": ["Hopper", "Chest", "Furnace", "Dispenser"]
           },
           "answer": {
             "pl": "Lej",
@@ -435,12 +542,12 @@
           "points": 400,
           "type": "ABCD",
           "question": {
-             "pl": "Co jest potrzebne do aktywacji Portalu Kresu?",
-             "en": "What is needed to activate the End Portal?"
+            "pl": "Co jest potrzebne do aktywacji Portalu Kresu?",
+            "en": "What is needed to activate the End Portal?"
           },
           "options": {
-             "pl": ["Oko Kresu", "Perła Kresu", "Płomienna Różdżka", "Diament"],
-             "en": ["Eye of Ender", "Ender Pearl", "Blaze Rod", "Diamond"]
+            "pl": ["Oko Kresu", "Perła Kresu", "Płomienna Różdżka", "Diament"],
+            "en": ["Eye of Ender", "Ender Pearl", "Blaze Rod", "Diamond"]
           },
           "answer": {
             "pl": "Oko Kresu",
@@ -457,12 +564,169 @@
             "en": "Where do Ghasts naturally spawn?"
           },
           "options": {
-             "pl": ["Nether", "Overworld", "End", "Jaskinie"],
-             "en": ["Nether", "Overworld", "End", "Caves"]
+            "pl": ["Nether", "Overworld", "End", "Jaskinie"],
+            "en": ["Nether", "Overworld", "End", "Caves"]
           },
           "answer": {
             "pl": "Nether",
             "en": "Nether"
+          },
+          "isAnswered": false
+        },
+        {
+          "id": "q_m_600",
+          "points": 600,
+          "type": "ABCD",
+          "question": {
+            "pl": "Ile maksymalnie poziomów może mieć zaklęcie w enchanting table?",
+            "en": "What is the maximum enchantment level possible with an enchanting table?"
+          },
+          "options": {
+            "pl": ["30", "50", "100", "64"],
+            "en": ["30", "50", "100", "64"]
+          },
+          "answer": {
+            "pl": "30",
+            "en": "30"
+          },
+          "isAnswered": false
+        }
+      ]
+    },
+    {
+      "id": "cat_tes",
+      "name": "The Elder Scrolls",
+      "questions": [
+        {
+          "id": "q_tes_100",
+          "points": 100,
+          "type": "ABCD",
+          "question": {
+            "pl": "W jakiej prowincji rozgrywa się Skyrim?",
+            "en": "In which province does Skyrim take place?"
+          },
+          "options": {
+            "pl": ["Skyrim", "Cyrodiil", "Morrowind", "Hammerfell"],
+            "en": ["Skyrim", "Cyrodiil", "Morrowind", "Hammerfell"]
+          },
+          "answer": {
+            "pl": "Skyrim",
+            "en": "Skyrim"
+          },
+          "isAnswered": false
+        },
+        {
+          "id": "q_tes_200",
+          "points": 200,
+          "type": "ABCD",
+          "question": {
+            "pl": "Jak nazywa się główny bohater w Skyrim?",
+            "en": "What is the main hero called in Skyrim?"
+          },
+          "options": {
+            "pl": ["Dovahkiin", "Nerevarine", "Warden", "Champion"],
+            "en": ["Dovahkiin", "Nerevarine", "Warden", "Champion"]
+          },
+          "answer": {
+            "pl": "Dovahkiin",
+            "en": "Dovahkiin"
+          },
+          "isAnswered": false
+        },
+        {
+          "id": "q_tes_300",
+          "points": 300,
+          "type": "ABCD",
+          "question": {
+            "pl": "Które miasto jest stolicą Cesarstwa w TES?",
+            "en": "Which city is the capital of the Empire in TES?"
+          },
+          "options": {
+            "pl": ["Imperial City", "Solitude", "Windhelm", "Whiterun"],
+            "en": ["Imperial City", "Solitude", "Windhelm", "Whiterun"]
+          },
+          "answer": {
+            "pl": "Imperial City",
+            "en": "Imperial City"
+          },
+          "isAnswered": false
+        },
+        {
+          "id": "q_tes_400",
+          "points": 400,
+          "type": "ABCD",
+          "question": {
+            "pl": "Jak nazywa się organizacja skrytobójców w TES?",
+            "en": "What is the assassin organization called in TES?"
+          },
+          "options": {
+            "pl": [
+              "Dark Brotherhood",
+              "Morag Tong",
+              "Thieves Guild",
+              "Companions"
+            ],
+            "en": [
+              "Dark Brotherhood",
+              "Morag Tong",
+              "Thieves Guild",
+              "Companions"
+            ]
+          },
+          "answer": {
+            "pl": "Dark Brotherhood",
+            "en": "Dark Brotherhood"
+          },
+          "isAnswered": false
+        },
+        {
+          "id": "q_tes_500",
+          "points": 500,
+          "type": "ABCD",
+          "question": {
+            "pl": "Który Daedric Prince jest panem szaleństwa?",
+            "en": "Which Daedric Prince is the lord of madness?"
+          },
+          "options": {
+            "pl": [
+              "Sheogorath",
+              "Mehrunes Dagon",
+              "Molag Bal",
+              "Hermaeus Mora"
+            ],
+            "en": ["Sheogorath", "Mehrunes Dagon", "Molag Bal", "Hermaeus Mora"]
+          },
+          "answer": {
+            "pl": "Sheogorath",
+            "en": "Sheogorath"
+          },
+          "isAnswered": false
+        },
+        {
+          "id": "q_tes_600",
+          "points": 600,
+          "type": "ABCD",
+          "question": {
+            "pl": "Jak nazywa się słynna fraza wykrzyczana przez strażników w Skyrim?",
+            "en": "What is the famous phrase shouted by guards in Skyrim?"
+          },
+          "options": {
+            "pl": [
+              "Strzała w kolano",
+              "Fus Ro Dah",
+              "Hail Sithis",
+              "Talos guide you"
+            ],
+            "en": [
+              "Arrow to the knee",
+              "Fus Ro Dah",
+              "Hail Sithis",
+              "Talos guide you"
+            ]
+          },
+          "answer": {
+            "pl": "Strzała w kolano",
+            "en": "Arrow to the knee"
           },
           "isAnswered": false
         }
