@@ -61,100 +61,31 @@ export type GameState = {
 
 const INITIAL_TEAMS: [Team, Team] = [
   {
+    hasLifelineABCD: true,
+    hasLifelinePhone: true,
+    hasLifelineSteal: true,
     id: "team1",
     name: "Drużyna 1",
     score: 0,
+  },
+  {
     hasLifelineABCD: true,
     hasLifelinePhone: true,
     hasLifelineSteal: true,
-  },
-  {
     id: "team2",
     name: "Drużyna 2",
     score: 0,
-    hasLifelineABCD: true,
-    hasLifelinePhone: true,
-    hasLifelineSteal: true,
   },
 ];
 
 export const useGameStore = create<GameState>()(
   persist(
     (set, get) => ({
-      teams: INITIAL_TEAMS,
-      categories: [],
-      activeQuestion: null,
       activeCategory: null,
-      lifelineActive: null,
+      activeQuestion: null,
       awardedBingos: [],
-      language: "pl",
       bingoNotification: null,
-
-      setTeamName: (teamId, name) =>
-        set((state) => ({
-          teams: state.teams.map((t) =>
-            t.id === teamId ? { ...t, name } : t,
-          ) as [Team, Team],
-        })),
-
-      updateScore: (teamId, points) =>
-        set((state) => ({
-          teams: state.teams.map((t) =>
-            t.id === teamId ? { ...t, score: t.score + points } : t,
-          ) as [Team, Team],
-        })),
-
-      openQuestion: (categoryId, questionId) =>
-        set((state) => {
-          const category = state.categories.find((c) => c.id === categoryId);
-          const question = category?.questions.find((q) => q.id === questionId);
-          return {
-            activeQuestion: question || null,
-            activeCategory: categoryId,
-            lifelineActive: null,
-          };
-        }),
-
-      closeQuestion: () =>
-        set({
-          activeQuestion: null,
-          activeCategory: null,
-          lifelineActive: null,
-        }),
-
-      markQuestionAnswered: (categoryId, questionId, answeredBy) =>
-        set((state) => ({
-          categories: state.categories.map((c) =>
-            c.id === categoryId
-              ? {
-                  ...c,
-                  questions: c.questions.map((q) =>
-                    q.id === questionId
-                      ? { ...q, isAnswered: true, answeredBy }
-                      : q,
-                  ),
-                }
-              : c,
-          ),
-        })),
-
-      useLifeline: (teamId, type) =>
-        set((state) => ({
-          teams: state.teams.map((t) => {
-            if (t.id !== teamId) return t;
-            if (type === "abcd") return { ...t, hasLifelineABCD: false };
-            if (type === "phone") return { ...t, hasLifelinePhone: false };
-            if (type === "steal") return { ...t, hasLifelineSteal: false };
-            return t;
-          }) as [Team, Team],
-          lifelineActive: { teamId, type },
-        })),
-
-      clearLifeline: () => set({ lifelineActive: null }),
-
-      setLanguage: (lang) => set({ language: lang }),
-
-      clearBingoNotification: () => set({ bingoNotification: null }),
+      categories: [],
 
       checkAndAwardBingo: () => {
         const state = get();
@@ -180,10 +111,10 @@ export const useGameStore = create<GameState>()(
               const team = teams.find((t) => t.id === firstAnswer);
               set((s) => ({
                 awardedBingos: [...s.awardedBingos, bingoKey],
+                bingoNotification: `BINGO! ${team?.name} +600 (${cat.name})`,
                 teams: s.teams.map((t) =>
-                  t.id === firstAnswer ? { ...t, score: t.score + 500 } : t,
+                  t.id === firstAnswer ? { ...t, score: t.score + 600 } : t,
                 ) as [Team, Team],
-                bingoNotification: `BINGO! ${team?.name} +500 (${cat.name})`,
               }));
               return;
             }
@@ -211,10 +142,10 @@ export const useGameStore = create<GameState>()(
               const points = [100, 200, 300, 400, 500, 600][rowIdx];
               set((s) => ({
                 awardedBingos: [...s.awardedBingos, bingoKey],
+                bingoNotification: `BINGO! ${team?.name} +600 (${points}pkt rząd)`,
                 teams: s.teams.map((t) =>
-                  t.id === firstAnswer ? { ...t, score: t.score + 500 } : t,
+                  t.id === firstAnswer ? { ...t, score: t.score + 600 } : t,
                 ) as [Team, Team],
-                bingoNotification: `BINGO! ${team?.name} +500 (${points}pkt rząd)`,
               }));
               return;
             }
@@ -222,22 +153,18 @@ export const useGameStore = create<GameState>()(
         }
       },
 
-      resetGame: () =>
+      clearBingoNotification: () => set({ bingoNotification: null }),
+
+      clearLifeline: () => set({ lifelineActive: null }),
+
+      closeQuestion: () =>
         set({
-          teams: INITIAL_TEAMS,
-          categories: get().categories.map((c) => ({
-            ...c,
-            questions: c.questions.map((q) => ({
-              ...q,
-              isAnswered: false,
-              answeredBy: null,
-            })),
-          })),
+          activeCategory: null,
           activeQuestion: null,
           lifelineActive: null,
-          awardedBingos: [],
-          bingoNotification: null,
         }),
+      language: "pl",
+      lifelineActive: null,
 
       loadCategories: (newCategories) => {
         const state = get();
@@ -253,22 +180,95 @@ export const useGameStore = create<GameState>()(
               if (!savedQ) return newQ;
               return {
                 ...newQ,
-                isAnswered: savedQ.isAnswered,
                 answeredBy: savedQ.answeredBy,
+                isAnswered: savedQ.isAnswered,
               };
             }),
           };
         });
         set({ categories: mergedCategories });
       },
+
+      markQuestionAnswered: (categoryId, questionId, answeredBy) =>
+        set((state) => ({
+          categories: state.categories.map((c) =>
+            c.id === categoryId
+              ? {
+                  ...c,
+                  questions: c.questions.map((q) =>
+                    q.id === questionId
+                      ? { ...q, answeredBy, isAnswered: true }
+                      : q,
+                  ),
+                }
+              : c,
+          ),
+        })),
+
+      openQuestion: (categoryId, questionId) =>
+        set((state) => {
+          const category = state.categories.find((c) => c.id === categoryId);
+          const question = category?.questions.find((q) => q.id === questionId);
+          return {
+            activeCategory: categoryId,
+            activeQuestion: question || null,
+            lifelineActive: null,
+          };
+        }),
+
+      resetGame: () =>
+        set({
+          activeQuestion: null,
+          awardedBingos: [],
+          bingoNotification: null,
+          categories: get().categories.map((c) => ({
+            ...c,
+            questions: c.questions.map((q) => ({
+              ...q,
+              answeredBy: null,
+              isAnswered: false,
+            })),
+          })),
+          lifelineActive: null,
+          teams: INITIAL_TEAMS,
+        }),
+
+      setLanguage: (lang) => set({ language: lang }),
+
+      setTeamName: (teamId, name) =>
+        set((state) => ({
+          teams: state.teams.map((t) =>
+            t.id === teamId ? { ...t, name } : t,
+          ) as [Team, Team],
+        })),
+      teams: INITIAL_TEAMS,
+
+      updateScore: (teamId, points) =>
+        set((state) => ({
+          teams: state.teams.map((t) =>
+            t.id === teamId ? { ...t, score: t.score + points } : t,
+          ) as [Team, Team],
+        })),
+
+      useLifeline: (teamId, type) =>
+        set((state) => ({
+          lifelineActive: { teamId, type },
+          teams: state.teams.map((t) => {
+            if (t.id !== teamId) return t;
+            if (type === "abcd") return { ...t, hasLifelineABCD: false };
+            if (type === "phone") return { ...t, hasLifelinePhone: false };
+            if (type === "steal") return { ...t, hasLifelineSteal: false };
+            return t;
+          }) as [Team, Team],
+        })),
     }),
     {
       name: "game-tournament-storage-v2",
       partialize: (state) => ({
-        teams: state.teams,
-        categories: state.categories,
         awardedBingos: state.awardedBingos,
+        categories: state.categories,
         language: state.language,
+        teams: state.teams,
       }),
     },
   ),
