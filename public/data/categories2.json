@@ -127,19 +127,29 @@
         },
         {
           "answer": {
-            "en": "Chemstyles",
-            "pl": "Chemstyles"
+            "en": "Piotr Świerczewski",
+            "pl": "Piotr Świerczewski"
           },
           "id": "q_fifa_600",
           "isAnswered": false,
           "options": {
-            "en": ["Chemstyles", "Attributes", "Traits", "Skill Moves"],
-            "pl": ["Chemstyles", "Atrybuty", "Cechy", "Skill Moves"]
+            "en": [
+              "Roman Kosecki",
+              "Piotr Świerczewski",
+              "Andrzej Juskowiak",
+              "Jan Furtok"
+            ],
+            "pl": [
+              "Roman Kosecki",
+              "Piotr Świerczewski",
+              "Andrzej Juskowiak",
+              "Jan Furtok"
+            ]
           },
           "points": 600,
           "question": {
-            "en": "What is the name of consumable items that modify player stats based on chemistry links?",
-            "pl": "Jak nazywają się przedmioty zużywalne modyfikujące statystyki w zależności od połączeń chemii?"
+            "en": "On the cover of the first-ever FIFA game ('FIFA International Soccer'), which Polish player appeared alongside England's David Platt?",
+            "pl": "Na okładce pierwszej w historii gry z serii FIFA ('FIFA International Soccer'), który polski piłkarz pojawił się obok Anglika Davida Platta?"
           },
           "type": "ABCD"
         }

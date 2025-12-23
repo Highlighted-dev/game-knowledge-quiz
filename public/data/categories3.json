@@ -1,0 +1,792 @@
+{
+  "categories": [
+    {
+      "id": "cat_rockstar",
+      "name": "Rockstar Games",
+      "questions": [
+        {
+          "answer": {
+            "en": "Grand Theft Auto V",
+            "pl": "Grand Theft Auto V"
+          },
+          "id": "q_rs_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Red Dead Redemption 2",
+              "Grand Theft Auto V",
+              "GTA San Andreas",
+              "Bully"
+            ],
+            "pl": [
+              "Red Dead Redemption 2",
+              "Grand Theft Auto V",
+              "GTA San Andreas",
+              "Bully"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "What is the most popular game made by Rockstar Games?",
+            "pl": "Jaka jest najpopularniejsza gra stworzona przez Rockstar Games?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "3",
+            "pl": "3"
+          },
+          "id": "q_rs_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["2", "3", "4", "1"],
+            "pl": ["2", "3", "4", "1"]
+          },
+          "points": 200,
+          "question": {
+            "en": "How many parts does Max Payne have?",
+            "pl": "Ile części ma Max Payne?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Jimmy Hopkins",
+            "pl": "Jimmy Hopkins"
+          },
+          "id": "q_rs_300",
+          "isAnswered": false,
+          "mediaUrl": "/rockstar1.webp",
+          "options": {
+            "en": [
+              "Gary Smith",
+              "Jimmy Hopkins",
+              "Pete Kowalski",
+              "Russell Northrop"
+            ],
+            "pl": [
+              "Gary Smith",
+              "Jimmy Hopkins",
+              "Pete Kowalski",
+              "Russell Northrop"
+            ]
+          },
+          "points": 300,
+          "question": {
+            "en": "Who is this character from Bully?",
+            "pl": "Kim jest ta postać z gry Bully?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "New York City",
+            "pl": "Nowy Jork"
+          },
+          "id": "q_rs_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Los Angeles", "New York City", "Chicago", "Miami"],
+            "pl": ["Los Angeles", "Nowy Jork", "Chicago", "Miami"]
+          },
+          "points": 400,
+          "question": {
+            "en": "In which real-world city is Max Payne set?",
+            "pl": "W jakim prawdziwym mieście toczy się akcja Max Payne?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "1998",
+            "pl": "1998"
+          },
+          "id": "q_rs_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["2001", "1999", "1998", "1997"],
+            "pl": ["2001", "1999", "1998", "1997"]
+          },
+          "points": 500,
+          "question": {
+            "en": "In which year was the first Grand Theft Auto game released?",
+            "pl": "W którym roku wydano pierwszą grę Grand Theft Auto?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Canis Canem Edit",
+            "pl": "Canis Canem Edit"
+          },
+          "id": "q_rs_600",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Schoolyard",
+              "Canis Canem Edit",
+              "Bully: Anniversary Edition",
+              "Scholarship Edition"
+            ],
+            "pl": [
+              "Schoolyard",
+              "Canis Canem Edit",
+              "Bully: Anniversary Edition",
+              "Scholarship Edition"
+            ]
+          },
+          "points": 600,
+          "question": {
+            "en": "What was the alternate name for 'Bully' in PAL regions due to controversy?",
+            "pl": "Jaka była alternatywna nazwa 'Bully' w regionach PAL z powodu kontrowersji?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_borderlands",
+      "name": "Borderlands",
+      "questions": [
+        {
+          "answer": {
+            "en": "2K Games",
+            "pl": "2K Games"
+          },
+          "id": "q_bl_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Gearbox Software",
+              "2K Games",
+              "Epic Games",
+              "Take-Two Interactive"
+            ],
+            "pl": [
+              "Gearbox Software",
+              "2K Games",
+              "Epic Games",
+              "Take-Two Interactive"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "Who is the publisher of Borderlands (not the developer)?",
+            "pl": "Kto jest wydawcą Borderlands (nie deweloperem)?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "2024",
+            "pl": "2024"
+          },
+          "id": "q_bl_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["2023", "2022", "2024", "2025"],
+            "pl": ["2023", "2022", "2024", "2025"]
+          },
+          "points": 200,
+          "question": {
+            "en": "In which year was the Borderlands movie released?",
+            "pl": "W którym roku premierę miał film Borderlands?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Claptrap",
+            "pl": "Claptrap"
+          },
+          "id": "q_bl_300",
+          "isAnswered": false,
+          "mediaUrl": "/borderlands1.webp",
+          "options": {
+            "en": ["Loader Bot", "Claptrap", "VR-0N1CA", "FL4K"],
+            "pl": ["Loader Bot", "Claptrap", "VR-0N1CA", "FL4K"]
+          },
+          "points": 300,
+          "question": {
+            "en": "Who is this robot?",
+            "pl": "Kim jest ten robot?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Handsome Jack",
+            "pl": "Handsome Jack"
+          },
+          "id": "q_bl_400",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Commander Lilith",
+              "Handsome Jack",
+              "General Knoxx",
+              "The Calypso Twins"
+            ],
+            "pl": [
+              "Commander Lilith",
+              "Handsome Jack",
+              "General Knoxx",
+              "The Calypso Twins"
+            ]
+          },
+          "points": 400,
+          "question": {
+            "en": "Who is the main antagonist in Borderlands 2?",
+            "pl": "Kto jest głównym antagonistą w Borderlands 2?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Pandora",
+            "pl": "Pandora"
+          },
+          "id": "q_bl_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["Promethea", "Eden-6", "Pandora", "Elpis"],
+            "pl": ["Promethea", "Eden-6", "Pandora", "Elpis"]
+          },
+          "points": 500,
+          "question": {
+            "en": "What is the name of the main planet in the original Borderlands?",
+            "pl": "Jak nazywa się główna planeta w oryginalnym Borderlands?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Butt Stallion",
+            "pl": "Butt Stallion"
+          },
+          "id": "q_bl_600",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Buttercup",
+              "Diamond Horse",
+              "Butt Stallion",
+              "Crystal Pony"
+            ],
+            "pl": [
+              "Buttercup",
+              "Diamond Horse",
+              "Butt Stallion",
+              "Crystal Pony"
+            ]
+          },
+          "points": 600,
+          "question": {
+            "en": "What is the name of Handsome Jack's diamond pony?",
+            "pl": "Jak nazywa się diamentowy kucyk Handsome Jacka?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_masseffect",
+      "name": "Mass Effect",
+      "questions": [
+        {
+          "answer": {
+            "en": "Electronic Arts",
+            "pl": "Electronic Arts"
+          },
+          "id": "q_me_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["Microsoft", "Electronic Arts", "Ubisoft", "Activision"],
+            "pl": ["Microsoft", "Electronic Arts", "Ubisoft", "Activision"]
+          },
+          "points": 100,
+          "question": {
+            "en": "Which company published Mass Effect 2 and 3?",
+            "pl": "Która firma wydała Mass Effect 2 i 3?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "4",
+            "pl": "4"
+          },
+          "id": "q_me_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["3", "4", "5", "2"],
+            "pl": ["3", "4", "5", "2"]
+          },
+          "points": 200,
+          "question": {
+            "en": "How many main Mass Effect games have been released?",
+            "pl": "Ile głównych gier Mass Effect zostało wydanych?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Normandy",
+            "pl": "Normandy"
+          },
+          "id": "q_me_300",
+          "isAnswered": false,
+          "mediaUrl": "/masseffect1.webp",
+          "options": {
+            "en": ["Enterprise", "Normandy", "Destiny Ascension", "Tempest"],
+            "pl": ["Enterprise", "Normandy", "Destiny Ascension", "Tempest"]
+          },
+          "points": 300,
+          "question": {
+            "en": "What is the name of this ship?",
+            "pl": "Jak nazywa się ten statek?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Reapers",
+            "pl": "Żniwiarze"
+          },
+          "id": "q_me_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Collectors", "Geth", "Reapers", "Cerberus"],
+            "pl": ["Zbieracze", "Geth", "Żniwiarze", "Cerberus"]
+          },
+          "points": 400,
+          "question": {
+            "en": "What is the main enemy race threatening the galaxy in Mass Effect?",
+            "pl": "Jaka jest główna rasa wrogów zagrażających galaktyce w Mass Effect?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Citadel",
+            "pl": "Cytadela"
+          },
+          "id": "q_me_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["Omega", "Citadel", "Illium", "Thessia"],
+            "pl": ["Omega", "Cytadela", "Illium", "Thessia"]
+          },
+          "points": 500,
+          "question": {
+            "en": "What is the name of the massive space station that serves as the political center of the galaxy?",
+            "pl": "Jak nazywa się ogromna stacja kosmiczna będąca centrum politycznym galaktyki?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Destroy, Control, Synthesis",
+            "pl": "Zniszczenie, Kontrola, Synteza"
+          },
+          "id": "q_me_600",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Attack, Defend, Retreat",
+              "Destroy, Control, Synthesis",
+              "Fight, Negotiate, Surrender",
+              "Red, Blue, Green"
+            ],
+            "pl": [
+              "Atak, Obrona, Odwrót",
+              "Zniszczenie, Kontrola, Synteza",
+              "Walka, Negocjacje, Poddanie",
+              "Czerwony, Niebieski, Zielony"
+            ]
+          },
+          "points": 600,
+          "question": {
+            "en": "What are the names of the three main ending choices in Mass Effect 3?",
+            "pl": "Jak nazywają się trzy główne możliwości zakończenia w Mass Effect 3?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_pokemon",
+      "name": "Pokemon",
+      "questions": [
+        {
+          "answer": {
+            "en": "Game Freak",
+            "pl": "Game Freak"
+          },
+          "id": "q_pk_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Nintendo",
+              "Game Freak",
+              "The Pokemon Company",
+              "HAL Laboratory"
+            ],
+            "pl": [
+              "Nintendo",
+              "Game Freak",
+              "The Pokemon Company",
+              "HAL Laboratory"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "Which company develops the main Pokemon games?",
+            "pl": "Która firma tworzy główne gry Pokemon?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Pikachu",
+            "pl": "Pikachu"
+          },
+          "id": "q_pk_200",
+          "isAnswered": false,
+          "mediaUrl": "/pokemon2.mp3",
+          "options": {
+            "en": ["Eevee", "Pikachu", "Jigglypuff", "Meowth"],
+            "pl": ["Eevee", "Pikachu", "Jigglypuff", "Meowth"]
+          },
+          "points": 200,
+          "question": {
+            "en": "Which Pokemon makes this sound?",
+            "pl": "Który Pokemon wydaje ten dźwięk?"
+          },
+          "type": "AUDIO"
+        },
+        {
+          "answer": {
+            "en": "Charmander",
+            "pl": "Charmander"
+          },
+          "id": "q_pk_300",
+          "isAnswered": false,
+          "mediaUrl": "/pokemon1.webp",
+          "options": {
+            "en": ["Squirtle", "Bulbasaur", "Charmander", "Pikachu"],
+            "pl": ["Squirtle", "Bulbasaur", "Charmander", "Pikachu"]
+          },
+          "points": 300,
+          "question": {
+            "en": "What is this Pokemon?",
+            "pl": "Jaki to Pokemon?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "151",
+            "pl": "151"
+          },
+          "id": "q_pk_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["150", "151", "152", "100"],
+            "pl": ["150", "151", "152", "100"]
+          },
+          "points": 400,
+          "question": {
+            "en": "How many Pokemon were in the original Red and Blue games?",
+            "pl": "Ile Pokemonów było w oryginalnych grach Red i Blue?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Arceus",
+            "pl": "Arceus"
+          },
+          "id": "q_pk_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["Mewtwo", "Mew", "Arceus", "Rayquaza"],
+            "pl": ["Mewtwo", "Mew", "Arceus", "Rayquaza"]
+          },
+          "points": 500,
+          "question": {
+            "en": "Which legendary Pokemon is known as the 'God' of all Pokemon?",
+            "pl": "Który legendarny Pokemon jest znany jako 'Bóg' wszystkich Pokemonów?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Dunsparce",
+            "pl": "Dunsparce"
+          },
+          "id": "q_pk_600",
+          "isAnswered": false,
+          "mediaUrl": "/pokemon3.webp",
+          "options": {
+            "en": ["Girafarig", "Dunsparce", "Qwilfish", "Shuckle"],
+            "pl": ["Girafarig", "Dunsparce", "Qwilfish", "Shuckle"]
+          },
+          "points": 600,
+          "question": {
+            "en": "What is this Pokemon?",
+            "pl": "Jaki to Pokemon?"
+          },
+          "type": "IMAGE"
+        }
+      ]
+    },
+    {
+      "id": "cat_l4d",
+      "name": "Left4Dead",
+      "questions": [
+        {
+          "answer": {
+            "en": "2",
+            "pl": "2"
+          },
+          "id": "q_l4d_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["3", "2", "4", "1"],
+            "pl": ["3", "2", "4", "1"]
+          },
+          "points": 100,
+          "question": {
+            "en": "How many parts does Left 4 Dead have?",
+            "pl": "Ile części ma Left 4 Dead?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Bill and Louis",
+            "pl": "Bill i Louis"
+          },
+          "id": "q_l4d_200",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Francis and Louis",
+              "Bill and Louis",
+              "Nick and Ellis",
+              "Coach and Rochelle"
+            ],
+            "pl": [
+              "Francis i Louis",
+              "Bill i Louis",
+              "Nick i Ellis",
+              "Coach i Rochelle"
+            ]
+          },
+          "points": 200,
+          "question": {
+            "en": "Name 2 characters from Left 4 Dead 1.",
+            "pl": "Wymień 2 postacie z Left 4 Dead 1."
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Tank",
+            "pl": "Tank"
+          },
+          "id": "q_l4d_300",
+          "isAnswered": false,
+          "mediaUrl": "/l4d1.webp",
+          "options": {
+            "en": ["Charger", "Tank", "Boomer", "Witch"],
+            "pl": ["Charger", "Tank", "Boomer", "Wiedźma"]
+          },
+          "points": 300,
+          "question": {
+            "en": "What is the name of this special infected?",
+            "pl": "Jak nazywa się ten specjalny zainfekowany?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Green Flu",
+            "pl": "Zielona Grypa"
+          },
+          "id": "q_l4d_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Rage Virus", "Green Flu", "T-Virus", "Cordyceps"],
+            "pl": ["Rage Virus", "Zielona Grypa", "T-Virus", "Cordyceps"]
+          },
+          "points": 400,
+          "question": {
+            "en": "What is the name of the infection that caused the zombie outbreak?",
+            "pl": "Jak nazywa się infekcja, która wywołała outbreak zombie?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "The Passing",
+            "pl": "The Passing"
+          },
+          "id": "q_l4d_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "The Sacrifice",
+              "The Passing",
+              "Cold Stream",
+              "Crash Course"
+            ],
+            "pl": [
+              "The Sacrifice",
+              "The Passing",
+              "Cold Stream",
+              "Crash Course"
+            ]
+          },
+          "points": 500,
+          "question": {
+            "en": "Which DLC features survivors from both Left 4 Dead games meeting?",
+            "pl": "W którym DLC spotykają się ocaleni z obu gier Left 4 Dead?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "A friend of Ellis. Had a lot of 'deathly' accidents. Potentially imaginary.",
+            "pl": "Przyjaciel Ellis. Przeżył wiele 'śmiertelnych' wypadków. Potencjalnie wymyślony."
+          },
+          "id": "q_l4d_600",
+          "isAnswered": false,
+          "points": 600,
+          "question": {
+            "en": "Who was Keith in Left 4 Dead 2? ",
+            "pl": "Kim był Keith w Left 4 Dead 2?"
+          },
+          "type": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "cat_stardew",
+      "name": "Stardew Valley",
+      "questions": [
+        {
+          "answer": {
+            "en": "Farming simulator",
+            "pl": "Symulator farmy"
+          },
+          "id": "q_sv_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["RPG", "Farming simulator", "Action", "Horror"],
+            "pl": ["RPG", "Symulator farmy", "Akcja", "Horror"]
+          },
+          "points": 100,
+          "question": {
+            "en": "What genre is Stardew Valley?",
+            "pl": "Jakiego gatunku jest Stardew Valley?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Joja Corporation",
+            "pl": "Korporacja Joja"
+          },
+          "id": "q_sv_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["Joja Corporation", "Valley Corp", "Morris Inc", "JojaMart"],
+            "pl": ["Korporacja Joja", "Valley Corp", "Morris Inc", "JojaMart"]
+          },
+          "points": 200,
+          "question": {
+            "en": "What is the name of the evil corporation in Stardew Valley?",
+            "pl": "Jak nazywa się zła korporacja w Stardew Valley?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Abigail",
+            "pl": "Abigail"
+          },
+          "id": "q_sv_300",
+          "isAnswered": false,
+          "mediaUrl": "/stardew1.webp",
+          "options": {
+            "en": ["Emily", "Abigail", "Haley", "Penny"],
+            "pl": ["Emily", "Abigail", "Haley", "Penny"]
+          },
+          "points": 300,
+          "question": {
+            "en": "Who is on this photo?",
+            "pl": "Kto jest na tym zdjęciu?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Grandpa",
+            "pl": "Dziadek"
+          },
+          "id": "q_sv_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Uncle", "Father", "Grandpa", "Friend"],
+            "pl": ["Wujek", "Ojciec", "Dziadek", "Przyjaciel"]
+          },
+          "points": 400,
+          "question": {
+            "en": "Who leaves the farm to the player in the game's opening?",
+            "pl": "Kto zostawia farmę graczowi na początku gry?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "12",
+            "pl": "12"
+          },
+          "id": "q_sv_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["10", "12", "8", "14"],
+            "pl": ["10", "12", "8", "14"]
+          },
+          "points": 500,
+          "question": {
+            "en": "How many marriageable characters are there in Stardew Valley?",
+            "pl": "Ile postaci można poślubić w Stardew Valley?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "1,000,000g",
+            "pl": "1,000,000g"
+          },
+          "id": "q_sv_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["500,000g", "2,000,000g", "1,000,000g", "750,000g"],
+            "pl": ["500,000g", "2,000,000g", "1,000,000g", "750,000g"]
+          },
+          "points": 600,
+          "question": {
+            "en": "How much gold does the Golden Clock cost?",
+            "pl": "Ile złota kosztuje Złoty Zegar?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    }
+  ]
+}
