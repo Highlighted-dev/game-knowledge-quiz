@@ -487,19 +487,19 @@
         },
         {
           "answer": {
-            "en": "151",
-            "pl": "151"
+            "en": "Red/Blue",
+            "pl": "Red/Blue"
           },
           "id": "q_pk_400",
           "isAnswered": false,
           "options": {
-            "en": ["150", "151", "152", "100"],
-            "pl": ["150", "151", "152", "100"]
+            "en": ["Emerald", "Gold/Silver", "Red/Blue", "Fire Red/Leaf Green"],
+            "pl": ["Emerald", "Gold/Silver", "Red/Blue", "Fire Red/Leaf Green"]
           },
           "points": 400,
           "question": {
-            "en": "How many Pokemon were in the original Red and Blue games?",
-            "pl": "Ile Pokemonów było w oryginalnych grach Red i Blue?"
+            "en": "From which Pokemon game is this music?",
+            "pl": "Z jakiej gry Pokemon jest ta muzyka?"
           },
           "type": "ABCD"
         },

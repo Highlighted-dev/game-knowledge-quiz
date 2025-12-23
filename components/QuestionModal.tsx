@@ -54,7 +54,7 @@ export default function QuestionModal() {
   const showStealHint = lifelineActive?.type === "steal";
 
   const t = {
-    abcdUsed: language === "pl" ? "50/50 użyte" : "50/50 used",
+    abcdUsed: language === "pl" ? "ABCD użyte" : "ABCD used",
     noPoints: language === "pl" ? "Brak Punktów" : "No Points",
     phoneHint:
       language === "pl"
@@ -116,7 +116,7 @@ export default function QuestionModal() {
                     onClick={() =>
                       team.hasLifelineABCD && useLifeline(team.id, "abcd")
                     }
-                    title={`${team.name} - 50/50`}
+                    title={`${team.name} - ABCD`}
                   >
                     <Sparkles className="h-3 w-3" />
                   </button>
