@@ -57,7 +57,7 @@
           },
           "id": "q_lc_300",
           "isAnswered": false,
-          "mediaUrl": "/lethalcompany1.webp",
+          "mediaUrl": "/preset1/lethalcompany1.webp",
           "options": {
             "en": ["Jester", "Nutcracker", "Masked", "Ghost Girl"],
             "pl": ["Jester", "Nutcracker", "Masked", "Ghost Girl"]
@@ -192,7 +192,7 @@
           },
           "id": "q_wow_300",
           "isAnswered": false,
-          "mediaUrl": "/wow1.webp",
+          "mediaUrl": "/preset1/wow1.webp",
           "options": {
             "en": ["Lich King", "Deathwing", "Illidan", "Ragnaros"],
             "pl": ["Król Licz", "Deathwing", "Illidan", "Ragnaros"]
@@ -350,7 +350,7 @@
           },
           "id": "q_hd_400",
           "isAnswered": false,
-          "mediaUrl": "/hd1.jpg",
+          "mediaUrl": "/preset1/hd1.jpg",
           "options": {
             "en": ["Automaton", "Terminid", "Illuminate", "Cyborg"],
             "pl": ["Automaton", "Terminid", "Iluminat", "Cyborg"]
@@ -467,7 +467,7 @@
           },
           "id": "q_fn_300",
           "isAnswered": false,
-          "mediaUrl": "/fort.webp",
+          "mediaUrl": "/preset1/fort.webp",
           "options": {
             "en": [
               "Tilted Towers",
@@ -496,7 +496,7 @@
           },
           "id": "q_fn_400",
           "isAnswered": false,
-          "mediaUrl": "/fort2.jpg",
+          "mediaUrl": "/preset1/fort2.jpg",
           "options": {
             "en": ["Kevin", "Bob", "Steve", "Larry"],
             "pl": ["Kevin", "Bob", "Steve", "Larry"]
@@ -608,7 +608,7 @@
           },
           "id": "q_btd_300",
           "isAnswered": false,
-          "mediaUrl": "/bloons1.webp",
+          "mediaUrl": "/preset1/bloons1.webp",
           "options": {
             "en": [
               "Super Monkey",
@@ -743,7 +743,7 @@
           },
           "id": "q_pd_300",
           "isAnswered": false,
-          "mediaUrl": "/payday2.mp3",
+          "mediaUrl": "/preset1/payday2.mp3",
           "options": {
             "en": ["Cloaker", "Bulldozer", "Taser", "Shield"],
             "pl": ["Cloaker", "Bulldozer", "Taser", "Tarczownik"]
@@ -762,7 +762,7 @@
           },
           "id": "q_pd_400",
           "isAnswered": false,
-          "mediaUrl": "/payday1.webp",
+          "mediaUrl": "/preset1/payday1.webp",
           "options": {
             "en": ["Wolf", "Dallas", "Chains", "Hoxton"],
             "pl": ["Wolf", "Dallas", "Chains", "Hoxton"]

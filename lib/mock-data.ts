@@ -8,7 +8,7 @@ export const MOCK_CATEGORIES: Category[] = [];
 // Function to load categories from JSON file (client-side)
 export async function loadCategoriesFromFile(): Promise<Category[]> {
   try {
-    const response = await fetch("/data/categories2.json");
+    const response = await fetch("/preset2/categories2.json");
     if (!response.ok) {
       throw new Error("Failed to load categories");
     }

@@ -57,7 +57,7 @@
           },
           "id": "q_fifa_300",
           "isAnswered": false,
-          "mediaUrl": "/fifa1.jpg",
+          "mediaUrl": "/preset2/fifa1.jpg",
           "options": {
             "en": [
               "Wayne Rooney",
@@ -212,7 +212,7 @@
           },
           "id": "q_ea_300",
           "isAnswered": false,
-          "mediaUrl": "/ea1.jpg",
+          "mediaUrl": "/preset2/ea1.jpg",
           "options": {
             "en": [
               "Mass Effect",
@@ -347,7 +347,7 @@
           },
           "id": "q_mh_300",
           "isAnswered": false,
-          "mediaUrl": "/mh1.webp",
+          "mediaUrl": "/preset2/mh1.webp",
           "options": {
             "en": ["Rathalos", "Rathian", "Tigrex", "Nergigante"],
             "pl": ["Rathalos", "Rathian", "Tigrex", "Nergigante"]
@@ -402,7 +402,7 @@
           },
           "id": "q_mh_600",
           "isAnswered": false,
-          "mediaUrl": "/mh1.mp3",
+          "mediaUrl": "/preset2/mh1.mp3",
           "options": {
             "en": ["Fatalis", "Alatreon", "Safi'jiiva", "Shara Ishvalda"],
             "pl": ["Fatalis", "Alatreon", "Safi'jiiva", "Shara Ishvalda"]
@@ -463,7 +463,7 @@
           },
           "id": "q_lol_300",
           "isAnswered": false,
-          "mediaUrl": "/lol1.jpg",
+          "mediaUrl": "/preset2/lol1.jpg",
           "options": {
             "en": ["Teemo", "Gnar", "Kennen", "Rumble"],
             "pl": ["Teemo", "Gnar", "Kennen", "Rumble"]
@@ -596,7 +596,7 @@
           },
           "id": "q_batman_400",
           "isAnswered": false,
-          "mediaUrl": "/batman1.webp",
+          "mediaUrl": "/preset2/batman1.webp",
           "options": {
             "en": ["Scarecrow", "Bane", "Killer Croc", "Mad Hatter"],
             "pl": [
@@ -648,7 +648,7 @@
           },
           "id": "q_batman_600",
           "isAnswered": false,
-          "mediaUrl": "/batman2.mp3",
+          "mediaUrl": "/preset2/batman2.mp3",
           "options": {
             "en": [
               "Mark Hamill",
@@ -729,7 +729,7 @@
           },
           "id": "q_fg_300",
           "isAnswered": false,
-          "mediaUrl": "/fighter.webp",
+          "mediaUrl": "/preset2/fighter.webp",
           "options": {
             "en": ["Tekken", "Dead or Alive", "Virtua Fighter", "SoulCalibur"],
             "pl": ["Tekken", "Dead or Alive", "Virtua Fighter", "SoulCalibur"]

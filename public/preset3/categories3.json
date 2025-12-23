@@ -57,7 +57,7 @@
           },
           "id": "q_rs_300",
           "isAnswered": false,
-          "mediaUrl": "/rockstar1.webp",
+          "mediaUrl": "/preset3/rockstar1.webp",
           "options": {
             "en": [
               "Gary Smith",
@@ -179,35 +179,17 @@
         },
         {
           "answer": {
-            "en": "2024",
-            "pl": "2024"
-          },
-          "id": "q_bl_200",
-          "isAnswered": false,
-          "options": {
-            "en": ["2023", "2022", "2024", "2025"],
-            "pl": ["2023", "2022", "2024", "2025"]
-          },
-          "points": 200,
-          "question": {
-            "en": "In which year was the Borderlands movie released?",
-            "pl": "W którym roku premierę miał film Borderlands?"
-          },
-          "type": "ABCD"
-        },
-        {
-          "answer": {
             "en": "Claptrap",
             "pl": "Claptrap"
           },
-          "id": "q_bl_300",
+          "id": "q_bl_200",
           "isAnswered": false,
-          "mediaUrl": "/borderlands1.webp",
+          "mediaUrl": "/preset3/borderlands1.png",
           "options": {
             "en": ["Loader Bot", "Claptrap", "VR-0N1CA", "FL4K"],
             "pl": ["Loader Bot", "Claptrap", "VR-0N1CA", "FL4K"]
           },
-          "points": 300,
+          "points": 200,
           "question": {
             "en": "Who is this robot?",
             "pl": "Kim jest ten robot?"
@@ -219,7 +201,7 @@
             "en": "Handsome Jack",
             "pl": "Handsome Jack"
           },
-          "id": "q_bl_400",
+          "id": "q_bl_300",
           "isAnswered": false,
           "options": {
             "en": [
@@ -235,10 +217,28 @@
               "The Calypso Twins"
             ]
           },
-          "points": 400,
+          "points": 300,
           "question": {
             "en": "Who is the main antagonist in Borderlands 2?",
             "pl": "Kto jest głównym antagonistą w Borderlands 2?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "2024",
+            "pl": "2024"
+          },
+          "id": "q_bl_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["2023", "2022", "2024", "2025"],
+            "pl": ["2023", "2022", "2024", "2025"]
+          },
+          "points": 400,
+          "question": {
+            "en": "In which year was the Borderlands movie released?",
+            "pl": "W którym roku premierę miał film Borderlands?"
           },
           "type": "ABCD"
         },
@@ -337,7 +337,7 @@
           },
           "id": "q_me_300",
           "isAnswered": false,
-          "mediaUrl": "/masseffect1.webp",
+          "mediaUrl": "/preset3/masseffect1.png",
           "options": {
             "en": ["Enterprise", "Normandy", "Destiny Ascension", "Tempest"],
             "pl": ["Enterprise", "Normandy", "Destiny Ascension", "Tempest"]
@@ -421,8 +421,8 @@
       "questions": [
         {
           "answer": {
-            "en": "Game Freak",
-            "pl": "Game Freak"
+            "en": "Nintendo",
+            "pl": "Nintendo"
           },
           "id": "q_pk_100",
           "isAnswered": false,
@@ -442,8 +442,8 @@
           },
           "points": 100,
           "question": {
-            "en": "Which company develops the main Pokemon games?",
-            "pl": "Która firma tworzy główne gry Pokemon?"
+            "en": "Which company releases the main Pokemon games?",
+            "pl": "Która firma wydaje główne gry Pokemon?"
           },
           "type": "ABCD"
         },
@@ -454,7 +454,7 @@
           },
           "id": "q_pk_200",
           "isAnswered": false,
-          "mediaUrl": "/pokemon2.mp3",
+          "mediaUrl": "/preset3/pokemon1.mp3",
           "options": {
             "en": ["Eevee", "Pikachu", "Jigglypuff", "Meowth"],
             "pl": ["Eevee", "Pikachu", "Jigglypuff", "Meowth"]
@@ -473,7 +473,7 @@
           },
           "id": "q_pk_300",
           "isAnswered": false,
-          "mediaUrl": "/pokemon1.webp",
+          "mediaUrl": "/preset3/pokemon1.webp",
           "options": {
             "en": ["Squirtle", "Bulbasaur", "Charmander", "Pikachu"],
             "pl": ["Squirtle", "Bulbasaur", "Charmander", "Pikachu"]
@@ -528,7 +528,7 @@
           },
           "id": "q_pk_600",
           "isAnswered": false,
-          "mediaUrl": "/pokemon3.webp",
+          "mediaUrl": "/preset3/pokemon2.webp",
           "options": {
             "en": ["Girafarig", "Dunsparce", "Qwilfish", "Shuckle"],
             "pl": ["Girafarig", "Dunsparce", "Qwilfish", "Shuckle"]
@@ -573,22 +573,22 @@
           "isAnswered": false,
           "options": {
             "en": [
-              "Francis and Louis",
+              "Steven and Louis",
               "Bill and Louis",
-              "Nick and Ellis",
-              "Coach and Rochelle"
+              "Joe and Ellis",
+              "Coach and Steven"
             ],
             "pl": [
-              "Francis i Louis",
+              "Steven i Louis",
               "Bill i Louis",
-              "Nick i Ellis",
-              "Coach i Rochelle"
+              "Joe i Ellis",
+              "Coach i Steven"
             ]
           },
           "points": 200,
           "question": {
-            "en": "Name 2 characters from Left 4 Dead 1.",
-            "pl": "Wymień 2 postacie z Left 4 Dead 1."
+            "en": "Name 2 characters from Left 4 Dead.",
+            "pl": "Wymień 2 postacie z Left 4 Dead."
           },
           "type": "ABCD"
         },
@@ -599,7 +599,7 @@
           },
           "id": "q_l4d_300",
           "isAnswered": false,
-          "mediaUrl": "/l4d1.webp",
+          "mediaUrl": "/preset3/l4d1.webp",
           "options": {
             "en": ["Charger", "Tank", "Boomer", "Witch"],
             "pl": ["Charger", "Tank", "Boomer", "Wiedźma"]
@@ -720,7 +720,7 @@
           },
           "id": "q_sv_300",
           "isAnswered": false,
-          "mediaUrl": "/stardew1.webp",
+          "mediaUrl": "/preset3/sv1.png",
           "options": {
             "en": ["Emily", "Abigail", "Haley", "Penny"],
             "pl": ["Emily", "Abigail", "Haley", "Penny"]
