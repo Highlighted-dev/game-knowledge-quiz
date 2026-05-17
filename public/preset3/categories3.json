@@ -99,8 +99,8 @@
         },
         {
           "answer": {
-            "en": "1998",
-            "pl": "1998"
+            "en": "1997",
+            "pl": "1997"
           },
           "id": "q_rs_500",
           "isAnswered": false,
@@ -492,6 +492,7 @@
           },
           "id": "q_pk_400",
           "isAnswered": false,
+          "mediaUrl": "/preset3/pokemon2.mp3",
           "options": {
             "en": ["Emerald", "Gold/Silver", "Red/Blue", "Fire Red/Leaf Green"],
             "pl": ["Emerald", "Gold/Silver", "Red/Blue", "Fire Red/Leaf Green"]
@@ -501,7 +502,7 @@
             "en": "From which Pokemon game is this music?",
             "pl": "Z jakiej gry Pokemon jest ta muzyka?"
           },
-          "type": "ABCD"
+          "type": "AUDIO"
         },
         {
           "answer": {
@@ -588,7 +589,7 @@
           "points": 200,
           "question": {
             "en": "Name 2 characters from Left 4 Dead.",
-            "pl": "Wymień 2 postacie z Left 4 Dead."
+            "pl": "Wymień 2 wybieralne postacie z Left 4 Dead."
           },
           "type": "ABCD"
         },
