@@ -3,7 +3,7 @@ import type { Category } from "./store";
 // Function to load categories from JSON file (client-side)
 export async function loadCategoriesFromFile(): Promise<Category[]> {
   try {
-    const response = await fetch("/preset3/categories3.json");
+    const response = await fetch("/preset4/categories4.json");
     if (!response.ok) {
       throw new Error("Failed to load categories");
     }

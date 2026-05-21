@@ -1,0 +1,788 @@
+{
+  "categories": [
+    {
+      "id": "cat_rdr",
+      "name": "Red Dead Redemption",
+      "questions": [
+        {
+          "answer": { "en": "Rockstar Games", "pl": "Rockstar Games" },
+          "id": "q_rdr_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["Naughty Dog", "Rockstar Games", "Ubisoft", "Bethesda"],
+            "pl": ["Naughty Dog", "Rockstar Games", "Ubisoft", "Bethesda"]
+          },
+          "points": 100,
+          "question": {
+            "en": "Which company developed the Red Dead Redemption series?",
+            "pl": "Która firma stworzyła serię Red Dead Redemption?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "Arthur Morgan", "pl": "Arthur Morgan" },
+          "id": "q_rdr_200",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Micah Bell",
+              "John Marston",
+              "Arthur Morgan",
+              "Dutch van der Linde"
+            ],
+            "pl": [
+              "Micah Bell",
+              "John Marston",
+              "Arthur Morgan",
+              "Dutch van der Linde"
+            ]
+          },
+          "points": 200,
+          "question": {
+            "en": "Who is the main protagonist in Red Dead Redemption 2?",
+            "pl": "Kto jest głównym bohaterem w Red Dead Redemption 2?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Dutch van der Linde",
+            "pl": "Dutch van der Linde"
+          },
+          "id": "q_rdr_300",
+          "isAnswered": false,
+          "mediaUrl": "/preset4/rdr1.jpg",
+          "options": {
+            "en": [
+              "Javier Escuella",
+              "Hosea Matthews",
+              "Dutch van der Linde",
+              "Bill Williamson"
+            ],
+            "pl": [
+              "Javier Escuella",
+              "Hosea Matthews",
+              "Dutch van der Linde",
+              "Bill Williamson"
+            ]
+          },
+          "points": 300,
+          "question": {
+            "en": "Identify this character.",
+            "pl": "Zidentyfikuj tę postać."
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": { "en": "Tuberculosis", "pl": "Gruźlica" },
+          "id": "q_rdr_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Yellow Fever", "Tuberculosis", "Cholera", "Dysentery"],
+            "pl": ["Żółta febra", "Gruźlica", "Cholera", "Czerwonka"]
+          },
+          "points": 400,
+          "question": {
+            "en": "What disease does Arthur Morgan contract in RDR2?",
+            "pl": "Na jaką chorobę zapada Arthur Morgan w RDR2?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "1911", "pl": "1911" },
+          "id": "q_rdr_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["1907", "1899", "1914", "1911"],
+            "pl": ["1907", "1899", "1914", "1911"]
+          },
+          "points": 500,
+          "question": {
+            "en": "In what year is the first Red Dead Redemption game set?",
+            "pl": "W którym roku toczy się akcja pierwszej gry Red Dead Redemption?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "Unshaken", "pl": "Unshaken" },
+          "id": "q_rdr_600",
+          "isAnswered": false,
+          "mediaUrl": "/preset4/rdr2.mp3",
+          "options": {
+            "en": [
+              "Mountain Hymn",
+              "Unshaken",
+              "That's The Way It Is",
+              "Cruel World"
+            ],
+            "pl": [
+              "Mountain Hymn",
+              "Unshaken",
+              "That's The Way It Is",
+              "Cruel World"
+            ]
+          },
+          "points": 600,
+          "question": {
+            "en": "What is the name of this iconic song from RDR2?",
+            "pl": "Jak nazywa się ta kultowa piosenka z RDR2?"
+          },
+          "type": "AUDIO"
+        }
+      ]
+    },
+    {
+      "id": "cat_civ",
+      "name": "Civilization",
+      "questions": [
+        {
+          "answer": { "en": "Turn-based strategy", "pl": "Strategia turowa" },
+          "id": "q_civ_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "First-person shooter",
+              "Turn-based strategy",
+              "Racing",
+              "Fighting"
+            ],
+            "pl": [
+              "Strzelanka (FPS)",
+              "Strategia turowa",
+              "Wyścigi",
+              "Bijatyka"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "What type of game is Civilization?",
+            "pl": "Jakim rodzajem gry jest Civilization?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "Sid Meier", "pl": "Sid Meier" },
+          "id": "q_civ_200",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Peter Molyneux",
+              "Will Wright",
+              "Hideo Kojima",
+              "Sid Meier"
+            ],
+            "pl": ["Peter Molyneux", "Will Wright", "Hideo Kojima", "Sid Meier"]
+          },
+          "points": 200,
+          "question": {
+            "en": "Who is the legendary designer behind the first Civilization game?",
+            "pl": "Kto jest legendarnym projektantem pierwszej gry Civilization?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Giant Death Robot",
+            "pl": "Ogromny Robot Śmierci"
+          },
+          "id": "q_civ_300",
+          "isAnswered": false,
+          "mediaUrl": "/preset4/civ1.webp",
+          "options": {
+            "en": [
+              "XCOM Squad",
+              "Modern Armor",
+              "Giant Death Robot",
+              "Mechanized Infantry"
+            ],
+            "pl": [
+              "Oddział XCOM",
+              "Współczesna zbroja",
+              "Ogromny Robot Śmierci",
+              "Piechota zmechanizowana"
+            ]
+          },
+          "points": 300,
+          "question": {
+            "en": "Identify this late-game military unit.",
+            "pl": "Zidentyfikuj tę wojskową jednostkę z późnego etapu gry."
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Science, Culture, Domination, Religion, Diplomacy, Time/Score",
+            "pl": "Naukowe, Kulturowe, Dominacja, Religijne, Dyplomatyczne, Czasowe/Punktowe"
+          },
+          "id": "q_civ_400",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Science, Culture, Domination, Diplomacy, Time/Score, Ideology",
+              "Science, Culture, Domination, Religion, Economy, Time/Score",
+              "Science, Culture, Domination, Religion, Diplomacy, Time/Score",
+              "Science, Culture, Domination, Religion, Diplomacy, Territory, Score"
+            ],
+            "pl": [
+              "Naukowe, Kulturowe, Dominacja, Dyplomatyczne, Czasowe, Punktowe, Ideologiczne",
+              "Naukowe, Kulturowe, Dominacja, Religijne, Ekonomiczne, Czasowe, Punktowe",
+              "Naukowe, Kulturowe, Dominacja, Religijne, Dyplomatyczne, Czasowe, Punktowe",
+              "Naukowe, Kulturowe, Dominacja, Religijne, Dyplomatyczne, Terytorialne, Punktowe"
+            ]
+          },
+          "points": 400,
+          "question": {
+            "en": "List all victory types in Civilization 6.",
+            "pl": "Wymień wszystkie rodzaje zwycięstwa w Cywilizacji  6."
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "Venice", "pl": "Wenecja" },
+          "id": "q_civ_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["Venice", "Austria", "Carthage", "Babylon"],
+            "pl": ["Wenecja", "Austria", "Kartagina", "Babilon"]
+          },
+          "points": 500,
+          "question": {
+            "en": "In Civilization V, which playable civilization cannot train Settlers and is limited to controlling only one city (its capital)?",
+            "pl": "W Civilization V, która grywalna cywilizacja nie może szkolić Osadników i jest ograniczona do kontrolowania tylko jednego miasta (swojej stolicy)?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "Voidsingers", "pl": "Pieśniarze Pustki" },
+          "id": "q_civ_600",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Hermetic Order",
+              "Owls of Minerva",
+              "Voidsingers",
+              "Sanguine Pact"
+            ],
+            "pl": [
+              "Zakon Hermetyczny",
+              "Sowy Minerwy",
+              "Pieśniarze Pustki",
+              "Pakt Krwi"
+            ]
+          },
+          "points": 600,
+          "question": {
+            "en": "What is the name of the secret society in Civilization VI that focuses on faith, the occult, and summoning cultists?",
+            "pl": "Jak nazywa się tajne stowarzyszenie w Civilization VI, które skupia się na wierze, okultyzmie i przyzywaniu kultystów?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_gta",
+      "name": "GTA",
+      "questions": [
+        {
+          "answer": {
+            "en": "Carl \"CJ\" Johnson",
+            "pl": "Carl \"CJ\" Johnson"
+          },
+          "id": "q_gta_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Tommy Vercetti",
+              "Carl \"CJ\" Johnson",
+              "Claude",
+              "Niko Bellic"
+            ],
+            "pl": [
+              "Tommy Vercetti",
+              "Carl \"CJ\" Johnson",
+              "Claude",
+              "Niko Bellic"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "What is the name of the main protagonist in GTA San Andreas?",
+            "pl": "Jak nazywa się główny bohater w GTA San Andreas?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "Miami", "pl": "Miami" },
+          "id": "q_gta_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["New York", "San Francisco", "Miami", "Los Angeles"],
+            "pl": ["Nowy Jork", "San Francisco", "Miami", "Los Angeles"]
+          },
+          "points": 200,
+          "question": {
+            "en": "What American city is GTA Vice City based on?",
+            "pl": "Na jakim amerykańskim mieście wzorowane jest Vice City?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "Infernus", "pl": "Infernus" },
+          "id": "q_gta_300",
+          "isAnswered": false,
+          "mediaUrl": "/preset4/gta1.webp",
+          "options": {
+            "en": ["Banshee", "Comet", "Cheetah", "Infernus"],
+            "pl": ["Banshee", "Comet", "Cheetah", "Infernus"]
+          },
+          "points": 300,
+          "question": {
+            "en": "What is the name of this iconic vehicle?",
+            "pl": "Jak nazywa się ten kultowy pojazd?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Big Smoke",
+            "pl": "Big Smoke"
+          },
+          "id": "q_gta_400",
+          "isAnswered": false,
+          "mediaUrl": "/preset4/gta2.mp3",
+          "options": {
+            "en": ["CJ", "Ryder", "Big Smoke", "Sweet"],
+            "pl": ["CJ", "Ryder", "Big Smoke", "Sweet"]
+          },
+          "points": 400,
+          "question": {
+            "en": "Which character says these words?",
+            "pl": "Jaka postać wypowiedziała te słowa?"
+          },
+          "type": "AUDIO"
+        },
+        {
+          "answer": { "en": "Epsilon Program", "pl": "Program Epsilon" },
+          "id": "q_gta_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Children of the Mountain",
+              "Altruist Cult",
+              "Epsilon Program",
+              "The Lost MC"
+            ],
+            "pl": [
+              "Children of the Mountain",
+              "Kult Altruistów",
+              "Program Epsilon",
+              "The Lost MC"
+            ]
+          },
+          "points": 500,
+          "question": {
+            "en": "What is the name of the cult that Michael De Santa can join in GTA V?",
+            "pl": "Jak nazywa się kult, do którego może dołączyć Michael De Santa w GTA V?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "GTA III, Vice City, San Andreas, Liberty City Stories, Chinatown Wars",
+            "pl": "GTA III, Vice City, San Andreas, Liberty City Stories, Chinatown Wars"
+          },
+          "id": "q_gta_600",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "GTA III, Vice City, San Andreas, Liberty City Stories, Chinatown Wars",
+              "GTA III, Vice City, San Andreas, Chinatown Wars, GTA IV",
+              "GTA III, Vice City, San Andreas, Liberty City Stories, Chinatown Wars",
+              "GTA III, Vice City, San Andreas, Liberty City Stories, GTA IV"
+            ],
+            "pl": [
+              "GTA III, Vice City, San Andreas, Liberty City Stories, Chinatown Wars",
+              "GTA III, Vice City, San Andreas, Chinatown Wars, GTA IV",
+              "GTA III, Vice City, San Andreas, Liberty City Stories, Chinatown Wars",
+              "GTA III, Vice City, San Andreas, Liberty City Stories, GTA IV"
+            ]
+          },
+          "points": 600,
+          "question": {
+            "en": "List all GTA games that were available on phones in official stores.",
+            "pl": "Wymień wszystkie gry GTA, które były dostępne na telefony w oficjalnych sklepach."
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_witcher",
+      "name": "Witcher",
+      "questions": [
+        {
+          "answer": { "en": "Geralt of Rivia", "pl": "Geralt z Rivii" },
+          "id": "q_witcher_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["Eskel", "Dandelion", "Geralt of Rivia", "Vesemir"],
+            "pl": ["Eskel", "Jaskier", "Geralt z Rivii", "Vesemir"]
+          },
+          "points": 100,
+          "question": {
+            "en": "Who is the main character in The Witcher series?",
+            "pl": "Kto jest głównym bohaterem w serii Wiedźmin?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "Andrzej Sapkowski", "pl": "Andrzej Sapkowski" },
+          "id": "q_witcher_200",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Andrzej Sapkowski",
+              "Dmitry Glukhovsky",
+              "J.R.R. Tolkien",
+              "George R.R. Martin"
+            ],
+            "pl": [
+              "Andrzej Sapkowski",
+              "Dmitry Glukhovsky",
+              "J.R.R. Tolkien",
+              "George R.R. Martin"
+            ]
+          },
+          "points": 200,
+          "question": {
+            "en": "What is the name of the author who wrote The Witcher book series?",
+            "pl": "Jak nazywa się autor, który napisał serię książek o Wiedźminie?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "Leshen", "pl": "Leszy" },
+          "id": "q_witcher_300",
+          "isAnswered": false,
+          "mediaUrl": "/preset4/witcher1.webp",
+          "options": {
+            "en": ["Griffin", "Fiend", "Leshen", "Chort"],
+            "pl": ["Gryf", "Bies", "Leszy", "Czart"]
+          },
+          "points": 300,
+          "question": {
+            "en": "Identify this monster.",
+            "pl": "Zidentyfikuj tego potwora."
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": { "en": "Imlerith", "pl": "Imlerith" },
+          "id": "q_witcher_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Imlerith", "Caranthir", "Nithral", "Ge'els"],
+            "pl": ["Imlerith", "Caranthir", "Nithral", "Ge'els"]
+          },
+          "points": 400,
+          "question": {
+            "en": "In The Witcher 3: Wild Hunt, who is the general that commands the Wild Hunt's cavalry and killed Vesemir?",
+            "pl": "W grze Wiedźmin 3: Dziki Gon, jak nazywa się generał dowodzący kawalerią Dzikiego Gonu, który zabił Vesemira?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Manticore School and Griffin School",
+            "pl": "Szkoła Mantikory i Szkoła Gryfa"
+          },
+          "id": "q_witcher_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Manticore School and Griffin School",
+              "Feline School and Ursine School",
+              "Manticore School and Feline School",
+              "Griffin School and Ursine School"
+            ],
+            "pl": [
+              "Szkoła Mantikory i Szkoła Gryfa",
+              "Szkoła Kota i Szkoła Niedźwiedzia",
+              "Szkoła Mantikory i Szkoła Kota",
+              "Szkoła Mantikory i Szkoła Niedźwiedzia"
+            ]
+          },
+          "points": 500,
+          "question": {
+            "en": "In The Witcher 3, which of these Witcher School gear sets was introduced in the Blood and Wine expansion?",
+            "pl": "W grze Wiedźmin 3, rynsztunek jakich wiedźmińskich szkół został wprowadzony dopiero w dodatku Krew i Wino?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Conjunction of the Spheres",
+            "pl": "Koniunkcja Sfer"
+          },
+          "id": "q_witcher_600",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Conjunction of the Spheres",
+              "The First Landing",
+              "Falka's Rebellion",
+              "The Wild Hunt's Arrival"
+            ],
+            "pl": [
+              "Koniunkcja Sfer",
+              "Pierwsze Lądowanie",
+              "Bunt Falki",
+              "Nadejście Dzikiego Gonu"
+            ]
+          },
+          "points": 600,
+          "question": {
+            "en": "According to Witcher lore, what was the cataclysmic event that trapped monsters in the Continent's dimension?",
+            "pl": "Zgodnie z wiedźmińską wiedzą, jak nazywało się katastrofalne wydarzenie, które uwięziło potwory w wymiarze Kontynentu?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_cs",
+      "name": "Counter-Strike",
+      "questions": [
+        {
+          "answer": { "en": "Counter-Strike", "pl": "Counter-Strike" },
+          "id": "q_cs_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Combat Strike",
+              "Cyber Shoot",
+              "Counter-Strike",
+              "Covert Sniper"
+            ],
+            "pl": [
+              "Combat Strike",
+              "Cyber Shoot",
+              "Counter-Strike",
+              "Covert Sniper"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "What does \"CS\" stand for in the popular FPS game?",
+            "pl": "Co oznacza skrót \"CS\" w popularnej grze FPS?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "25", "pl": "25" },
+          "id": "q_cs_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["20", "25", "30", "35"],
+            "pl": ["20", "25", "30", "35"]
+          },
+          "points": 200,
+          "question": {
+            "en": "How many bullets does the FAMAS have in its magazine in CS2?",
+            "pl": "Ile pocisków ma w magazynku FAMAS w CS2?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "Pool Day", "pl": "Pool Day" },
+          "id": "q_cs_300",
+          "isAnswered": false,
+          "mediaUrl": "/preset4/cs1.jpg",
+          "options": {
+            "en": ["Nuke", "Pool Day", "Mirage", "Inferno"],
+            "pl": ["Nuke", "Pool Day", "Mirage", "Inferno"]
+          },
+          "points": 300,
+          "question": {
+            "en": "Which map is this from CS 1.6?",
+            "pl": "Jaka to mapa z cs 1.6?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": { "en": "$100", "pl": "$100" },
+          "id": "q_cs_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["$50", "$100", "$150", "$300"],
+            "pl": ["$50", "$100", "$150", "$300"]
+          },
+          "points": 400,
+          "question": {
+            "en": "What is the exact kill reward for an AWP kill in Competitive matchmaking?",
+            "pl": "Jaka jest dokładna nagroda za zabójstwo z AWP w trybie turniejowym?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "Fnatic", "pl": "Fnatic" },
+          "id": "q_cs_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Ninjas in Pyjamas",
+              "Fnatic",
+              "Virtus.pro",
+              "Natus Vincere"
+            ],
+            "pl": ["Ninjas in Pyjamas", "Fnatic", "Virtus.pro", "Natus Vincere"]
+          },
+          "points": 500,
+          "question": {
+            "en": "Which team won the very first CS:GO Major Championship (DreamHack Winter 2013)?",
+            "pl": "Która drużyna wygrała pierwszy w historii turniej rangi Major w CS:GO (DreamHack Winter 2013)?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "34", "pl": "34" },
+          "id": "q_cs_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["25", "30", "34", "40"],
+            "pl": ["25", "30", "34", "40"]
+          },
+          "points": 600,
+          "question": {
+            "en": "How many default maps are there to choose from in CS 1.6 (as of 18.05.2026)? (You can be off by 4)",
+            "pl": "Ile jest podstawowych map do wyboru w cs 1.6 (stan na 18.05.2026)? Możesz się pomylić o 4"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_mc",
+      "name": "Minecraft",
+      "questions": [
+        {
+          "answer": { "en": "Blocks", "pl": "Bloki" },
+          "id": "q_mc_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["Cylinders", "Blocks", "Pyramids", "Spheres"],
+            "pl": ["Walce", "Bloki", "Piramidy", "Kule"]
+          },
+          "points": 100,
+          "question": {
+            "en": "What is the primary building material in Minecraft?",
+            "pl": "Co jest głównym materiałem budowlanym w Minecraft?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Markus \"Notch\" Persson",
+            "pl": "Markus \"Notch\" Persson"
+          },
+          "id": "q_mc_200",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Jens \"Jeb\" Bergensten",
+              "Gabe Newell",
+              "Markus \"Notch\" Persson",
+              "Todd Howard"
+            ],
+            "pl": [
+              "Jens \"Jeb\" Bergensten",
+              "Gabe Newell",
+              "Markus \"Notch\" Persson",
+              "Todd Howard"
+            ]
+          },
+          "points": 200,
+          "question": {
+            "en": "Who is the original creator of Minecraft?",
+            "pl": "Kto jest pierwotnym twórcą Minecrafta?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "Herobrine", "pl": "Herobrine" },
+          "id": "q_mc_300",
+          "isAnswered": false,
+          "mediaUrl": "/preset4/mc1.png",
+          "options": {
+            "en": ["Notch", "Entity 303", "Herobrine", "Null"],
+            "pl": ["Notch", "Entity 303", "Herobrine", "Null"]
+          },
+          "points": 300,
+          "question": {
+            "en": "Identify this legendary creepypasta character.",
+            "pl": "Zidentyfikuj tę legendarną postać z creepypasty."
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": { "en": "20", "pl": "20" },
+          "id": "q_mc_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["10", "20", "30", "60"],
+            "pl": ["10", "20", "30", "60"]
+          },
+          "points": 400,
+          "question": {
+            "en": "What is the exact tick rate (ticks per second) of Minecraft's game loop under normal conditions?",
+            "pl": "Ile wynosi dokładna częstotliwość odświeżania logiki gry (tick rate na sekundę) w Minecrafcie w normalnych warunkach?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": { "en": "12", "pl": "12" },
+          "id": "q_mc_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["10", "12", "14", "16"],
+            "pl": ["10", "12", "14", "16"]
+          },
+          "points": 500,
+          "question": {
+            "en": "What is the maximum number of blocks a Piston can push at once?",
+            "pl": "Jaka jest maksymalna liczba bloków, którą tłok może przesunąć naraz?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Deepslate Emerald Ore",
+            "pl": "Łupkowa ruda szmaragdu"
+          },
+          "id": "q_mc_600",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Ancient Debris",
+              "Deepslate Emerald Ore",
+              "Diamond Ore",
+              "Nether Quartz Ore"
+            ],
+            "pl": [
+              "Pradawne zgliszcza",
+              "Łupkowa ruda szmaragdu",
+              "Ruda diamentu",
+              "Ruda kwarcu z Netheru"
+            ]
+          },
+          "points": 600,
+          "question": {
+            "en": "What is the rarest ore in Minecraft (as of 1.21)?",
+            "pl": "Jaka jest najrzadsza ruda w Minecrafcie (stan na 1.21)?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    }
+  ]
+}
