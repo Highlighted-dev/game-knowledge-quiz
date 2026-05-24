@@ -1,0 +1,842 @@
+{
+  "categories": [
+    {
+      "id": "cat_sims",
+      "name": "The Sims",
+      "questions": [
+        {
+          "answer": {
+            "en": "Simoleons",
+            "pl": "Simoleony"
+          },
+          "id": "q_sims_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["Simoleons", "Simdollars", "Septims", "Credits"],
+            "pl": ["Simoleony", "Simdolary", "Septimy", "Kredyty"]
+          },
+          "points": 100,
+          "question": {
+            "en": "What is the name of the currency used by Sims in the game?",
+            "pl": "Jak nazywa się waluta, którą posługują się Simowie w grze?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Grim Reaper",
+            "pl": "Mroczny Kosiarz"
+          },
+          "id": "q_sims_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["Grim Reaper", "Gravedigger", "Death", "Skeletor"],
+            "pl": [
+              "Mroczny Kosiarz (Grim Reaper)",
+              "Grabarz",
+              "Śmierć",
+              "Szkieletor"
+            ]
+          },
+          "points": 200,
+          "question": {
+            "en": "Who do Sims see before death (the character who comes to claim their soul)?",
+            "pl": "Kogo Simowie widzą przed śmiercią (postać, która przychodzi po ich duszę)?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "motherlode",
+            "pl": "motherlode"
+          },
+          "id": "q_sims_300",
+          "isAnswered": false,
+          "options": {
+            "en": ["motherlode", "kaching", "rosebud", "klapaucius"],
+            "pl": ["motherlode", "kaching", "rosebud", "klapaucius"]
+          },
+          "points": 300,
+          "question": {
+            "en": "Entering which cheat code in the game console adds 50,000 Simoleons to the family funds?",
+            "pl": "Wpisanie jakiego kodu w konsoli gry dodaje do funduszy rodziny 50 000 Simoleonów?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Plumbob",
+            "pl": "Plumbob"
+          },
+          "id": "q_sims_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Plumbob", "Simob", "Mood Crystal", "Green Diamond"],
+            "pl": ["Plumbob", "Simob", "Mood Crystal", "Zielony Diament"]
+          },
+          "points": 400,
+          "question": {
+            "en": "What is the name of the characteristic green crystal hovering over the active Sim's head, indicating their mood?",
+            "pl": "Jak nazywa się charakterystyczny, zielony kryształ lewitujący nad głową aktywnego Sima, wskazujący jego nastrój?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Bonehilda",
+            "pl": "Kościlda"
+          },
+          "id": "q_sims_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["Bonehilda", "Skeleta", "Mary", "Agatha"],
+            "pl": ["Kościlda (Bonehilda)", "Skeleta", "Maria", "Agata"]
+          },
+          "points": 500,
+          "question": {
+            "en": "What is the name of the iconic skeleton maid (bone helper) who first appeared in the expansion pack The Sims: Livin' Large?",
+            "pl": "Jak nazywa się kultowa pokojówka-szkielet (kościany sługa), która po raz pierwszy pojawiła się w dodatku The Sims: Światowe Życie?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "112",
+            "pl": "112"
+          },
+          "id": "q_sims_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["89", "92", "97", "112"],
+            "pl": ["89", "92", "97", "112"]
+          },
+          "points": 600,
+          "question": {
+            "en": "How many offical content packs (dlcs) have been released for The Sims 4 (as of May 2026 from steam)? You can be off by 7.",
+            "pl": "Ile oficjalnych pakietów kontentu do kupienia (dlc) zostało wydanych do gry The Sims 4 (stan na maj 2026 ze steama)? Możesz się pomylić o 7."
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_esport",
+      "name": "E-sport",
+      "questions": [
+        {
+          "answer": {
+            "en": "League of Legends",
+            "pl": "League of Legends"
+          },
+          "id": "q_esport_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "League of Legends",
+              "Counter-Strike 2",
+              "Dota 2",
+              "Valorant"
+            ],
+            "pl": [
+              "League of Legends",
+              "Counter-Strike 2",
+              "Dota 2",
+              "Valorant"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "What is the most popular esport game in the world in terms of tournament viewership?",
+            "pl": "Jaka jest najpopularniejsza gra esportowa na świecie pod względem oglądalności turniejów?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "TaZ, NEO, pashaBiceps, snax, byali",
+            "pl": "TaZ, NEO, pashaBiceps, snax, byali"
+          },
+          "id": "q_esport_200",
+          "isAnswered": false,
+          "mediaUrl": "/preset5/virtus_pro.webp",
+          "options": {
+            "en": [
+              "TaZ, NEO, pashaBiceps, snax, byali",
+              "tiziaN, tabseN, syrsoN, gob b, k1to",
+              "innocent, rallen, mouz, snatchie, phr",
+              "Furlan, GruBy, TOAO, snatchie, szpero"
+            ],
+            "pl": [
+              "TaZ, NEO, pashaBiceps, snax, byali",
+              "tiziaN, tabseN, syrsoN, gob b, k1to",
+              "innocent, rallen, mouz, snatchie, phr",
+              "Furlan, GruBy, TOAO, snatchie, szpero"
+            ]
+          },
+          "points": 200,
+          "question": {
+            "en": "Name at least 4 players of the iconic Polish Virtus.pro roster shown in the picture.",
+            "pl": "Wymień przynajmniej 4 graczy kultowego, polskiego składu drużyny Virtus.pro widocznej na obrazku."
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Shushei",
+            "pl": "Shushei"
+          },
+          "id": "q_esport_300",
+          "isAnswered": false,
+          "options": {
+            "en": ["Shushei", "Jankos", "Selfmade", "Vander"],
+            "pl": ["Shushei", "Jankos", "Selfmade", "Vander"]
+          },
+          "points": 300,
+          "question": {
+            "en": "What is the name of the only Polish player who won the League of Legends World Championship (Worlds Season 1 with Fnatic)?",
+            "pl": "Jak nazywa się jedyny Polak, który wygrał mistrzostwa świata w League of Legends (Worlds Sezon 1 w barwach Fnatic)?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Jax, Lee Sin, Zed, Vayne, Zyra, Renekton, Elise, Ryze, Azir, Kalista, Alistar, Ekko, Olaf, Zac, Jhin, Nami, Jayce, Orianna, Jinx, Bard, Xin zhao, Ambessa, Galio, Yunara, Seraphine",
+            "pl": "Jax, Lee Sin, Zed, Vayne, Zyra, Renekton, Elise, Ryze, Azir, Kalista, Alistar, Ekko, Olaf, Zac, Jhin, Nami, Jayce, Orianna, Jinx, Bard, Xin zhao, Ambessa, Galio, Yunara, Seraphine"
+          },
+          "id": "q_esport_400",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Jax, Lee Sin, Zed, Vayne, Zyra, Renekton, Elise, Ryze, Azir, Kalista",
+              "Ahri, Yasuo, Garen, Lux, Janna, Thresh, Lucian, Riven, Teemo, Ashe",
+              "Zoe, Sylas, Kai'Sa, Ezreal, Graves, Gragas, Karma, Lulu, Xayah, Rakan",
+              "Braum, Twitch, Syndra, Rumble, Gnar, Rek'Sai, Bard, Vi, Caitlyn, Jhin"
+            ],
+            "pl": [
+              "Jax, Lee Sin, Zed, Vayne, Zyra, Renekton, Elise, Ryze, Azir, Jinx",
+              "Ahri, Yasuo, Garen, Lux, Janna, Thresh, Lucian, Riven, Teemo, Ashe",
+              "Zoe, Sylas, Kai'Sa, Ezreal, Graves, Gragas, Karma, Lulu, Xayah, Rakan",
+              "Braum, Twitch, Syndra, Rumble, Gnar, Rek'Sai, Bard, Vi, Caitlyn, Jhin"
+            ]
+          },
+          "points": 400,
+          "question": {
+            "en": "Name 6 League of Legends champions that have T1 skins.",
+            "pl": "Wymień 6 postaci z League of Legends, do których powstały skiny T1."
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Fnatic and Sentinels",
+            "pl": "Fnatic i Sentinels"
+          },
+          "id": "q_esport_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Fnatic and Sentinels",
+              "Acend and Sentinels",
+              "Optic and Fnatic",
+              "Paper Rex and LOUD"
+            ],
+            "pl": [
+              "Fnatic i Sentinels",
+              "Acend i Sentinels",
+              "Optic i Fnatic",
+              "Paper Rex i LOUD"
+            ]
+          },
+          "points": 500,
+          "question": {
+            "en": "Name all teams that have won more than one international VCT (Valorant Champions Tour Masters or Champions) trophy.",
+            "pl": "Wymień wszystkie drużyny, które mają na swoim koncie więcej niż 1 międzynarodowe trofeum VCT (Valorant Champions Tour Masters / Champions)."
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "17",
+            "pl": "17"
+          },
+          "id": "q_esport_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["17", "15", "19", "21"],
+            "pl": ["17", "15", "19", "21"]
+          },
+          "points": 600,
+          "question": {
+            "en": "How many Counter-Strike Major tournaments did Polish player Janusz \"Snax\" Pogorzelski participate in?",
+            "pl": "Na ilu turniejach rangi Major w grze Counter-Strike wystąpił polski zawodnik Janusz \"Snax\" Pogorzelski?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_halflife",
+      "name": "Half-Life",
+      "questions": [
+        {
+          "answer": {
+            "en": "Gordon Freeman",
+            "pl": "Gordon Freeman"
+          },
+          "id": "q_halflife_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Gordon Freeman",
+              "Adrian Shephard",
+              "Barney Calhoun",
+              "Isaac Kleiner"
+            ],
+            "pl": [
+              "Gordon Freeman",
+              "Adrian Shephard",
+              "Barney Calhoun",
+              "Isaac Kleiner"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "What is the name of the main protagonist of the Half-Life series, a theoretical physicist who wields a crowbar?",
+            "pl": "Jak nazywa się główny protagonista serii gier Half-Life, fizyk teoretyczny posługujący się łomem?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Black Mesa",
+            "pl": "Black Mesa"
+          },
+          "id": "q_halflife_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["Black Mesa", "Aperture Science", "City 17", "Black Forest"],
+            "pl": ["Black Mesa", "Aperture Science", "City 17", "Black Forest"]
+          },
+          "points": 200,
+          "question": {
+            "en": "What is the name of the fictional secret research facility in New Mexico where the first Half-Life game begins?",
+            "pl": "Jak nazywa się fikcyjne tajne laboratorium badawcze w Nowym Meksyku, w którym rozpoczyna się akcja pierwszej części Half-Life?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Vortigaunt",
+            "pl": "Vortigaunt"
+          },
+          "id": "q_halflife_300",
+          "isAnswered": false,
+          "options": {
+            "en": ["Vortigaunt", "Headcrab", "Bullsquid", "Houndeye"],
+            "pl": [
+              "Vortigaunt (Vortiguard)",
+              "Headcrab",
+              "Bullsquid",
+              "Houndeye"
+            ]
+          },
+          "points": 300,
+          "question": {
+            "en": "Which alien species from Xen sides with humanity and assists the player between the events of Half-Life and Half-Life 2?",
+            "pl": "Który stwór (obca rasa istot z Xen) przechodzi na stronę ludzkości i pomaga graczowi między wydarzeniami z Half-Life a Half-Life 2?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "3",
+            "pl": "3"
+          },
+          "id": "q_halflife_400",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "3 (Standard, Fast, Poison)",
+              "2 (Standard, Fast)",
+              "4 (Standard, Fast, Poison, Armored)",
+              "5"
+            ],
+            "pl": [
+              "3 (Standardowy, Szybki, Trujący)",
+              "2 (Standardowy, Szybki)",
+              "4 (Standardowy, Szybki, Trujący, Pancerny)",
+              "5"
+            ]
+          },
+          "points": 400,
+          "question": {
+            "en": "How many types of headcrabs (parasites that take control of hosts) are there in Half-Life 2?",
+            "pl": "Ile jest rodzajów headcrabów w grze Half-Life 2?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Opposing Force and Blue Shift",
+            "pl": "Opposing Force i Blue Shift"
+          },
+          "id": "q_halflife_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Opposing Force and Blue Shift",
+              "Decay and Blue Shift",
+              "Opposing Force and Decay",
+              "Lost Coast and Episode One"
+            ],
+            "pl": [
+              "Opposing Force i Blue Shift (Blue Force)",
+              "Decay i Blue Shift",
+              "Opposing Force i Decay",
+              "Lost Coast i Episode One"
+            ]
+          },
+          "points": 500,
+          "question": {
+            "en": "Name both official single-player expansions for the first Half-Life game developed by Gearbox Software.",
+            "pl": "Wymień oba oficjalne, fabularne dodatki singleplayer do pierwszej części gry Half-Life."
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Jeff",
+            "pl": "Jeff"
+          },
+          "id": "q_halflife_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["Jeff", "Greg", "Griggs", "Russell"],
+            "pl": ["Jeff", "Greg", "Griggs", "Russell"]
+          },
+          "points": 600,
+          "question": {
+            "en": "What is the name of the blind, sound-sensitive zombie mutant who serves as a mini-boss in Half-Life: Alyx?",
+            "pl": "Jak nazywa się ślepy zombie mini-boss z Half-Life: Alyx, reagujący wyłącznie na dźwięki?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_clashroyale",
+      "name": "Clash Royale",
+      "questions": [
+        {
+          "answer": {
+            "en": "Witch",
+            "pl": "Wiedźma"
+          },
+          "id": "q_clashroyale_100",
+          "isAnswered": false,
+          "mediaUrl": "/preset5/witch.png",
+          "options": {
+            "en": ["Witch", "Night Witch", "Mother Witch", "Inferno Dragon"],
+            "pl": [
+              "Wiedźma (Witch)",
+              "Nocna Wiedźma (Night Witch)",
+              "Matka Wiedźma (Mother Witch)",
+              "Piekielny Smok (Inferno Dragon)"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "What is the name of this character from Clash Royale shown in the picture, who summons skeletons?",
+            "pl": "Jak nazywa się ta postać z Clash Royale przedstawiona na obrazku?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "King",
+            "pl": "Król"
+          },
+          "id": "q_clashroyale_200",
+          "isAnswered": false,
+          "mediaUrl": "/preset5/heheheha.ogg",
+          "options": {
+            "en": ["King", "Goblin", "Knight", "Royal Ghost"],
+            "pl": [
+              "Król (King)",
+              "Goblin",
+              "Rycerz (Knight)",
+              "Królewski Duch (Royal Ghost)"
+            ]
+          },
+          "points": 200,
+          "question": {
+            "en": "Which character appears on the emote associated with this sound?",
+            "pl": "Jaka postać występuje na emotce z tym dźwiękiem?"
+          },
+          "type": "AUDIO"
+        },
+        {
+          "answer": {
+            "en": "4",
+            "pl": "4"
+          },
+          "id": "q_clashroyale_300",
+          "isAnswered": false,
+          "mediaUrl": "/preset5/hog_rider.mp3",
+          "options": {
+            "en": ["4", "3", "5", "6"],
+            "pl": ["4", "3", "5", "6"]
+          },
+          "points": 300,
+          "question": {
+            "en": "How much elixir does the character speaking the words in the played audio cost?",
+            "pl": "Ile eliksiru kosztuje postać wypowiadająca to?"
+          },
+          "type": "AUDIO"
+        },
+        {
+          "answer": {
+            "en": "16",
+            "pl": "16"
+          },
+          "id": "q_clashroyale_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["16", "14", "15", "13"],
+            "pl": ["16", "14", "15", "13"]
+          },
+          "points": 400,
+          "question": {
+            "en": "What is the maximum level of a card in Clash Royale (attainable through standard upgrading of units)?",
+            "pl": "Jaki jest maksymalny level postaci w Clash Royale (dostępny poprzez ulepszanie jednostek)?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "14000",
+            "pl": "14000"
+          },
+          "id": "q_clashroyale_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["14000", "9000", "12000", "15000"],
+            "pl": ["14000", "9000", "12000", "15000"]
+          },
+          "points": 500,
+          "question": {
+            "en": "What is currently the maximum number of trophies that can be earned in the Trophy Road mode in Clash Royale (as of May 23, 2026)?",
+            "pl": "Jaka jest aktualnie maksymalna liczba trofeów do zdobycia w Trophy Road (stan na 23.05.26)?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Skeletons, Heal Spirit, Ice Spirit, Electro Spirit, Fire Spirit",
+            "pl": "Skeletons, Heal Spirit, Ice Spirit, Electro Spirit, Fire Spirit"
+          },
+          "id": "q_clashroyale_600",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Skeletons, Heal Spirit, Ice Spirit, Electro Spirit, Fire Spirit",
+              "Skeletons, Goblins, Spear Goblins, Ice Spirit, Zap",
+              "Heal Spirit, Fire Spirit, Rage, Skeletons, Bats",
+              "Electro Spirit, Ice Spirit, Fire Spirit, Poison, Skeletons"
+            ],
+            "pl": [
+              "Skeletons, Heal Spirit, Ice Spirit, Electro Spirit, Fire Spirit",
+              "Skeletons, Goblins, Spear Goblins, Ice Spirit, Zap",
+              "Heal Spirit, Fire Spirit, Rage, Skeletons, Bats",
+              "Electro Spirit, Ice Spirit, Fire Spirit, Poison, Skeletons"
+            ]
+          },
+          "points": 600,
+          "question": {
+            "en": "Name all 5 cards in Clash Royale that cost exactly 1 elixir (excluding the mirror card).",
+            "pl": "Wymień wszystkie 5 kart w Clash Royale kosztujących \"1\" eliksiru."
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_tlou",
+      "name": "The Last Of Us",
+      "questions": [
+        {
+          "answer": {
+            "en": "Naughty Dog",
+            "pl": "Naughty Dog"
+          },
+          "id": "q_tlou_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Naughty Dog",
+              "Santa Monica Studio",
+              "Insomniac Games",
+              "Guerrilla Games"
+            ],
+            "pl": [
+              "Naughty Dog",
+              "Santa Monica Studio",
+              "Insomniac Games",
+              "Guerrilla Games"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "Which game development studio is responsible for creating The Last of Us game series?",
+            "pl": "Które studio deweloperskie jest odpowiedzialne za stworzenie serii gier The Last of Us?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Ellie",
+            "pl": "Ellie"
+          },
+          "id": "q_tlou_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["Ellie", "Sarah", "Tess", "Abby"],
+            "pl": ["Ellie", "Sarah", "Tess", "Abby"]
+          },
+          "points": 200,
+          "question": {
+            "en": "What is the name of the teenage girl whom Joel has to transport across the ruined United States?",
+            "pl": "Jak ma na imię nastoletnia dziewczyna, którą Joel musi przetransportować przez zrujnowane Stany Zjednoczone?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Clickers",
+            "pl": "Klikacze"
+          },
+          "id": "q_tlou_300",
+          "isAnswered": false,
+          "options": {
+            "en": ["Clickers", "Runners", "Stalkers", "Bloaters"],
+            "pl": [
+              "Klikacze (Clickers)",
+              "Biegacze (Runners)",
+              "Czyhacze (Stalkers)",
+              "Purchlaki (Bloaters)"
+            ]
+          },
+          "points": 300,
+          "question": {
+            "en": "What is the name of the blind infected in the third stage of the infection, who locate their victims using echolocation and a characteristic clicking sound?",
+            "pl": "Jak nazywają się zarażeni w trzecim stadium infekcji, którzy są całkowicie ślepi i lokalizują ofiary za pomocą echolokacji (wydając charakterystyczny odgłos klikania)?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Guitar",
+            "pl": "Gitara"
+          },
+          "id": "q_tlou_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Guitar", "Piano", "Harmonica", "Violin"],
+            "pl": ["Gitara", "Pianino", "Harmonijka", "Skrzypce"]
+          },
+          "points": 400,
+          "question": {
+            "en": "Which musical instrument does Joel promise to teach Ellie to play, and their playing together becomes a central theme of The Last of Us Part II?",
+            "pl": "Na jakim instrumencie muzycznym Joel obiecuje nauczyć grać Ellie i uczy jej na początku The Last of Us Part II?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Frank",
+            "pl": "Frank"
+          },
+          "id": "q_tlou_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["Frank", "Henry", "Sam", "David"],
+            "pl": ["Frank", "Henry", "Sam", "David"]
+          },
+          "points": 500,
+          "question": {
+            "en": "What was the name of Bill's partner from the town of Lincoln, whose body Joel and Ellie find hanging in one of the houses after he committed suicide?",
+            "pl": "Jak nazywał się partner Billa z miasteczka Lincoln, którego ciało Joel i Ellie odnajdują wiszące w jednym z domów po tym, jak popełnił samobójstwo z powodu infekcji?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Savage Starlight",
+            "pl": "Savage Starlight"
+          },
+          "id": "q_tlou_600",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Savage Starlight",
+              "Dawn of the Wolf",
+              "Space Punisher",
+              "Galaxy Quest"
+            ],
+            "pl": [
+              "Savage Starlight (Dzikie Gwiazdy)",
+              "Dawn of the Wolf",
+              "Space Punisher",
+              "Galaxy Quest"
+            ]
+          },
+          "points": 600,
+          "question": {
+            "en": "What is the name of the fictional sci-fi comic book series, of which Ellie can collect 14 issues throughout the game?",
+            "pl": "Jak nazywa się fikcyjna seria komiksów science-fiction, której 14 wydań Ellie może zbierać jako przedmioty kolekcjonerskie w trakcie gry?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_fallout",
+      "name": "Fallout",
+      "questions": [
+        {
+          "answer": {
+            "en": "United States (USA)",
+            "pl": "Stany Zjednoczone (USA)"
+          },
+          "id": "q_fallout_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["United States (USA)", "Russia", "China", "Japan"],
+            "pl": ["Stany Zjednoczone (USA)", "Rosja", "Chiny", "Japonia"]
+          },
+          "points": 100,
+          "question": {
+            "en": "In which country is the post-apocalyptic action of the Fallout games set?",
+            "pl": "Na terenie jakiego państwa rozgrywa się postapokaliptyczna akcja gier z serii Fallout?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Vault Boy",
+            "pl": "Vault Boy"
+          },
+          "id": "q_fallout_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["Vault Boy", "Pip-Boy", "Vault Man", "Fallout Boy"],
+            "pl": ["Vault Boy", "Pip-Boy", "Vault Man", "Fallout Boy"]
+          },
+          "points": 200,
+          "question": {
+            "en": "What is the name of the official Vault-Tec mascot, a smiling blonde boy in a blue and yellow Vault suit showing a thumbs-up?",
+            "pl": "Jak nazywa się oficjalna maskotka firmy Vault-Tec, uśmiechnięty blondyn w niebiesko-żółtym kombinezonie krypty pokazujący uniesiony kciuk?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Platinum Chip",
+            "pl": "Platynowy Szeton"
+          },
+          "id": "q_fallout_300",
+          "isAnswered": false,
+          "options": {
+            "en": ["Platinum Chip", "G.E.C.K.", "Water Chip", "Gold Bar"],
+            "pl": [
+              "Platynowy Szeton (Platinum Chip)",
+              "G.E.C.K.",
+              "Water Chip",
+              "Złoty Sztab"
+            ]
+          },
+          "points": 300,
+          "question": {
+            "en": "What key item does the protagonist of Fallout: New Vegas (The Courier) transport before being shot and robbed?",
+            "pl": "Co transportuje protagonista Fallout New Vegas przed wydarzeniami gry (zostając postrzelonym i okradzionym)?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "111",
+            "pl": "111"
+          },
+          "id": "q_fallout_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["111", "101", "13", "76"],
+            "pl": ["111", "101", "13", "76"]
+          },
+          "points": 400,
+          "question": {
+            "en": "In which Vault does the protagonist of Fallout 4 wake up and start their adventure after leaving cryogenic sleep?",
+            "pl": "W której krypcie budzi się gracz w grze Fallout 4 po wyjściu z kriogenicznego snu?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Lone Wanderer, Sole Survivor, Courier",
+            "pl": "Lone Wanderer, Sole Survivor, Courier"
+          },
+          "id": "q_fallout_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Lone Wanderer, Sole Survivor, Courier",
+              "Vault Dweller, Chosen One, Courier",
+              "Lone Wanderer, Courier, Sole Survivor",
+              "Chosen One, Courier, Sole Survivor"
+            ],
+            "pl": [
+              "Lone Wanderer (Samotny Wędrowiec), Sole Survivor (Jedyny Ocalały), Courier (Kurier)",
+              "Vault Dweller (Mieszkaniec Krypty), Chosen One (Wybraniec), Courier (Kurier)",
+              "Lone Wanderer (Samotny Wędrowiec), Courier (Kurier), Sole Survivor (Jedyny Ocalały)",
+              "Chosen One (Wybraniec), Courier (Kurier), Sole Survivor (Jedyny Ocalały)"
+            ]
+          },
+          "points": 500,
+          "question": {
+            "en": "List in order the monikers of the protagonists of Fallout 3, Fallout 4, and Fallout: New Vegas.",
+            "pl": "Wymień protagonistów Fallouta 3, 4 i New Vegas w kolejności gier."
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Arthur Maxson",
+            "pl": "Arthur Maxson"
+          },
+          "id": "q_fallout_600",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Arthur Maxson",
+              "Sarah Lyons",
+              "Paladin Danse",
+              "Robert MacCready"
+            ],
+            "pl": [
+              "Arthur Maxson",
+              "Sarah Lyons",
+              "Paladin Danse",
+              "Robert MacCready"
+            ]
+          },
+          "points": 600,
+          "question": {
+            "en": "Which character, appearing as a child in Fallout 3, returns in Fallout 4 as the Elder of the Brotherhood of Steel commanding the Prydwen?",
+            "pl": "Jaka postać pojawiająca się jako dziecko w Fallout 3, wraca w Fallout 4 jako Elder (Starszy) Brotherhood of steel?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    }
+  ]
+}

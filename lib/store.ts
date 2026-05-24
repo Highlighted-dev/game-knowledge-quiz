@@ -132,26 +132,30 @@ export const useGameStore = create<GameState>()(
             const type = parts[0];
             const idx = Number.parseInt(parts[1], 10);
             const teamId = parts[2];
+            const opposingTeamId = teamId === "team1" ? "team2" : "team1";
 
             let isBroken = false;
 
             if (type === "h") {
-              // Horizontal bingo - check if all questions in category still answered by same team
+              // Horizontal bingo - check if at least 5 questions in category still not answered by opposing team
               const cat = updatedCategories[idx];
               if (cat) {
-                const answers = cat.questions.map((q) => q.answeredBy);
-                const allSameTeam = answers.every((a) => a === teamId);
-                if (!allSameTeam) {
+                const matches = cat.questions.filter(
+                  (q) => q.isAnswered && q.answeredBy !== opposingTeamId,
+                ).length;
+                if (matches < 5) {
                   isBroken = true;
                 }
               }
             } else if (type === "v") {
-              // Vertical bingo - check if all questions in row still answered by same team
-              const rowAnswers = updatedCategories.map(
-                (cat) => cat.questions[idx]?.answeredBy,
-              );
-              const allSameTeam = rowAnswers.every((a) => a === teamId);
-              if (!allSameTeam) {
+              // Vertical bingo - check if at least 5 questions in row still not answered by opposing team
+              const rowQuestions = updatedCategories
+                .map((cat) => cat.questions[idx])
+                .filter(Boolean);
+              const matches = rowQuestions.filter(
+                (q) => q.isAnswered && q.answeredBy !== opposingTeamId,
+              ).length;
+              if (matches < 5) {
                 isBroken = true;
               }
             }
@@ -196,59 +200,53 @@ export const useGameStore = create<GameState>()(
         const { categories, awardedBingos, teams } = state;
         if (categories.length === 0) return;
 
-        // Check horizontal (all questions in a category by same team)
-        for (let catIdx = 0; catIdx < categories.length; catIdx++) {
-          const cat = categories[catIdx];
-          const answers = cat.questions.map((q) => q.answeredBy);
-          const allAnswered = answers.every(
-            (a) => a !== undefined && a !== null,
-          );
-          if (allAnswered) {
-            const firstAnswer = answers[0];
-            const allSameTeam = answers.every((a) => a === firstAnswer);
-            const bingoKey = `h-${catIdx}-${firstAnswer}`;
-            if (
-              allSameTeam &&
-              firstAnswer &&
-              !awardedBingos.includes(bingoKey)
-            ) {
-              const team = teams.find((t) => t.id === firstAnswer);
+        for (const team of teams) {
+          const teamId = team.id;
+          const opposingTeamId = teamId === "team1" ? "team2" : "team1";
+
+          // Check horizontal (at least 5 questions in a category not answered by opposing team)
+          for (let catIdx = 0; catIdx < categories.length; catIdx++) {
+            const cat = categories[catIdx];
+            const matches = cat.questions.filter(
+              (q) => q.isAnswered && q.answeredBy !== opposingTeamId,
+            ).length;
+            const bingoKey = `h-${catIdx}-${teamId}`;
+
+            console.log(`[BINGO CHECK] Horiz - Team: ${team.name}, Cat: ${cat.name}, Matches: ${matches}/${cat.questions.length}, Key: ${bingoKey}, Already Awarded: ${awardedBingos.includes(bingoKey)}`);
+
+            if (matches >= 5 && !awardedBingos.includes(bingoKey)) {
+              console.log(`[BINGO AWARD] Horizontal Bingo! Key: ${bingoKey}`);
               set((s) => ({
                 awardedBingos: [...s.awardedBingos, bingoKey],
-                bingoNotification: `BINGO! ${team?.name} +600 (${cat.name})`,
+                bingoNotification: `BINGO! ${team.name} +600 (${cat.name})`,
                 teams: s.teams.map((t) =>
-                  t.id === firstAnswer ? { ...t, score: t.score + 600 } : t,
+                  t.id === teamId ? { ...t, score: t.score + 600 } : t,
                 ) as [Team, Team],
               }));
               return;
             }
           }
-        }
 
-        // Check vertical (same row across all categories by same team)
-        for (let rowIdx = 0; rowIdx < 6; rowIdx++) {
-          const rowAnswers = categories.map(
-            (cat) => cat.questions[rowIdx]?.answeredBy,
-          );
-          const allAnswered = rowAnswers.every(
-            (a) => a !== undefined && a !== null,
-          );
-          if (allAnswered) {
-            const firstAnswer = rowAnswers[0];
-            const allSameTeam = rowAnswers.every((a) => a === firstAnswer);
-            const bingoKey = `v-${rowIdx}-${firstAnswer}`;
-            if (
-              allSameTeam &&
-              firstAnswer &&
-              !awardedBingos.includes(bingoKey)
-            ) {
-              const team = teams.find((t) => t.id === firstAnswer);
+          // Check vertical (at least 5 questions in a row not answered by opposing team)
+          for (let rowIdx = 0; rowIdx < 6; rowIdx++) {
+            const rowQuestions = categories
+              .map((cat) => cat.questions[rowIdx])
+              .filter(Boolean);
+            const matches = rowQuestions.filter(
+              (q) => q.isAnswered && q.answeredBy !== opposingTeamId,
+            ).length;
+            const bingoKey = `v-${rowIdx}-${teamId}`;
+
+            console.log(`[BINGO CHECK] Vert - Team: ${team.name}, RowIdx: ${rowIdx}, Matches: ${matches}/${rowQuestions.length}, Key: ${bingoKey}, Already Awarded: ${awardedBingos.includes(bingoKey)}`);
+
+            if (matches >= 5 && !awardedBingos.includes(bingoKey)) {
               const points = [100, 200, 300, 400, 500, 600][rowIdx];
+              console.log(`[BINGO AWARD] Vertical Bingo! Key: ${bingoKey}`);
               set((s) => ({
                 awardedBingos: [...s.awardedBingos, bingoKey],
-                bingoNotification: `BINGO! ${team?.name} +600 (${points}pkt rząd)`,
+                bingoNotification: `BINGO! ${team.name} +600 (${points}pkt rząd)`,
                 teams: s.teams.map((t) =>
-                  t.id === firstAnswer ? { ...t, score: t.score + 600 } : t,
+                  t.id === teamId ? { ...t, score: t.score + 600 } : t,
                 ) as [Team, Team],
               }));
               return;
@@ -395,7 +393,7 @@ export const useGameStore = create<GameState>()(
         })),
     }),
     {
-      name: "game-tournament-storage-v2",
+      name: "game-tournament-storage-v3",
       partialize: (state) => ({
         awardedBingos: state.awardedBingos,
         categories: state.categories,

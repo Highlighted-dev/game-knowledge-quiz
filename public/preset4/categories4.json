@@ -98,8 +98,8 @@
           },
           "points": 500,
           "question": {
-            "en": "In what year is the first Red Dead Redemption game set?",
-            "pl": "W którym roku toczy się akcja pierwszej gry Red Dead Redemption?"
+            "en": "In what year is the first Red Dead Redemption game set? (you can be wrong by 2 years)",
+            "pl": "W którym roku toczy się akcja pierwszej gry Red Dead Redemption? (możesz się pomylić o 2 lata)"
           },
           "type": "ABCD"
         },
@@ -247,8 +247,8 @@
           },
           "points": 500,
           "question": {
-            "en": "In Civilization V, which playable civilization cannot train Settlers and is limited to controlling only one city (its capital)?",
-            "pl": "W Civilization V, która grywalna cywilizacja nie może szkolić Osadników i jest ograniczona do kontrolowania tylko jednego miasta (swojej stolicy)?"
+            "en": "In Civilization V, which playable civilization cannot train Settlers?",
+            "pl": "W Civilization V, która grywalna cywilizacja nie może szkolić Osadników?"
           },
           "type": "ABCD"
         },
@@ -666,7 +666,7 @@
       "name": "Minecraft",
       "questions": [
         {
-          "answer": { "en": "Blocks", "pl": "Bloki" },
+          "answer": { "en": "2011", "pl": "2011" },
           "id": "q_mc_100",
           "isAnswered": false,
           "options": {
@@ -675,8 +675,8 @@
           },
           "points": 100,
           "question": {
-            "en": "What is the primary building material in Minecraft?",
-            "pl": "Co jest głównym materiałem budowlanym w Minecraft?"
+            "en": "In which year was minecraft 1.0 realesed?",
+            "pl": "W którym roku wyszedł minecraft 1.0? Możesz pomylić się o 2 lata"
           },
           "type": "ABCD"
         },
@@ -777,8 +777,8 @@
           },
           "points": 600,
           "question": {
-            "en": "What is the rarest ore in Minecraft (as of 1.21)?",
-            "pl": "Jaka jest najrzadsza ruda w Minecrafcie (stan na 1.21)?"
+            "en": "What is the rarest ore (block) in Minecraft (as of 1.21)?",
+            "pl": "Jaka jest najrzadszy blok rudy w Minecrafcie (stan na 1.21)?"
           },
           "type": "ABCD"
         }
