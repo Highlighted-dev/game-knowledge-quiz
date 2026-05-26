@@ -47,37 +47,37 @@
         },
         {
           "answer": {
-            "en": "motherlode",
-            "pl": "motherlode"
-          },
-          "id": "q_sims_300",
-          "isAnswered": false,
-          "options": {
-            "en": ["motherlode", "kaching", "rosebud", "klapaucius"],
-            "pl": ["motherlode", "kaching", "rosebud", "klapaucius"]
-          },
-          "points": 300,
-          "question": {
-            "en": "Entering which cheat code in the game console adds 50,000 Simoleons to the family funds?",
-            "pl": "Wpisanie jakiego kodu w konsoli gry dodaje do funduszy rodziny 50 000 Simoleonów?"
-          },
-          "type": "ABCD"
-        },
-        {
-          "answer": {
             "en": "Plumbob",
             "pl": "Plumbob"
           },
-          "id": "q_sims_400",
+          "id": "q_sims_300",
           "isAnswered": false,
           "options": {
             "en": ["Plumbob", "Simob", "Mood Crystal", "Green Diamond"],
             "pl": ["Plumbob", "Simob", "Mood Crystal", "Zielony Diament"]
           },
-          "points": 400,
+          "points": 300,
           "question": {
             "en": "What is the name of the characteristic green crystal hovering over the active Sim's head, indicating their mood?",
             "pl": "Jak nazywa się charakterystyczny, zielony kryształ lewitujący nad głową aktywnego Sima, wskazujący jego nastrój?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "motherlode",
+            "pl": "motherlode"
+          },
+          "id": "q_sims_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["motherlode", "kaching", "rosebud", "klapaucius"],
+            "pl": ["motherlode", "kaching", "rosebud", "klapaucius"]
+          },
+          "points": 400,
+          "question": {
+            "en": "Entering which cheat code in the game console adds 50,000 Simoleons to the family funds?",
+            "pl": "Wpisanie jakiego kodu w konsoli gry dodaje do funduszy rodziny 50 000 Simoleonów?"
           },
           "type": "ABCD"
         },
@@ -175,8 +175,8 @@
           },
           "points": 200,
           "question": {
-            "en": "Name at least 4 players of the iconic Polish Virtus.pro roster shown in the picture.",
-            "pl": "Wymień przynajmniej 4 graczy kultowego, polskiego składu drużyny Virtus.pro widocznej na obrazku."
+            "en": "Name at least 3 players of the iconic Polish Virtus.pro roster shown in the picture.",
+            "pl": "Wymień przynajmniej 3 graczy kultowego, polskiego składu drużyny Virtus.pro widocznej na obrazku."
           },
           "type": "IMAGE"
         },
@@ -267,8 +267,8 @@
           },
           "points": 600,
           "question": {
-            "en": "How many Counter-Strike Major tournaments did Polish player Janusz \"Snax\" Pogorzelski participate in?",
-            "pl": "Na ilu turniejach rangi Major w grze Counter-Strike wystąpił polski zawodnik Janusz \"Snax\" Pogorzelski?"
+            "en": "How many Counter-Strike Major tournaments did Polish player Janusz \"Snax\" Pogorzelski participate in? (możesz sie pomylić o 2)",
+            "pl": "Na ilu turniejach rangi Major w grze Counter-Strike wystąpił polski zawodnik Janusz \"Snax\" Pogorzelski? (możesz sie pomylić o 2)"
           },
           "type": "ABCD"
         }
@@ -304,7 +304,8 @@
             "en": "What is the name of the main protagonist of the Half-Life series, a theoretical physicist who wields a crowbar?",
             "pl": "Jak nazywa się główny protagonista serii gier Half-Life, fizyk teoretyczny posługujący się łomem?"
           },
-          "type": "ABCD"
+          "type": "IMAGE",
+          "mediaUrl": "/preset5/halflife1.webp"
         },
         {
           "answer": {
@@ -628,8 +629,8 @@
           },
           "points": 300,
           "question": {
-            "en": "What is the name of the blind infected in the third stage of the infection, who locate their victims using echolocation and a characteristic clicking sound?",
-            "pl": "Jak nazywają się zarażeni w trzecim stadium infekcji, którzy są całkowicie ślepi i lokalizują ofiary za pomocą echolokacji (wydając charakterystyczny odgłos klikania)?"
+            "en": "What is the name of the blind infected in the third stage of the infection, who locate their victims using echolocation?",
+            "pl": "Jak nazywają się zarażeni w trzecim stadium infekcji, którzy są całkowicie ślepi i lokalizują ofiary za pomocą echolokacji?"
           },
           "type": "ABCD"
         },
