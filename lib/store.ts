@@ -1,3 +1,4 @@
+import { hasConsecutiveBingoRun } from "@/lib/bingo";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
@@ -68,30 +69,6 @@ export type GameState = {
   initializeDoublePoints: () => void;
   isDoublePoints: (questionId: string) => boolean;
 };
-
-const BINGO_RUN_LENGTH = 5;
-
-function countsForBingo(q: Question, opposingTeamId: string): boolean {
-  return q.isAnswered && q.answeredBy !== opposingTeamId;
-}
-
-/** At least `runLength` adjacent cells in array order (column top→bottom or row left→right). */
-function hasConsecutiveBingoRun(
-  questions: Question[],
-  opposingTeamId: string,
-  runLength = BINGO_RUN_LENGTH,
-): boolean {
-  let streak = 0;
-  for (const q of questions) {
-    if (countsForBingo(q, opposingTeamId)) {
-      streak++;
-      if (streak >= runLength) return true;
-    } else {
-      streak = 0;
-    }
-  }
-  return false;
-}
 
 const INITIAL_TEAMS: [Team, Team] = [
   {

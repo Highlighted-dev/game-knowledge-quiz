@@ -2,8 +2,9 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { Globe, RotateCcw } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import { Button } from "@/components/ui/button";
+import { getAwardedBingoCells } from "@/lib/bingo";
 import { loadCategoriesFromFile } from "@/lib/mock-data";
 import { useGameStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
@@ -22,7 +23,13 @@ export default function GameBoard() {
     setLanguage,
     isDoublePoints,
     changeQuestionResult,
+    awardedBingos,
   } = useGameStore();
+
+  const bingoCells = useMemo(
+    () => getAwardedBingoCells(categories, awardedBingos),
+    [categories, awardedBingos],
+  );
 
   useEffect(() => {
     loadCategoriesFromFile().then((cats) => {
@@ -138,6 +145,7 @@ export default function GameBoard() {
                 const isTeam1 = q.answeredBy === "team1";
                 const isTeam2 = q.answeredBy === "team2";
                 const isDouble = isDoublePoints(q.id);
+                const isBingoCell = bingoCells.has(q.id);
 
                 return (
                   <button
@@ -152,6 +160,15 @@ export default function GameBoard() {
                               "bg-red-950/50 border-red-500/50 hover:border-red-400",
                             !q.answeredBy &&
                               "bg-zinc-900/30 border-dashed border-zinc-800 hover:border-zinc-600",
+                            isBingoCell &&
+                              isTeam1 &&
+                              "border-blue-400",
+                            isBingoCell &&
+                              isTeam2 &&
+                              "border-red-400",
+                            isBingoCell &&
+                              !q.answeredBy &&
+                              "border-solid border-zinc-500",
                           )
                         : "bg-black border-zinc-800 hover:border-white/50 text-white hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] cursor-pointer",
                     )}
@@ -179,7 +196,19 @@ export default function GameBoard() {
                         );
                       }
                     }}
+                    title={
+                      isBingoCell
+                        ? language === "pl"
+                          ? "Część binga"
+                          : "Part of a bingo"
+                        : undefined
+                    }
                   >
+                    {isBingoCell && (
+                      <span className="absolute top-1 right-1 text-[10px] font-medium leading-none text-zinc-600">
+                        B
+                      </span>
+                    )}
                     {q.isAnswered ? (
                       q.answeredBy ? (
                         <div className="flex flex-col items-center gap-1">
