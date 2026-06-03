@@ -5,13 +5,20 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { useGameStore } from "@/lib/store";
 
+function countTeamBingos(awardedBingos: string[], teamId: string): number {
+  return awardedBingos.filter((key) => key.endsWith(`-${teamId}`)).length;
+}
+
 export default function ScoreBoard() {
-  const { teams, setTeamName } = useGameStore();
+  const { teams, setTeamName, awardedBingos } = useGameStore();
   const [editing, setEditing] = useState<string | null>(null);
 
   const handleNameChange = (teamId: string, newName: string) => {
     setTeamName(teamId, newName);
   };
+
+  const team0BingoCount = countTeamBingos(awardedBingos, teams[0].id);
+  const team1BingoCount = countTeamBingos(awardedBingos, teams[1].id);
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 flex justify-center border-t border-white/10 bg-black/80 backdrop-blur-md">
@@ -21,7 +28,7 @@ export default function ScoreBoard() {
             <span className="text-xs uppercase tracking-widest text-zinc-500">
               Team 01
             </span>
-            <div className="flex gap-1">
+            <div className="flex gap-1 items-center">
               {teams[0].hasLifelineABCD && (
                 <Sparkles className="h-3 w-3 text-yellow-500" />
               )}
@@ -30,6 +37,14 @@ export default function ScoreBoard() {
               )}
               {teams[0].hasLifelineSteal && (
                 <Zap className="h-3 w-3 text-yellow-500" />
+              )}
+              {team0BingoCount > 0 && (
+                <span
+                  className="ml-1 rounded-full border border-yellow-500/40 bg-yellow-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-yellow-400"
+                  title={`Bingo: ${team0BingoCount}`}
+                >
+                  Bingo {team0BingoCount}
+                </span>
               )}
             </div>
           </div>
@@ -61,7 +76,15 @@ export default function ScoreBoard() {
 
         <div className="flex flex-col items-end gap-1">
           <div className="flex items-center gap-2">
-            <div className="flex gap-1">
+            <div className="flex gap-1 items-center">
+              {team1BingoCount > 0 && (
+                <span
+                  className="mr-1 rounded-full border border-yellow-500/40 bg-yellow-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-yellow-400"
+                  title={`Bingo: ${team1BingoCount}`}
+                >
+                  Bingo {team1BingoCount}
+                </span>
+              )}
               {teams[1].hasLifelineABCD && (
                 <Sparkles className="h-3 w-3 text-yellow-500" />
               )}
