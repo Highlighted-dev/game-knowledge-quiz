@@ -1,7 +1,8 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { Check, Globe, Phone, Sparkles, X, Zap } from "lucide-react";
+import { Check, Globe, X } from "lucide-react";
+import { IconABCD, IconPhone, IconHook } from "@/components/icons";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
@@ -118,7 +119,7 @@ export default function QuestionModal() {
                     }
                     title={`${team.name} - ABCD`}
                   >
-                    <Sparkles className="h-3 w-3" />
+                    <IconABCD className="h-3 w-3" />
                   </button>
                   <button
                     className={cn(
@@ -135,7 +136,7 @@ export default function QuestionModal() {
                     }
                     title={`${team.name} - Phone`}
                   >
-                    <Phone className="h-3 w-3" />
+                    <IconPhone className="h-3 w-3" />
                   </button>
                   <button
                     className={cn(
@@ -152,7 +153,7 @@ export default function QuestionModal() {
                     }
                     title={`${team.name} - Steal`}
                   >
-                    <Zap className="h-3 w-3" />
+                    <IconHook className="h-3 w-3" />
                   </button>
                 </div>
               ))}
@@ -213,17 +214,17 @@ export default function QuestionModal() {
             >
               {lifelineActive.type === "abcd" && (
                 <>
-                  <Sparkles className="h-4 w-4" /> {t.abcdUsed}
+                  <IconABCD className="h-4 w-4" /> {t.abcdUsed}
                 </>
               )}
               {lifelineActive.type === "phone" && (
                 <>
-                  <Phone className="h-4 w-4" /> {t.phoneUsed}
+                  <IconPhone className="h-4 w-4" /> {t.phoneUsed}
                 </>
               )}
               {lifelineActive.type === "steal" && (
                 <>
-                  <Zap className="h-4 w-4" /> {t.stealUsed}
+                  <IconHook className="h-4 w-4" /> {t.stealUsed}
                 </>
               )}
               <span className="opacity-60">
@@ -255,7 +256,7 @@ export default function QuestionModal() {
 
           {showPhoneHint && (
             <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4 text-center max-w-md">
-              <Phone className="h-6 w-6 mx-auto mb-2 text-yellow-500" />
+              <IconPhone className="h-6 w-6 mx-auto mb-2 text-yellow-500" />
               <p className="text-zinc-400 text-sm">{t.phoneHint}</p>
               <p className="text-zinc-600 text-xs mt-1">{t.phoneTimer}</p>
             </div>
@@ -263,7 +264,7 @@ export default function QuestionModal() {
 
           {showStealHint && (
             <div className="bg-zinc-900 border border-orange-500/30 rounded-lg p-4 text-center max-w-md">
-              <Zap className="h-6 w-6 mx-auto mb-2 text-orange-500" />
+              <IconHook className="h-6 w-6 mx-auto mb-2 text-orange-500" />
               <p className="text-zinc-400 text-sm">{t.stealHint}</p>
             </div>
           )}

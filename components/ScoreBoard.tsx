@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Sparkles, Zap } from "lucide-react";
+import { IconABCD, IconPhone, IconHook } from "@/components/icons";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { useGameStore } from "@/lib/store";
@@ -30,13 +30,13 @@ export default function ScoreBoard() {
             </span>
             <div className="flex gap-1 items-center">
               {teams[0].hasLifelineABCD && (
-                <Sparkles className="h-3 w-3 text-yellow-500" />
+                <IconABCD className="h-4 w-4 text-yellow-500" />
               )}
               {teams[0].hasLifelinePhone && (
-                <Phone className="h-3 w-3 text-yellow-500" />
+                <IconPhone className="h-4 w-4 text-yellow-500" />
               )}
               {teams[0].hasLifelineSteal && (
-                <Zap className="h-3 w-3 text-yellow-500" />
+                <IconHook className="h-4 w-4 text-yellow-500" />
               )}
               {team0BingoCount > 0 && (
                 <span
@@ -86,13 +86,13 @@ export default function ScoreBoard() {
                 </span>
               )}
               {teams[1].hasLifelineABCD && (
-                <Sparkles className="h-3 w-3 text-yellow-500" />
+                <IconABCD className="h-4 w-4 text-yellow-500" />
               )}
               {teams[1].hasLifelinePhone && (
-                <Phone className="h-3 w-3 text-yellow-500" />
+                <IconPhone className="h-4 w-4 text-yellow-500" />
               )}
               {teams[1].hasLifelineSteal && (
-                <Zap className="h-3 w-3 text-yellow-500" />
+                <IconHook className="h-4 w-4 text-yellow-500" />
               )}
             </div>
             <span className="text-xs uppercase tracking-widest text-zinc-500">
