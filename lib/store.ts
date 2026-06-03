@@ -69,6 +69,30 @@ export type GameState = {
   isDoublePoints: (questionId: string) => boolean;
 };
 
+const BINGO_RUN_LENGTH = 5;
+
+function countsForBingo(q: Question, opposingTeamId: string): boolean {
+  return q.isAnswered && q.answeredBy !== opposingTeamId;
+}
+
+/** At least `runLength` adjacent cells in array order (column top→bottom or row left→right). */
+function hasConsecutiveBingoRun(
+  questions: Question[],
+  opposingTeamId: string,
+  runLength = BINGO_RUN_LENGTH,
+): boolean {
+  let streak = 0;
+  for (const q of questions) {
+    if (countsForBingo(q, opposingTeamId)) {
+      streak++;
+      if (streak >= runLength) return true;
+    } else {
+      streak = 0;
+    }
+  }
+  return false;
+}
+
 const INITIAL_TEAMS: [Team, Team] = [
   {
     hasLifelineABCD: true,
@@ -137,25 +161,18 @@ export const useGameStore = create<GameState>()(
             let isBroken = false;
 
             if (type === "h") {
-              // Horizontal bingo - check if at least 5 questions in category still not answered by opposing team
               const cat = updatedCategories[idx];
-              if (cat) {
-                const matches = cat.questions.filter(
-                  (q) => q.isAnswered && q.answeredBy !== opposingTeamId,
-                ).length;
-                if (matches < 5) {
-                  isBroken = true;
-                }
+              if (
+                !cat ||
+                !hasConsecutiveBingoRun(cat.questions, opposingTeamId)
+              ) {
+                isBroken = true;
               }
             } else if (type === "v") {
-              // Vertical bingo - check if at least 5 questions in row still not answered by opposing team
               const rowQuestions = updatedCategories
                 .map((cat) => cat.questions[idx])
                 .filter(Boolean);
-              const matches = rowQuestions.filter(
-                (q) => q.isAnswered && q.answeredBy !== opposingTeamId,
-              ).length;
-              if (matches < 5) {
+              if (!hasConsecutiveBingoRun(rowQuestions, opposingTeamId)) {
                 isBroken = true;
               }
             }
@@ -204,18 +221,15 @@ export const useGameStore = create<GameState>()(
           const teamId = team.id;
           const opposingTeamId = teamId === "team1" ? "team2" : "team1";
 
-          // Check horizontal (at least 5 questions in a category not answered by opposing team)
+          // Column bingo: 5 consecutive questions top→bottom in one category
           for (let catIdx = 0; catIdx < categories.length; catIdx++) {
             const cat = categories[catIdx];
-            const matches = cat.questions.filter(
-              (q) => q.isAnswered && q.answeredBy !== opposingTeamId,
-            ).length;
             const bingoKey = `h-${catIdx}-${teamId}`;
 
-            console.log(`[BINGO CHECK] Horiz - Team: ${team.name}, Cat: ${cat.name}, Matches: ${matches}/${cat.questions.length}, Key: ${bingoKey}, Already Awarded: ${awardedBingos.includes(bingoKey)}`);
-
-            if (matches >= 5 && !awardedBingos.includes(bingoKey)) {
-              console.log(`[BINGO AWARD] Horizontal Bingo! Key: ${bingoKey}`);
+            if (
+              hasConsecutiveBingoRun(cat.questions, opposingTeamId) &&
+              !awardedBingos.includes(bingoKey)
+            ) {
               set((s) => ({
                 awardedBingos: [...s.awardedBingos, bingoKey],
                 bingoNotification: `BINGO! ${team.name} +600 (${cat.name})`,
@@ -227,21 +241,18 @@ export const useGameStore = create<GameState>()(
             }
           }
 
-          // Check vertical (at least 5 questions in a row not answered by opposing team)
+          // Row bingo: 5 consecutive questions left→right at the same point level
           for (let rowIdx = 0; rowIdx < 6; rowIdx++) {
             const rowQuestions = categories
               .map((cat) => cat.questions[rowIdx])
               .filter(Boolean);
-            const matches = rowQuestions.filter(
-              (q) => q.isAnswered && q.answeredBy !== opposingTeamId,
-            ).length;
             const bingoKey = `v-${rowIdx}-${teamId}`;
 
-            console.log(`[BINGO CHECK] Vert - Team: ${team.name}, RowIdx: ${rowIdx}, Matches: ${matches}/${rowQuestions.length}, Key: ${bingoKey}, Already Awarded: ${awardedBingos.includes(bingoKey)}`);
-
-            if (matches >= 5 && !awardedBingos.includes(bingoKey)) {
+            if (
+              hasConsecutiveBingoRun(rowQuestions, opposingTeamId) &&
+              !awardedBingos.includes(bingoKey)
+            ) {
               const points = [100, 200, 300, 400, 500, 600][rowIdx];
-              console.log(`[BINGO AWARD] Vertical Bingo! Key: ${bingoKey}`);
               set((s) => ({
                 awardedBingos: [...s.awardedBingos, bingoKey],
                 bingoNotification: `BINGO! ${team.name} +600 (${points}pkt rząd)`,
