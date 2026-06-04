@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Globe, RotateCcw } from "lucide-react";
 import { useEffect, useMemo } from "react";
 import { Button } from "@/components/ui/button";
+import { IconBingo } from "@/components/icons";
 import { getAwardedBingoCells } from "@/lib/bingo";
 import { loadCategoriesFromFile } from "@/lib/mock-data";
 import { useGameStore } from "@/lib/store";
@@ -74,31 +75,47 @@ export default function GameBoard() {
       <AnimatePresence>
         {bingoNotification && (
           <motion.div
-            animate={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1 }}
             className="fixed inset-0 z-[100] flex items-center justify-center pointer-events-none"
-            exit={{ filter: "blur(10px)", opacity: 0, scale: 1.1 }}
-            initial={{ opacity: 0, scale: 0.9 }}
+            exit={{ opacity: 0 }}
+            initial={{ opacity: 0 }}
           >
-            <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+            <div className="absolute inset-0 bg-black/60 backdrop-blur-md" />
+            
             <motion.div
-              animate={{ y: 0 }}
-              className="relative bg-zinc-900/90 border border-yellow-500/30 p-12 rounded-3xl flex flex-col items-center shadow-[0_0_100px_rgba(234,179,8,0.2)] text-center max-w-2xl mx-4"
-              initial={{ y: 20 }}
+              animate={{ scaleY: 1, opacity: 1 }}
+              className="relative w-full bg-zinc-950/90 border-y-2 border-yellow-500/40 py-12 md:py-16 flex flex-col items-center justify-center shadow-[0_0_100px_rgba(234,179,8,0.15)] backdrop-blur-xl"
+              initial={{ scaleY: 0, opacity: 0 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
             >
-              <motion.div
-                animate={{ rotate: [0, 10, -10, 0] }}
-                className="text-6xl mb-6"
-                transition={{ delay: 0.2, duration: 0.5 }}
-              >
-                🏆
-              </motion.div>
-              <h2 className="text-6xl font-black text-white tracking-tighter mb-4 uppercase italic">
-                BINGO!
-              </h2>
-              <div className="h-1 w-32 bg-yellow-500 rounded-full mb-6" />
-              <p className="text-2xl font-medium text-yellow-400">
-                {bingoNotification.replace("BINGO! ", "")}
-              </p>
+              <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#eab308_1px,transparent_1px),linear-gradient(to_bottom,#eab308_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
+              
+              <div className="relative z-10 flex items-center gap-6 md:gap-20">
+                <motion.div
+                  animate={{ scale: [1, 1.1, 1] }}
+                  className="text-yellow-500 hidden md:block drop-shadow-[0_0_15px_rgba(234,179,8,0.5)]"
+                  transition={{ delay: 0.2, duration: 0.5 }}
+                >
+                  <IconBingo className="w-24 h-24 md:w-32 md:h-32" />
+                </motion.div>
+                
+                <div className="flex flex-col items-center">
+                  <h2 className="text-6xl md:text-[8rem] font-black text-transparent bg-clip-text bg-gradient-to-b from-yellow-100 via-yellow-400 to-yellow-600 tracking-[0.2em] uppercase leading-none drop-shadow-2xl mb-4 translate-x-3">
+                    BINGO
+                  </h2>
+                  <p className="text-lg md:text-3xl text-yellow-400 font-mono uppercase tracking-[0.4em] font-bold drop-shadow-md">
+                    {bingoNotification.replace("BINGO! ", "")}
+                  </p>
+                </div>
+
+                <motion.div
+                  animate={{ scale: [1, 1.1, 1] }}
+                  className="text-yellow-500 hidden md:block drop-shadow-[0_0_15px_rgba(234,179,8,0.5)]"
+                  transition={{ delay: 0.2, duration: 0.5 }}
+                >
+                  <IconBingo className="w-24 h-24 md:w-32 md:h-32" />
+                </motion.div>
+              </div>
             </motion.div>
           </motion.div>
         )}

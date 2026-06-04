@@ -49,6 +49,32 @@ export const IconHook = (props: React.SVGProps<SVGSVGElement>) => (
     {/* Clean Fishing/Snag Hook for Steal Lifeline */}
     <circle cx="15" cy="5" r="2" />
     <path d="M15 7v8a5 5 0 0 1-10 0v-3" />
-    <path d="M5 12l3 3" />
   </svg>
 );
+
+export const IconBingo = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <circle cx="6" cy="6" r="1.5" />
+    <circle cx="12" cy="6" r="1.5" />
+    <circle cx="18" cy="6" r="1.5" fill="currentColor" />
+    
+    <circle cx="6" cy="12" r="1.5" />
+    <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+    <circle cx="18" cy="12" r="1.5" />
+    
+    <circle cx="6" cy="18" r="1.5" fill="currentColor" />
+    <circle cx="12" cy="18" r="1.5" />
+    <circle cx="18" cy="18" r="1.5" />
+    
+    <path d="M6 18L18 6" strokeWidth="2.5" />
+  </svg>
+);
+
