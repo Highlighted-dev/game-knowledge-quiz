@@ -43,7 +43,7 @@ Teams should **never** click the board themselves. They call out answers verball
 
 ### Turn order
 
-1. Pick the starting team at random - [WheelDecider](https://wheeldecider.com) works well.
+1. Use the **built-in spin wheel** to pick the starting team at random. Click the **Spin** button in the board toolbar to open it. You can re-spin before the first question is answered if needed.
 2. That team picks the first question.
 3. Turns alternate: Team A → Team B → Team A → … for the rest of the game.
 
@@ -165,7 +165,7 @@ Switch between **Polish** and **English** using the globe button. Both the UI an
 
 ### Progress persists
 
-Game state is saved in the browser (localStorage). Refreshing the page keeps scores, answered cells, bingos, lifeline usage, and the active preset.
+Game state is saved in the browser (localStorage). Refreshing the page keeps scores, answered cells, bingos, lifeline usage, the active preset, and which team was chosen to go first.
 
 ### Reset and presets
 
@@ -184,7 +184,7 @@ Presets can include several question formats:
 ### Suggested host workflow
 
 1. Open the app, pick a preset, rename teams, share your screen.
-2. Spin a wheel to decide the starting team.
+2. Spin the built-in wheel to decide the starting team.
 3. Active team calls a category and point value.
 4. Host opens the cell → optional lifeline → reveal answer → assign outcome.
 5. Alternate turns until the board is full.
@@ -241,4 +241,4 @@ Presets live as JSON files under [`public/preset*/`](public/). Each file defines
 
 ### Deploy
 
-The app is hosted on [Vercel](https://game-knowledge-quiz.vercel.app/). To deploy your own copy, connect the repo to Vercel or run `pnpm build` and serve the output.
+The app is built and hosted on [Vercel](https://game-knowledge-quiz.vercel.app/). To deploy your own copy, connect the repo to Vercel or run `pnpm build` and serve the output.

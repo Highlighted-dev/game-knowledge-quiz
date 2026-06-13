@@ -11,7 +11,8 @@ function countTeamBingos(awardedBingos: string[], teamId: string): number {
 }
 
 export default function ScoreBoard() {
-  const { teams, setTeamName, awardedBingos, language } = useGameStore();
+  const { teams, setTeamName, awardedBingos, language, startingTeamId } =
+    useGameStore();
   const [editing, setEditing] = useState<string | null>(null);
 
   const handleNameChange = (teamId: string, newName: string) => {
@@ -49,6 +50,11 @@ export default function ScoreBoard() {
                   {t("scoreBoard.bingo", language, { count: team0BingoCount })}
                 </span>
               )}
+              {startingTeamId === teams[0].id && (
+                <span className="ml-1 rounded-full border border-blue-500/40 bg-blue-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-blue-400">
+                  {t("scoreBoard.goesFirst", language)}
+                </span>
+              )}
             </div>
           </div>
           <div className="flex items-baseline gap-4">
@@ -80,6 +86,11 @@ export default function ScoreBoard() {
         <div className="flex flex-col items-end gap-1">
           <div className="flex items-center gap-2">
             <div className="flex gap-1 items-center">
+              {startingTeamId === teams[1].id && (
+                <span className="mr-1 rounded-full border border-red-500/40 bg-red-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-red-400">
+                  {t("scoreBoard.goesFirst", language)}
+                </span>
+              )}
               {team1BingoCount > 0 && (
                 <span
                   className="mr-1 rounded-full border border-yellow-500/40 bg-yellow-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-yellow-400"

@@ -51,6 +51,7 @@ export type GameState = {
   language: Language;
   bingoNotification: string | null;
   doublePointQuestions: string[]; // Array of question IDs that give 2x points
+  startingTeamId: "team1" | "team2" | null;
 
   // Actions
   setTeamName: (teamId: string, name: string) => void;
@@ -79,6 +80,8 @@ export type GameState = {
   clearBingoNotification: () => void;
   initializeDoublePoints: () => void;
   isDoublePoints: (questionId: string) => boolean;
+  setStartingTeam: (teamId: "team1" | "team2") => void;
+  clearStartingTeam: () => void;
 };
 
 export const useGameStore = create<GameState>()(
@@ -250,6 +253,8 @@ export const useGameStore = create<GameState>()(
 
       clearLifeline: () => set({ lifelineActive: null }),
 
+      clearStartingTeam: () => set({ startingTeamId: null }),
+
       closeQuestion: () =>
         set({
           activeCategory: null,
@@ -325,6 +330,7 @@ export const useGameStore = create<GameState>()(
           categories: freshCategories,
           doublePointQuestions: [],
           lifelineActive: null,
+          startingTeamId: null,
           teams: getInitialTeams(get().language),
         });
         get().initializeDoublePoints();
@@ -372,6 +378,7 @@ export const useGameStore = create<GameState>()(
           })),
           doublePointQuestions: [],
           lifelineActive: null,
+          startingTeamId: null,
           teams: getInitialTeams(get().language),
         });
         // Re-initialize double points for new game
@@ -390,12 +397,15 @@ export const useGameStore = create<GameState>()(
           return { language: lang, teams: updatedTeams };
         }),
 
+      setStartingTeam: (teamId) => set({ startingTeamId: teamId }),
+
       setTeamName: (teamId, name) =>
         set((state) => ({
           teams: state.teams.map((t) =>
             t.id === teamId ? { ...t, name } : t,
           ) as [Team, Team],
         })),
+      startingTeamId: null,
       teams: getInitialTeams("pl"),
 
       updateScore: (teamId, points) =>
@@ -447,6 +457,7 @@ export const useGameStore = create<GameState>()(
         categories: state.categories,
         doublePointQuestions: state.doublePointQuestions,
         language: state.language,
+        startingTeamId: state.startingTeamId,
         teams: state.teams,
       }),
     },

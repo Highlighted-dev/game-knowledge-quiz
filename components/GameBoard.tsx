@@ -1,11 +1,12 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { Globe, RotateCcw } from "lucide-react";
-import { useEffect, useMemo } from "react";
+import { CircleDot, Globe, RotateCcw } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { IconBingo } from "@/components/icons";
 import PresetSelector from "@/components/PresetSelector";
+import StartingTeamWheel from "@/components/StartingTeamWheel";
 import { getAwardedBingoCells } from "@/lib/bingo";
 import { t } from "@/lib/i18n";
 import { loadCategoriesFromPreset } from "@/lib/mock-data";
@@ -29,7 +30,26 @@ export default function GameBoard() {
     isDoublePoints,
     changeQuestionResult,
     awardedBingos,
+    startingTeamId,
+    clearStartingTeam,
   } = useGameStore();
+
+  const [wheelOpen, setWheelOpen] = useState(false);
+
+  const boardUntouched = useMemo(
+    () =>
+      categories.length > 0 &&
+      categories.every((cat) => cat.questions.every((q) => !q.isAnswered)),
+    [categories],
+  );
+
+  const handleOpenWheel = () => {
+    if (startingTeamId && boardUntouched) {
+      if (!confirm(t("wheel.respinConfirm", language))) return;
+      clearStartingTeam();
+    }
+    setWheelOpen(true);
+  };
 
   const bingoCells = useMemo(
     () => getAwardedBingoCells(categories, awardedBingos),
@@ -124,6 +144,8 @@ export default function GameBoard() {
         )}
       </AnimatePresence>
 
+      <StartingTeamWheel onClose={() => setWheelOpen(false)} open={wheelOpen} />
+
       <div className="relative flex flex-wrap justify-end items-center gap-2 px-2">
         <span className="absolute left-2 text-[10px] uppercase tracking-widest text-zinc-600 hidden md:inline">
           {getPresetById(activePresetId)?.label ?? activePresetId}
@@ -140,6 +162,13 @@ export default function GameBoard() {
           variant="outline"
         >
           <Globe className="h-4 w-4" /> {language.toUpperCase()}
+        </Button>
+        <Button
+          className="gap-2 bg-black border-zinc-800 text-zinc-400 hover:text-white hover:border-white/50 transition-colors"
+          onClick={handleOpenWheel}
+          variant="outline"
+        >
+          <CircleDot className="h-4 w-4" /> {t("gameBoard.spinWheel", language)}
         </Button>
         <Button
           className="gap-2 bg-black border-zinc-800 text-zinc-400 hover:text-white hover:border-red-500/50 transition-colors"
