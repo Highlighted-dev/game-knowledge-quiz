@@ -3,6 +3,7 @@
 import { IconABCD, IconPhone, IconHook } from "@/components/icons";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
+import { t } from "@/lib/i18n";
 import { useGameStore } from "@/lib/store";
 
 function countTeamBingos(awardedBingos: string[], teamId: string): number {
@@ -10,7 +11,7 @@ function countTeamBingos(awardedBingos: string[], teamId: string): number {
 }
 
 export default function ScoreBoard() {
-  const { teams, setTeamName, awardedBingos } = useGameStore();
+  const { teams, setTeamName, awardedBingos, language } = useGameStore();
   const [editing, setEditing] = useState<string | null>(null);
 
   const handleNameChange = (teamId: string, newName: string) => {
@@ -26,7 +27,7 @@ export default function ScoreBoard() {
         <div className="flex flex-col items-start gap-1">
           <div className="flex items-center gap-2">
             <span className="text-xs uppercase tracking-widest text-zinc-500">
-              Team 01
+              {t("scoreBoard.teamSlot", language, { num: "01" })}
             </span>
             <div className="flex gap-1 items-center">
               {teams[0].hasLifelineABCD && (
@@ -41,9 +42,11 @@ export default function ScoreBoard() {
               {team0BingoCount > 0 && (
                 <span
                   className="ml-1 rounded-full border border-yellow-500/40 bg-yellow-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-yellow-400"
-                  title={`Bingo: ${team0BingoCount}`}
+                  title={t("scoreBoard.bingo", language, {
+                    count: team0BingoCount,
+                  })}
                 >
-                  Bingo {team0BingoCount}
+                  {t("scoreBoard.bingo", language, { count: team0BingoCount })}
                 </span>
               )}
             </div>
@@ -61,7 +64,7 @@ export default function ScoreBoard() {
               <h2
                 className="text-2xl font-bold text-white cursor-pointer hover:text-zinc-300 transition-colors truncate max-w-[200px]"
                 onClick={() => setEditing(teams[0].id)}
-                title="Click to rename"
+                title={t("scoreBoard.clickToRename", language)}
               >
                 {teams[0].name}
               </h2>
@@ -80,9 +83,11 @@ export default function ScoreBoard() {
               {team1BingoCount > 0 && (
                 <span
                   className="mr-1 rounded-full border border-yellow-500/40 bg-yellow-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-yellow-400"
-                  title={`Bingo: ${team1BingoCount}`}
+                  title={t("scoreBoard.bingo", language, {
+                    count: team1BingoCount,
+                  })}
                 >
-                  Bingo {team1BingoCount}
+                  {t("scoreBoard.bingo", language, { count: team1BingoCount })}
                 </span>
               )}
               {teams[1].hasLifelineABCD && (
@@ -96,7 +101,7 @@ export default function ScoreBoard() {
               )}
             </div>
             <span className="text-xs uppercase tracking-widest text-zinc-500">
-              Team 02
+              {t("scoreBoard.teamSlot", language, { num: "02" })}
             </span>
           </div>
           <div className="flex items-baseline gap-4 flex-row-reverse">
@@ -112,7 +117,7 @@ export default function ScoreBoard() {
               <h2
                 className="text-2xl font-bold text-white cursor-pointer hover:text-zinc-300 transition-colors truncate max-w-[200px]"
                 onClick={() => setEditing(teams[1].id)}
-                title="Click to rename"
+                title={t("scoreBoard.clickToRename", language)}
               >
                 {teams[1].name}
               </h2>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import LanguageSync from "@/components/LanguageSync";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Wielki Turniej Wiedzy O Grach",
-  description: "Wielki Turniej Wiedzy O Grach",
+  title: "Great Game Knowledge Tournament",
+  description: "Great Game Knowledge Tournament",
 };
 
 export default function RootLayout({
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <LanguageSync />
         {children}
       </body>
     </html>

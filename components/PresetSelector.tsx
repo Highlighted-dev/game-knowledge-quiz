@@ -13,6 +13,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { loadCategoriesFromPreset } from "@/lib/mock-data";
+import { t } from "@/lib/i18n";
 import { getPresetById, PRESETS } from "@/lib/presets";
 import { useGameStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
@@ -40,12 +41,12 @@ export default function PresetSelector() {
     if (!selectedPreset) return;
 
     const msg = isReload
-      ? language === "pl"
-        ? `Czy na pewno chcesz przeładować preset "${selectedPreset.label}"? Wszystkie postępy gry zostaną zresetowane.`
-        : `Are you sure you want to reload preset "${selectedPreset.label}"? All game progress will be reset.`
-      : language === "pl"
-        ? `Czy na pewno chcesz załadować preset "${selectedPreset.label}"? Plansza i wszystkie postępy gry (wyniki, odpowiedzi, bingo) zostaną zresetowane.`
-        : `Are you sure you want to load preset "${selectedPreset.label}"? The board and all game progress (scores, answers, bingos) will be reset.`;
+      ? t("presetSelector.reloadConfirm", language, {
+          label: selectedPreset.label,
+        })
+      : t("presetSelector.loadConfirm", language, {
+          label: selectedPreset.label,
+        });
 
     if (!confirm(msg)) return;
 
@@ -53,11 +54,7 @@ export default function PresetSelector() {
     try {
       const categories = await loadCategoriesFromPreset(selectedId);
       if (categories.length === 0) {
-        alert(
-          language === "pl"
-            ? "Nie udało się załadować presetu."
-            : "Failed to load preset.",
-        );
+        alert(t("presetSelector.loadFailed", language));
         return;
       }
       loadPreset(selectedId, categories);
@@ -77,17 +74,17 @@ export default function PresetSelector() {
         >
           <Layers className="h-4 w-4" />
           <span className="hidden sm:inline">
-            {language === "pl" ? "Presety" : "Presets"}
+            {t("presetSelector.presets", language)}
           </span>
         </Button>
       </DialogTrigger>
       <DialogContent className="bg-zinc-950 border-zinc-800 text-white sm:max-w-md flex max-h-[min(90dvh,calc(100%-2rem))] flex-col gap-3 overflow-hidden p-4 sm:p-6 max-sm:top-4 max-sm:translate-y-0">
         <DialogHeader className="shrink-0 pr-6">
           <DialogTitle>
-            {language === "pl" ? "Wybierz preset" : "Select preset"}
+            {t("presetSelector.selectPreset", language)}
           </DialogTitle>
           <DialogDescription className="text-zinc-400">
-            {language === "pl" ? "Aktywny preset: " : "Active preset: "}
+            {t("presetSelector.activePreset", language)}
             <span className="text-zinc-300 font-medium">
               {activePreset?.label ?? activePresetId}
             </span>
@@ -115,7 +112,7 @@ export default function PresetSelector() {
                   <span className="font-medium text-sm">{preset.label}</span>
                   {isActive && (
                     <span className="text-[10px] uppercase tracking-wider text-zinc-500">
-                      {language === "pl" ? "aktywny" : "active"}
+                      {t("presetSelector.active", language)}
                     </span>
                   )}
                 </div>
@@ -134,12 +131,8 @@ export default function PresetSelector() {
             onClick={handleLoad}
           >
             {loading
-              ? language === "pl"
-                ? "Ładowanie..."
-                : "Loading..."
-              : language === "pl"
-                ? "Załaduj preset"
-                : "Load preset"}
+              ? t("presetSelector.loading", language)
+              : t("presetSelector.loadPreset", language)}
           </Button>
         </DialogFooter>
       </DialogContent>

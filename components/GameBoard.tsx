@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { IconBingo } from "@/components/icons";
 import PresetSelector from "@/components/PresetSelector";
 import { getAwardedBingoCells } from "@/lib/bingo";
+import { t } from "@/lib/i18n";
 import { loadCategoriesFromPreset } from "@/lib/mock-data";
 import { getPresetById } from "@/lib/presets";
 import { useGameStore } from "@/lib/store";
@@ -66,9 +67,7 @@ export default function GameBoard() {
     return (
       <div className="flex items-center justify-center min-h-[400px]">
         <div className="text-zinc-500">
-          {language === "pl"
-            ? "Ładowanie kategorii..."
-            : "Loading categories..."}
+          {t("gameBoard.loadingCategories", language)}
         </div>
       </div>
     );
@@ -133,7 +132,11 @@ export default function GameBoard() {
         <Button
           className="gap-2 bg-black border-zinc-800 text-zinc-400 hover:text-white hover:border-white/50 transition-colors"
           onClick={() => setLanguage(language === "pl" ? "en" : "pl")}
-          title={language === "pl" ? "Switch to English" : "Przełącz na Polski"}
+          title={
+            language === "pl"
+              ? t("gameBoard.switchToEnglish", language)
+              : t("gameBoard.switchToPolish", language)
+          }
           variant="outline"
         >
           <Globe className="h-4 w-4" /> {language.toUpperCase()}
@@ -141,17 +144,13 @@ export default function GameBoard() {
         <Button
           className="gap-2 bg-black border-zinc-800 text-zinc-400 hover:text-white hover:border-red-500/50 transition-colors"
           onClick={() => {
-            const msg =
-              language === "pl"
-                ? "Czy na pewno chcesz zresetować grę?"
-                : "Are you sure you want to reset the game?";
-            if (confirm(msg)) {
+            if (confirm(t("gameBoard.resetConfirm", language))) {
               resetGame();
             }
           }}
           variant="outline"
         >
-          <RotateCcw className="h-4 w-4" /> Reset
+          <RotateCcw className="h-4 w-4" /> {t("gameBoard.reset", language)}
         </Button>
       </div>
 
@@ -223,9 +222,7 @@ export default function GameBoard() {
                     }}
                     title={
                       isBingoCell
-                        ? language === "pl"
-                          ? "Część binga"
-                          : "Part of a bingo"
+                        ? t("gameBoard.bingoCellTooltip", language)
                         : undefined
                     }
                   >

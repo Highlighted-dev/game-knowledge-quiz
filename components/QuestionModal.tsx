@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { useGameStore } from "@/lib/store";
+import { t } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
 export default function QuestionModal() {
@@ -53,26 +54,6 @@ export default function QuestionModal() {
   const showOptions = lifelineActive?.type === "abcd";
   const showPhoneHint = lifelineActive?.type === "phone";
   const showStealHint = lifelineActive?.type === "steal";
-
-  const t = {
-    abcdUsed: language === "pl" ? "ABCD użyte" : "ABCD used",
-    noPoints: language === "pl" ? "Brak Punktów" : "No Points",
-    phoneHint:
-      language === "pl"
-        ? "Drużyna może teraz zadzwonić do przyjaciela!"
-        : "Team can now call a friend!",
-    phoneTimer:
-      language === "pl"
-        ? "Host: Daj 30 sekund na rozmowę."
-        : "Host: Give 30 seconds for the call.",
-    phoneUsed: language === "pl" ? "Telefon użyty" : "Phone used",
-    showAnswer: language === "pl" ? "Pokaż Odpowiedź" : "Reveal Answer",
-    stealHint:
-      language === "pl"
-        ? "Drużyna może przejąć pytanie!"
-        : "Team can steal this question!",
-    stealUsed: language === "pl" ? "Kradzież użyta" : "Steal used",
-  };
 
   return (
     <Dialog
@@ -164,7 +145,9 @@ export default function QuestionModal() {
               className="text-zinc-500 hover:text-white transition-colors flex items-center gap-1 text-xs"
               onClick={() => setLanguage(language === "pl" ? "en" : "pl")}
               title={
-                language === "pl" ? "Switch to English" : "Przełącz na Polski"
+                language === "pl"
+                  ? t("gameBoard.switchToEnglish", language)
+                  : t("questionModal.switchToPolish", language)
               }
             >
               <Globe className="h-4 w-4" /> {language.toUpperCase()}
@@ -214,17 +197,20 @@ export default function QuestionModal() {
             >
               {lifelineActive.type === "abcd" && (
                 <>
-                  <IconABCD className="h-4 w-4" /> {t.abcdUsed}
+                  <IconABCD className="h-4 w-4" />{" "}
+                  {t("questionModal.abcdUsed", language)}
                 </>
               )}
               {lifelineActive.type === "phone" && (
                 <>
-                  <IconPhone className="h-4 w-4" /> {t.phoneUsed}
+                  <IconPhone className="h-4 w-4" />{" "}
+                  {t("questionModal.phoneUsed", language)}
                 </>
               )}
               {lifelineActive.type === "steal" && (
                 <>
-                  <IconHook className="h-4 w-4" /> {t.stealUsed}
+                  <IconHook className="h-4 w-4" />{" "}
+                  {t("questionModal.stealUsed", language)}
                 </>
               )}
               <span className="opacity-60">
@@ -257,15 +243,21 @@ export default function QuestionModal() {
           {showPhoneHint && (
             <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-4 text-center max-w-md">
               <IconPhone className="h-6 w-6 mx-auto mb-2 text-yellow-500" />
-              <p className="text-zinc-400 text-sm">{t.phoneHint}</p>
-              <p className="text-zinc-600 text-xs mt-1">{t.phoneTimer}</p>
+              <p className="text-zinc-400 text-sm">
+                {t("questionModal.phoneHint", language)}
+              </p>
+              <p className="text-zinc-600 text-xs mt-1">
+                {t("questionModal.phoneTimer", language)}
+              </p>
             </div>
           )}
 
           {showStealHint && (
             <div className="bg-zinc-900 border border-orange-500/30 rounded-lg p-4 text-center max-w-md">
               <IconHook className="h-6 w-6 mx-auto mb-2 text-orange-500" />
-              <p className="text-zinc-400 text-sm">{t.stealHint}</p>
+              <p className="text-zinc-400 text-sm">
+                {t("questionModal.stealHint", language)}
+              </p>
             </div>
           )}
 
@@ -290,7 +282,7 @@ export default function QuestionModal() {
               className="h-10 px-6 rounded-full bg-white text-black hover:bg-zinc-200 font-bold text-sm"
               onClick={() => setIsRevealed(true)}
             >
-              {t.showAnswer}
+              {t("questionModal.showAnswer", language)}
             </Button>
           ) : (
             <div className="grid grid-cols-3 gap-3 w-full md:w-auto">
@@ -306,7 +298,7 @@ export default function QuestionModal() {
                 onClick={() => handleResolve(null)}
                 variant="ghost"
               >
-                {t.noPoints}
+                {t("questionModal.noPoints", language)}
               </Button>
               <Button
                 className="h-10 border-zinc-700 hover:bg-zinc-800 hover:text-white hover:border-red-500"

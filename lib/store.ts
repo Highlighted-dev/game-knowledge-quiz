@@ -1,4 +1,12 @@
 import { hasConsecutiveBingoRun } from "@/lib/bingo";
+import {
+  formatBingoNotification,
+  getDefaultTeamName,
+  getInitialTeams,
+  isDefaultTeamName,
+  migrateTeamsToLanguage,
+  type Language,
+} from "@/lib/i18n";
 import { DEFAULT_PRESET_ID } from "@/lib/presets";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
@@ -40,7 +48,7 @@ export type GameState = {
   activeCategory: string | null;
   lifelineActive: { teamId: string; type: "abcd" | "phone" | "steal" } | null;
   awardedBingos: string[];
-  language: "pl" | "en";
+  language: Language;
   bingoNotification: string | null;
   doublePointQuestions: string[]; // Array of question IDs that give 2x points
 
@@ -67,30 +75,11 @@ export type GameState = {
   useLifeline: (teamId: string, type: "abcd" | "phone" | "steal") => void;
   clearLifeline: () => void;
   checkAndAwardBingo: () => void;
-  setLanguage: (lang: "pl" | "en") => void;
+  setLanguage: (lang: Language) => void;
   clearBingoNotification: () => void;
   initializeDoublePoints: () => void;
   isDoublePoints: (questionId: string) => boolean;
 };
-
-const INITIAL_TEAMS: [Team, Team] = [
-  {
-    hasLifelineABCD: true,
-    hasLifelinePhone: true,
-    hasLifelineSteal: true,
-    id: "team1",
-    name: "Drużyna 1",
-    score: 0,
-  },
-  {
-    hasLifelineABCD: true,
-    hasLifelinePhone: true,
-    hasLifelineSteal: true,
-    id: "team2",
-    name: "Drużyna 2",
-    score: 0,
-  },
-];
 
 export const useGameStore = create<GameState>()(
   persist(
@@ -213,7 +202,12 @@ export const useGameStore = create<GameState>()(
             ) {
               set((s) => ({
                 awardedBingos: [...s.awardedBingos, bingoKey],
-                bingoNotification: `BINGO! ${team.name} +600 (${cat.name})`,
+                bingoNotification: formatBingoNotification(
+                  s.language,
+                  team.name,
+                  "column",
+                  cat.name,
+                ),
                 teams: s.teams.map((t) =>
                   t.id === teamId ? { ...t, score: t.score + 600 } : t,
                 ) as [Team, Team],
@@ -236,7 +230,12 @@ export const useGameStore = create<GameState>()(
               const points = [100, 200, 300, 400, 500, 600][rowIdx];
               set((s) => ({
                 awardedBingos: [...s.awardedBingos, bingoKey],
-                bingoNotification: `BINGO! ${team.name} +600 (${points}pkt rząd)`,
+                bingoNotification: formatBingoNotification(
+                  s.language,
+                  team.name,
+                  "row",
+                  points,
+                ),
                 teams: s.teams.map((t) =>
                   t.id === teamId ? { ...t, score: t.score + 600 } : t,
                 ) as [Team, Team],
@@ -326,7 +325,7 @@ export const useGameStore = create<GameState>()(
           categories: freshCategories,
           doublePointQuestions: [],
           lifelineActive: null,
-          teams: INITIAL_TEAMS,
+          teams: getInitialTeams(get().language),
         });
         get().initializeDoublePoints();
       },
@@ -373,13 +372,23 @@ export const useGameStore = create<GameState>()(
           })),
           doublePointQuestions: [],
           lifelineActive: null,
-          teams: INITIAL_TEAMS,
+          teams: getInitialTeams(get().language),
         });
         // Re-initialize double points for new game
         get().initializeDoublePoints();
       },
 
-      setLanguage: (lang) => set({ language: lang }),
+      setLanguage: (lang) =>
+        set((state) => {
+          const updatedTeams = state.teams.map((team, index) => {
+            const teamIndex = index as 0 | 1;
+            if (isDefaultTeamName(team.name)) {
+              return { ...team, name: getDefaultTeamName(teamIndex, lang) };
+            }
+            return team;
+          }) as [Team, Team];
+          return { language: lang, teams: updatedTeams };
+        }),
 
       setTeamName: (teamId, name) =>
         set((state) => ({
@@ -387,7 +396,7 @@ export const useGameStore = create<GameState>()(
             t.id === teamId ? { ...t, name } : t,
           ) as [Team, Team],
         })),
-      teams: INITIAL_TEAMS,
+      teams: getInitialTeams("pl"),
 
       updateScore: (teamId, points) =>
         set((state) => ({
@@ -410,6 +419,28 @@ export const useGameStore = create<GameState>()(
     }),
     {
       name: "game-tournament-storage-v3",
+      onRehydrateStorage: () => (state) => {
+        if (!state) return;
+        const lang = state.language;
+        const needsMigration = state.teams.some(
+          (team, index) =>
+            team.name === getDefaultTeamName(index as 0 | 1, "pl") &&
+            lang === "en",
+        );
+        if (needsMigration) {
+          const migrated = migrateTeamsToLanguage(state.teams, "pl", lang);
+          state.teams = migrated as [Team, Team];
+        } else if (
+          state.teams.some(
+            (team, index) =>
+              team.name === getDefaultTeamName(index as 0 | 1, "en") &&
+              lang === "pl",
+          )
+        ) {
+          const migrated = migrateTeamsToLanguage(state.teams, "en", lang);
+          state.teams = migrated as [Team, Team];
+        }
+      },
       partialize: (state) => ({
         activePresetId: state.activePresetId,
         awardedBingos: state.awardedBingos,
