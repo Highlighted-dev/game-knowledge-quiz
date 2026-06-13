@@ -1,4 +1,5 @@
 import { hasConsecutiveBingoRun } from "@/lib/bingo";
+import { DEFAULT_PRESET_ID } from "@/lib/presets";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
@@ -34,6 +35,7 @@ export type Team = {
 export type GameState = {
   teams: [Team, Team];
   categories: Category[];
+  activePresetId: string;
   activeQuestion: Question | null;
   activeCategory: string | null;
   lifelineActive: { teamId: string; type: "abcd" | "phone" | "steal" } | null;
@@ -61,6 +63,7 @@ export type GameState = {
   ) => void;
   resetGame: () => void;
   loadCategories: (categories: Category[]) => void;
+  loadPreset: (presetId: string, categories: Category[]) => void;
   useLifeline: (teamId: string, type: "abcd" | "phone" | "steal") => void;
   clearLifeline: () => void;
   checkAndAwardBingo: () => void;
@@ -93,6 +96,7 @@ export const useGameStore = create<GameState>()(
   persist(
     (set, get) => ({
       activeCategory: null,
+      activePresetId: DEFAULT_PRESET_ID,
       activeQuestion: null,
       awardedBingos: [],
       bingoNotification: null,
@@ -303,6 +307,30 @@ export const useGameStore = create<GameState>()(
         }
       },
 
+      loadPreset: (presetId, newCategories) => {
+        const freshCategories = newCategories.map((c) => ({
+          ...c,
+          questions: c.questions.map((q) => ({
+            ...q,
+            answeredBy: null,
+            isAnswered: false,
+          })),
+        }));
+
+        set({
+          activeCategory: null,
+          activePresetId: presetId,
+          activeQuestion: null,
+          awardedBingos: [],
+          bingoNotification: null,
+          categories: freshCategories,
+          doublePointQuestions: [],
+          lifelineActive: null,
+          teams: INITIAL_TEAMS,
+        });
+        get().initializeDoublePoints();
+      },
+
       markQuestionAnswered: (categoryId, questionId, answeredBy) =>
         set((state) => ({
           categories: state.categories.map((c) =>
@@ -383,6 +411,7 @@ export const useGameStore = create<GameState>()(
     {
       name: "game-tournament-storage-v3",
       partialize: (state) => ({
+        activePresetId: state.activePresetId,
         awardedBingos: state.awardedBingos,
         categories: state.categories,
         doublePointQuestions: state.doublePointQuestions,

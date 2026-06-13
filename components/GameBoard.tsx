@@ -5,8 +5,10 @@ import { Globe, RotateCcw } from "lucide-react";
 import { useEffect, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { IconBingo } from "@/components/icons";
+import PresetSelector from "@/components/PresetSelector";
 import { getAwardedBingoCells } from "@/lib/bingo";
-import { loadCategoriesFromFile } from "@/lib/mock-data";
+import { loadCategoriesFromPreset } from "@/lib/mock-data";
+import { getPresetById } from "@/lib/presets";
 import { useGameStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
@@ -14,6 +16,7 @@ export default function GameBoard() {
   const {
     categories,
     loadCategories,
+    activePresetId,
     openQuestion,
     teams,
     resetGame,
@@ -33,7 +36,8 @@ export default function GameBoard() {
   );
 
   useEffect(() => {
-    loadCategoriesFromFile().then((cats) => {
+    const presetId = useGameStore.getState().activePresetId;
+    loadCategoriesFromPreset(presetId).then((cats) => {
       if (cats.length > 0) {
         loadCategories(cats);
       }
@@ -121,7 +125,11 @@ export default function GameBoard() {
         )}
       </AnimatePresence>
 
-      <div className="flex justify-end gap-2 px-2">
+      <div className="relative flex flex-wrap justify-end items-center gap-2 px-2">
+        <span className="absolute left-2 text-[10px] uppercase tracking-widest text-zinc-600 hidden md:inline">
+          {getPresetById(activePresetId)?.label ?? activePresetId}
+        </span>
+        <PresetSelector />
         <Button
           className="gap-2 bg-black border-zinc-800 text-zinc-400 hover:text-white hover:border-white/50 transition-colors"
           onClick={() => setLanguage(language === "pl" ? "en" : "pl")}
