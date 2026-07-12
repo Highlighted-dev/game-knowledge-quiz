@@ -1,0 +1,786 @@
+{
+  "categories": [
+    {
+      "id": "cat_amongus",
+      "name": "Among Us",
+      "questions": [
+        {
+          "answer": {
+            "en": "Innersloth",
+            "pl": "Innersloth"
+          },
+          "id": "q_amongus_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["Innersloth", "Supercell", "InnerSloth Studio", "Epic Games"],
+            "pl": ["Innersloth", "Supercell", "InnerSloth Studio", "Epic Games"]
+          },
+          "points": 100,
+          "question": {
+            "en": "Who created Among Us?",
+            "pl": "Kto stworzył grę Among Us?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "The Skeld, Mira HQ, Polus, The Airship, The Fungle",
+            "pl": "The Skeld, Mira HQ, Polus, The Airship, The Fungle"
+          },
+          "id": "q_amongus_200",
+          "isAnswered": false,
+          "points": 200,
+          "question": {
+            "en": "List all official base maps in Among Us.",
+            "pl": "Wymień wszystkie podstawowe mapy w grze Among Us."
+          },
+          "type": "OPEN"
+        },
+        {
+          "answer": {
+            "en": "The House / Domek tryczka",
+            "pl": "The House / Domek tryczka"
+          },
+          "id": "q_amongus_300",
+          "isAnswered": false,
+          "mediaUrl": "/preset6/amongus_house.png",
+          "options": {
+            "en": [
+              "The House / Domek tryczka",
+              "The Skeld",
+              "Polus",
+              "The Airship"
+            ],
+            "pl": [
+              "The House / Domek tryczka",
+              "The Skeld",
+              "Polus",
+              "The Airship"
+            ]
+          },
+          "points": 300,
+          "question": {
+            "en": "What map is this?",
+            "pl": "Co to za mapa?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Morphling, Janitor, Miner, Swooper, Warlock, Undertaker, Blackmailer (any 7 Impostor roles from Town of Us)",
+            "pl": "Morphling, Janitor, Miner, Swooper, Warlock, Undertaker, Blackmailer (dowolne 7 ról Impostor z Town of Us)"
+          },
+          "id": "q_amongus_400",
+          "isAnswered": false,
+          "points": 400,
+          "question": {
+            "en": "Name 7 Impostor (traitor) roles from the Town of Us mod.",
+            "pl": "Wymień 7 ról traitorów (Impostor) w dodatku Town of Us."
+          },
+          "type": "OPEN"
+        },
+        {
+          "answer": {
+            "en": "15",
+            "pl": "15"
+          },
+          "id": "q_amongus_500",
+          "isAnswered": false,
+          "options": {
+            "en": ["10", "12", "15", "20"],
+            "pl": ["10", "12", "15", "20"]
+          },
+          "points": 500,
+          "question": {
+            "en": "How many players can a standard Among Us lobby hold?",
+            "pl": "Ile graczy mieści standardowe lobby Among Us?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "2020",
+            "pl": "2020"
+          },
+          "id": "q_amongus_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["2018", "2019", "2020", "2021"],
+            "pl": ["2018", "2019", "2020", "2021"]
+          },
+          "points": 600,
+          "question": {
+            "en": "In which year did Among Us gain massive popularity during the lockdowns?",
+            "pl": "W którym roku Among Us zyskało masową popularność podczas lockdownów?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_nintendo",
+      "name": "Nintendo",
+      "questions": [
+        {
+          "answer": {
+            "en": "1889",
+            "pl": "1889"
+          },
+          "id": "q_nintendo_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["1889", "1902", "1925", "1946"],
+            "pl": ["1889", "1902", "1925", "1946"]
+          },
+          "points": 100,
+          "question": {
+            "en": "In which year was Nintendo founded?",
+            "pl": "W którym roku powstała firma Nintendo?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "2017",
+            "pl": "2017"
+          },
+          "id": "q_nintendo_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["2015", "2016", "2017", "2018"],
+            "pl": ["2015", "2016", "2017", "2018"]
+          },
+          "points": 200,
+          "question": {
+            "en": "In which year was the Nintendo Switch released (+- 1 year)?",
+            "pl": "W którym roku wydano Nintendo Switch? Możesz pomylić się o jeden rok"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Donkey Kong",
+            "pl": "Donkey Kong"
+          },
+          "id": "q_nintendo_300",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Donkey Kong",
+              "Super Mario Bros.",
+              "Mario Bros.",
+              "Popeye"
+            ],
+            "pl": [
+              "Donkey Kong",
+              "Super Mario Bros.",
+              "Mario Bros.",
+              "Popeye"
+            ]
+          },
+          "points": 300,
+          "question": {
+            "en": "In which game did Mario make his first appearance?",
+            "pl": "W której grze po raz pierwszy pojawił się Mario?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Game Boy",
+            "pl": "Game Boy"
+          },
+          "id": "q_nintendo_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Game Boy", "Game Gear", "PSP", "Nintendo DS"],
+            "pl": ["Game Boy", "Game Gear", "PSP", "Nintendo DS"]
+          },
+          "points": 400,
+          "question": {
+            "en": "What was Nintendo's first handheld console (1989)?",
+            "pl": "Jak nazywał się pierwszy handheld Nintendo (1989)?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Master Sword",
+            "pl": "Master Sword"
+          },
+          "id": "q_nintendo_500",
+          "isAnswered": false,
+          "mediaUrl": "/preset6/nintendo_link.svg",
+          "options": {
+            "en": ["Master Sword", "Kokiri Sword", "Biggoron's Sword", "Goddess Sword"],
+            "pl": ["Master Sword", "Kokiri Sword", "Biggoron's Sword", "Goddess Sword"]
+          },
+          "points": 500,
+          "question": {
+            "en": "What is the name of this character's legendary sword?",
+            "pl": "Jak nazywa się legendarne ostrze tej postaci?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Revolution",
+            "pl": "Revolution"
+          },
+          "id": "q_nintendo_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["Revolution", "Dolphin", "NX", "Project Café"],
+            "pl": ["Revolution", "Dolphin", "NX", "Project Café"]
+          },
+          "points": 600,
+          "question": {
+            "en": "What was the codename of the Nintendo Wii before its official reveal?",
+            "pl": "Jak nazywał się projekt Nintendo Wii przed oficjalną premierą?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_cyberpunk",
+      "name": "Cyberpunk 2077",
+      "questions": [
+        {
+          "answer": {
+            "en": "CD Projekt Red",
+            "pl": "CD Projekt Red"
+          },
+          "id": "q_cyberpunk_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "CD Projekt Red",
+              "Bethesda",
+              "BioWare",
+              "Rockstar Games"
+            ],
+            "pl": [
+              "CD Projekt Red",
+              "Bethesda",
+              "BioWare",
+              "Rockstar Games"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "Which studio developed Cyberpunk 2077?",
+            "pl": "Które studio stworzyło Cyberpunk 2077?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Night City",
+            "pl": "Night City"
+          },
+          "id": "q_cyberpunk_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["Night City", "Neo Tokyo", "Los Santos", "Rapture"],
+            "pl": ["Night City", "Neo Tokyo", "Los Santos", "Rapture"]
+          },
+          "points": 200,
+          "question": {
+            "en": "What is the name of the main city in the game?",
+            "pl": "Jak nazywa się główne miasto w grze?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Viktor Vektor",
+            "pl": "Viktor Vektor"
+          },
+          "id": "q_cyberpunk_300",
+          "isAnswered": false,
+          "options": {
+            "en": ["Viktor Vektor", "Fingers", "Cassius Ryder", "Robert Wilson"],
+            "pl": ["Viktor Vektor", "Fingers", "Cassius Ryder", "Robert Wilson"]
+          },
+          "points": 300,
+          "question": {
+            "en": "What is the name of the ripperdoc V visits at the start of the game in Watson?",
+            "pl": "Jak nazywa się ripperdoc, u którego V zaczyna przygodę w Watson?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Samurai — Never Fade Away",
+            "pl": "Samurai — Never Fade Away"
+          },
+          "id": "q_cyberpunk_400",
+          "isAnswered": false,
+          "mediaUrl": "/preset6/cyberpunk_nfa.m4a",
+          "options": {
+            "en": [
+              "Samurai — Chippin' In",
+              "Samurai — Never Fade Away",
+              "Refused — New Dawn Fades",
+              "Run the Jewels — No Save Point"
+            ],
+            "pl": [
+              "Samurai — Chippin' In",
+              "Samurai — Never Fade Away",
+              "Refused — New Dawn Fades",
+              "Run the Jewels — No Save Point"
+            ]
+          },
+          "points": 400,
+          "question": {
+            "en": "What is the name of this song / band from the Cyberpunk 2077 soundtrack?",
+            "pl": "Jak nazywa się ten utwór / zespół z OST Cyberpunka?"
+          },
+          "type": "AUDIO"
+        },
+        {
+          "answer": {
+            "en": "Phantom Liberty",
+            "pl": "Phantom Liberty"
+          },
+          "id": "q_cyberpunk_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Phantom Liberty",
+              "Blood and Sand",
+              "Night City Stories",
+              "Edgerunners"
+            ],
+            "pl": [
+              "Phantom Liberty",
+              "Blood and Sand",
+              "Night City Stories",
+              "Edgerunners"
+            ]
+          },
+          "points": 500,
+          "question": {
+            "en": "What is the name of the first major expansion for Cyberpunk 2077?",
+            "pl": "Jak nazywa się pierwsze duże DLC do Cyberpunka 2077?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Alt Cunningham",
+            "pl": "Alt Cunningham"
+          },
+          "id": "q_cyberpunk_600",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Alt Cunningham",
+              "Rogue Amendiares",
+              "Panam Palmer",
+              "Judy Alvarez"
+            ],
+            "pl": [
+              "Alt Cunningham",
+              "Rogue Amendiares",
+              "Panam Palmer",
+              "Judy Alvarez"
+            ]
+          },
+          "points": 600,
+          "question": {
+            "en": "Who created the Soulkiller program and was Johnny Silverhand's partner?",
+            "pl": "Kto stworzyła program Soulkiller i była partnerką Johnny'ego Silverhanda?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_valve",
+      "name": "Valve",
+      "questions": [
+        {
+          "answer": {
+            "en": "Gabe Newell",
+            "pl": "Gabe Newell"
+          },
+          "id": "q_valve_100",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Gabe Newell",
+              "Tim Sweeney",
+              "Gabe Logan",
+              "Gordon Freeman"
+            ],
+            "pl": [
+              "Gabe Newell",
+              "Tim Sweeney",
+              "Gabe Logan",
+              "Gordon Freeman"
+            ]
+          },
+          "points": 100,
+          "question": {
+            "en": "Who co-founded Valve alongside Mike Harrington?",
+            "pl": "Kto jest współzałożycielem Valve wraz z Mike'em Harringtonem?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Half-Life",
+            "pl": "Half-Life"
+          },
+          "id": "q_valve_200",
+          "isAnswered": false,
+          "mediaUrl": "/preset6/valve_halflife.mp3",
+          "options": {
+            "en": ["Half-Life", "Portal", "Counter-Strike", "Team Fortress 2"],
+            "pl": ["Half-Life", "Portal", "Counter-Strike", "Team Fortress 2"]
+          },
+          "points": 200,
+          "question": {
+            "en": "From which Valve game does this music come?",
+            "pl": "Z jakiej gry Valve pochodzi ten motyw muzyczny?"
+          },
+          "type": "AUDIO"
+        },
+        {
+          "answer": {
+            "en": "Vampire: The Masquerade – Bloodlines, SiN Episodes, Dark Messiah of Might and Magic, The Ship, Dystopia, Insurgency: Modern Infantry Combat, No More Room in Hell, Postal III, etc.",
+            "pl": "Vampire: The Masquerade – Bloodlines, SiN Episodes, Dark Messiah of Might and Magic, The Ship, Dystopia, Insurgency: Modern Infantry Combat, No More Room in Hell, Postal III, itp."
+          },
+          "id": "q_valve_300",
+          "isAnswered": false,
+          "points": 300,
+          "question": {
+            "en": "Name 3 games on the Source engine that were neither developed nor published by Valve.",
+            "pl": "Wymień 3 gry na silniku Source, które nie były stworzone i nie zostały wydane przez Valve."
+          },
+          "type": "OPEN"
+        },
+        {
+          "answer": {
+            "en": "Counter-Strike",
+            "pl": "Counter-Strike"
+          },
+          "id": "q_valve_400",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Counter-Strike",
+              "Condition Zero",
+              "Civilian Scenario",
+              "Classic Strike"
+            ],
+            "pl": [
+              "Counter-Strike",
+              "Condition Zero",
+              "Civilian Scenario",
+              "Classic Strike"
+            ]
+          },
+          "points": 400,
+          "question": {
+            "en": "What does the cs_ prefix mean in Counter-Strike hostage maps like cs_office?",
+            "pl": "Co oznacza przedrostek cs_ w mapach typu Hostage w Counter-Strike, np. cs_office?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Aperture Desk Job",
+            "pl": "Aperture Desk Job"
+          },
+          "id": "q_valve_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Aperture Desk Job",
+              "Aperture Hand Lab",
+              "The Lab",
+              "Portal: Companion Collection"
+            ],
+            "pl": [
+              "Aperture Desk Job",
+              "Aperture Hand Lab",
+              "The Lab",
+              "Portal: Companion Collection"
+            ]
+          },
+          "points": 500,
+          "question": {
+            "en": "What is the name of the Steam Deck tech demo set in the Portal universe?",
+            "pl": "Jak nazywa się tech demo dla Steam Decka ze świata Portala?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Half-Life, Team Fortress Classic, Ricochet, Counter-Strike, Deathmatch Classic",
+            "pl": "Half-Life, Team Fortress Classic, Ricochet, Counter-Strike, Deathmatch Classic"
+          },
+          "id": "q_valve_600",
+          "isAnswered": false,
+          "points": 600,
+          "question": {
+            "en": "List chronologically the first 5 games created by Valve (not counting Half-Life 1 DLC).",
+            "pl": "Wymień chronologicznie 5 pierwszych gier stworzonych przez Valve (nie licząc DLC do Half-Life 1)."
+          },
+          "type": "OPEN"
+        }
+      ]
+    },
+    {
+      "id": "cat_battlefield",
+      "name": "Battlefield",
+      "questions": [
+        {
+          "answer": {
+            "en": "DICE",
+            "pl": "DICE"
+          },
+          "id": "q_battlefield_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["DICE", "Infinity Ward", "id Software", "Bungie"],
+            "pl": ["DICE", "Infinity Ward", "id Software", "Bungie"]
+          },
+          "points": 100,
+          "question": {
+            "en": "Which studio develops the Battlefield series?",
+            "pl": "Które studio tworzy serię Battlefield?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "2002",
+            "pl": "2002"
+          },
+          "id": "q_battlefield_200",
+          "isAnswered": false,
+          "options": {
+            "en": ["1999", "2000", "2002", "2004"],
+            "pl": ["1999", "2000", "2002", "2004"]
+          },
+          "points": 200,
+          "question": {
+            "en": "In which year was the first Battlefield released?",
+            "pl": "W którym roku wyszedł pierwszy Battlefield?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Battlefield 1",
+            "pl": "Battlefield 1"
+          },
+          "id": "q_battlefield_300",
+          "isAnswered": false,
+          "mediaUrl": "/preset6/battlefield1.jpg",
+          "options": {
+            "en": [
+              "Battlefield 1",
+              "Battlefield 4",
+              "Battlefield V",
+              "Battlefield 2042"
+            ],
+            "pl": [
+              "Battlefield 1",
+              "Battlefield 4",
+              "Battlefield V",
+              "Battlefield 2042"
+            ]
+          },
+          "points": 300,
+          "question": {
+            "en": "Which Battlefield game is shown in this screenshot?",
+            "pl": "Z której części Battlefield pochodzi ten zrzut ekranu?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Conquest",
+            "pl": "Conquest"
+          },
+          "id": "q_battlefield_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Conquest", "Domination", "Rush", "Breakthrough"],
+            "pl": ["Conquest", "Domination", "Rush", "Breakthrough"]
+          },
+          "points": 400,
+          "question": {
+            "en": "What is the classic Battlefield mode with large maps and capture points?",
+            "pl": "Jak nazywa się klasyczny tryb Battlefield z dużą mapą i punktami do przejmowania?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Battlefield 2042",
+            "pl": "Battlefield 2042"
+          },
+          "id": "q_battlefield_500",
+          "isAnswered": false,
+          "options": {
+            "en": [
+              "Battlefield 2042",
+              "Battlefield V",
+              "Battlefield 4",
+              "Battlefield Hardline"
+            ],
+            "pl": [
+              "Battlefield 2042",
+              "Battlefield V",
+              "Battlefield 4",
+              "Battlefield Hardline"
+            ]
+          },
+          "points": 500,
+          "question": {
+            "en": "In which Battlefield did Portal mode first appear?",
+            "pl": "W którym Battlefield po raz pierwszy pojawił się tryb Portal?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Frostbite",
+            "pl": "Frostbite"
+          },
+          "id": "q_battlefield_600",
+          "isAnswered": false,
+          "options": {
+            "en": ["Frostbite", "Unreal Engine", "Unity", "CryEngine"],
+            "pl": ["Frostbite", "Unreal Engine", "Unity", "CryEngine"]
+          },
+          "points": 600,
+          "question": {
+            "en": "What is the name of the destruction engine used in Battlefield since Bad Company?",
+            "pl": "Jak nazywa się silnik niszczenia otoczenia w Battlefield (od Bad Company)?"
+          },
+          "type": "ABCD"
+        }
+      ]
+    },
+    {
+      "id": "cat_paradox",
+      "name": "Paradox Interactive",
+      "questions": [
+        {
+          "answer": {
+            "en": "1999",
+            "pl": "1999"
+          },
+          "id": "q_paradox_100",
+          "isAnswered": false,
+          "options": {
+            "en": ["1995", "1999", "2004", "2007"],
+            "pl": ["1995", "1999", "2004", "2007"]
+          },
+          "points": 100,
+          "question": {
+            "en": "In which year was Paradox Interactive founded as a publisher?",
+            "pl": "W którym roku powstało Paradox Interactive jako wydawca?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Europa Universalis IV",
+            "pl": "Europa Universalis IV"
+          },
+          "id": "q_paradox_200",
+          "isAnswered": false,
+          "mediaUrl": "/preset6/paradox_eu4.jpg",
+          "options": {
+            "en": [
+              "Europa Universalis IV",
+              "Crusader Kings III",
+              "Hearts of Iron IV",
+              "Victoria 3"
+            ],
+            "pl": [
+              "Europa Universalis IV",
+              "Crusader Kings III",
+              "Hearts of Iron IV",
+              "Victoria 3"
+            ]
+          },
+          "points": 200,
+          "question": {
+            "en": "Which Paradox game is shown in this screenshot?",
+            "pl": "Z której gry Paradox pochodzi ten zrzut ekranu?"
+          },
+          "type": "IMAGE"
+        },
+        {
+          "answer": {
+            "en": "Sweden",
+            "pl": "Szwecja"
+          },
+          "id": "q_paradox_300",
+          "isAnswered": false,
+          "points": 300,
+          "question": {
+            "en": "Where does Paradox Interactive come from?",
+            "pl": "Skąd pochodzi Paradox?"
+          },
+          "type": "OPEN"
+        },
+        {
+          "answer": {
+            "en": "Ironman",
+            "pl": "Ironman"
+          },
+          "id": "q_paradox_400",
+          "isAnswered": false,
+          "options": {
+            "en": ["Ironman", "Hardcore", "Survivor", "Challenge"],
+            "pl": ["Ironman", "Hardcore", "Survivor", "Challenge"]
+          },
+          "points": 400,
+          "question": {
+            "en": "What is the name of the mode without saving and reloading in Paradox games?",
+            "pl": "Jak nazywa się tryb bez zapisywania i cofania save'ów w grach Paradoxu?"
+          },
+          "type": "ABCD"
+        },
+        {
+          "answer": {
+            "en": "Day, Day, 6-hour time period, Hour, No typical daily tick (continuous simulation)",
+            "pl": "Dzień, Dzień, Pora dnia (6h), Godzina, Brak typowego daily ticka (gra działa ciągle)"
+          },
+          "id": "q_paradox_500",
+          "isAnswered": false,
+          "points": 500,
+          "question": {
+            "en": "In Europa Universalis IV one tick equals one day. What about Stellaris, CK3, Victoria 3, Hearts of Iron IV, and Prison Architect?",
+            "pl": "W Europie Universalis jeden tick to jeden dzień. Jak to wygląda w Stellaris, CK3, Vic3, HoI4 i Prison Architect?"
+          },
+          "type": "OPEN"
+        },
+        {
+          "answer": {
+            "en": "As Portugal, all of Europe is owned by you or blue European countries that exist in 1444",
+            "pl": "Jako Portugalia — cała Europa należy do ciebie lub niebieskich europejskich krajów istniejących w 1444"
+          },
+          "id": "q_paradox_600",
+          "isAnswered": false,
+          "points": 600,
+          "question": {
+            "en": "What does the All Blue achievement in EU4 require?",
+            "pl": "Na czym polega achievement All Blue w EU4?"
+          },
+          "type": "OPEN"
+        }
+      ]
+    }
+  ]
+}

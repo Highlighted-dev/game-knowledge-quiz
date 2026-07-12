@@ -43,6 +43,13 @@ export const PRESETS: Preset[] = [
       "The Sims, E-sport, Half-Life, Clash Royale, The Last Of Us, Fallout",
     path: "/preset5/categories5.json",
   },
+  {
+    id: "preset6",
+    label: "Preset 6",
+    description:
+      "Among Us, Nintendo, Cyberpunk 2077, Valve, Battlefield, Paradox Interactive",
+    path: "/preset6/categories6.json",
+  },
 ];
 
 export function getPresetById(id: string): Preset | undefined {

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 400" width="320" height="400">
+  <rect width="320" height="400" fill="#1a1a2e"/>
+  <ellipse cx="160" cy="110" rx="52" ry="58" fill="#f4c27a"/>
+  <path d="M108 95 Q160 35 212 95 L205 125 Q160 80 115 125 Z" fill="#2d6a2d"/>
+  <rect x="118" y="118" width="84" height="18" rx="4" fill="#8b5a2b"/>
+  <ellipse cx="138" cy="108" rx="10" ry="12" fill="#1a472a"/>
+  <ellipse cx="182" cy="108" rx="10" ry="12" fill="#1a472a"/>
+  <circle cx="138" cy="108" r="4" fill="#111"/>
+  <circle cx="182" cy="108" r="4" fill="#111"/>
+  <rect x="120" y="165" width="80" height="110" rx="8" fill="#2d6a2d"/>
+  <rect x="95" y="175" width="28" height="70" rx="6" fill="#f4c27a"/>
+  <rect x="197" y="175" width="28" height="70" rx="6" fill="#f4c27a"/>
+  <rect x="130" y="270" width="32" height="85" rx="6" fill="#5c3d1e"/>
+  <rect x="158" y="270" width="32" height="85" rx="6" fill="#5c3d1e"/>
+  <rect x="200" y="200" width="70" height="14" rx="4" fill="#c0c0c0" transform="rotate(25 200 207)"/>
+  <polygon points="265,195 290,207 265,219" fill="#888"/>
+  <circle cx="95" cy="250" r="28" fill="#3d7a9e" stroke="#c0c0c0" stroke-width="4"/>
+  <text x="160" y="385" text-anchor="middle" fill="#888" font-family="sans-serif" font-size="14">?</text>
+</svg>
