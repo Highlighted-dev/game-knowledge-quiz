@@ -338,8 +338,8 @@
           },
           "points": 400,
           "question": {
-            "en": "What is the name of this song / band from the Cyberpunk 2077 soundtrack?",
-            "pl": "Jak nazywa się ten utwór / zespół z OST Cyberpunka?"
+            "en": "What is the name of this song & band from the Cyberpunk 2077 soundtrack?",
+            "pl": "Jak nazywa się ten utwór & zespół z OST Cyberpunka?"
           },
           "type": "AUDIO"
         },
@@ -670,7 +670,7 @@
           },
           "id": "q_battlefield_600",
           "isAnswered": false,
-          "mediaUrl": "/preset6/battlefield_vietnam.m4a",
+          "mediaUrl": "/preset6/battlefield2.m4a",
           "options": {
             "en": [
               "Battlefield Vietnam",
