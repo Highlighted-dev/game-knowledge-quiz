@@ -67,17 +67,21 @@
         },
         {
           "answer": {
-            "en": "Morphling, Janitor, Miner, Swooper, Warlock, Undertaker, Blackmailer (any 7 Impostor roles from Town of Us)",
-            "pl": "Morphling, Janitor, Miner, Swooper, Warlock, Undertaker, Blackmailer (dowolne 7 ról Impostor z Town of Us)"
+            "en": "Ambassador, Ambusher, Blackmailer, Bomber, Eclipsal, Escapist, Grenadier, Hypnotist, Morphling, Scavenger, Spellslinger, Morphling, Venerer, Janitor, Miner, Swooper, Warlock, Undertaker",
+            "pl": "Ambassador, Ambusher, Blackmailer, Bomber, Eclipsal, Escapist, Grenadier, Hypnotist, Morphling, Scavenger, Spellslinger, Morphling, Venerer, Janitor, Miner, Swooper, Warlock, Undertaker"
           },
           "id": "q_amongus_400",
           "isAnswered": false,
           "points": 400,
           "question": {
-            "en": "Name 7 Impostor (traitor) roles from the Town of Us mod.",
-            "pl": "Wymień 7 ról traitorów (Impostor) w dodatku Town of Us."
+            "en": "Name 7 Impostor (traitor) roles from the Town of Us (+ mira) mod.",
+            "pl": "Wymień 7 ról traitorów (Impostor) w dodatku Town of Us (+ mira)."
           },
-          "type": "OPEN"
+          "type": "ABCD",
+          "options":{
+            "en": ["Ambassador, Ambusher, Blackmailer, Bomber, Eclipsal, Escapist, Grenadier", "Ambassador, Ambusher, Blackmailer, Bomber, Fanatic, Escapist, Grenadier", "Ambassador, Ambusher, Blackmailer, Bomber, Fanatic, Escapist, Gunner", "Adopter, Ambusher, Blackmailer, Bomber, Fanatic, Escapist, Grenadier"],
+            "pl": ["Ambassador, Ambusher, Blackmailer, Bomber, Eclipsal, Escapist, Grenadier", "Ambassador, Ambusher, Blackmailer, Bomber, Fanatic, Escapist, Grenadier", "Ambassador, Ambusher, Blackmailer, Bomber, Fanatic, Escapist, Gunner", "Adopter, Ambusher, Blackmailer, Bomber, Fanatic, Escapist, Grenadier"]
+          }
         },
         {
           "answer": {
@@ -305,8 +309,8 @@
           },
           "points": 300,
           "question": {
-            "en": "What is the name of the ripperdoc V visits at the start of the game in Watson?",
-            "pl": "Jak nazywa się ripperdoc, u którego V zaczyna przygodę w Watson?"
+            "en": "What is the name of the ripperdoc V visits at the start of the game in Watson (first and last name)?",
+            "pl": "Jak nazywa się ripperdoc, u którego V zaczyna przygodę w Watson (imie i nazwisko)?"
           },
           "type": "ABCD"
         },
@@ -341,17 +345,17 @@
         },
         {
           "answer": {
-            "en": "Phantom Liberty",
-            "pl": "Phantom Liberty"
+            "en": "The Devil, The Star, The Sun, Temperance, Secret ending, Path of least resistance, The Tower ",
+            "pl": "The Devil, The Star, The Sun, Temperance, Secret ending, Path of least resistance, The Tower "
           },
           "id": "q_cyberpunk_500",
           "isAnswered": false,
           "options": {
             "en": [
-              "Phantom Liberty",
-              "Blood and Sand",
-              "Night City Stories",
-              "Edgerunners"
+              "The Devil, The Star, The Sun, Temperance, Secret ending, The Tower ",
+              "The Devil, The Star, The Sun, Temperance, Secret ending, Path of least resistance, The Tower ",
+              "The Devil, The Star, The Sun, Temperance, Secret ending, The Bird ",
+              "The Devil, The Star, The Sun, Temperance, Secret ending, Path of least resistance, The Bird "
             ],
             "pl": [
               "Phantom Liberty",
@@ -362,15 +366,15 @@
           },
           "points": 500,
           "question": {
-            "en": "What is the name of the first major expansion for Cyberpunk 2077?",
-            "pl": "Jak nazywa się pierwsze duże DLC do Cyberpunka 2077?"
+            "en": "List ALL endings of Cyberpunk 2077 (with DLC)",
+            "pl": "Wymień WSZYSTKIE endingi Cyberpunk 2077 (wliczamy DLC)"
           },
           "type": "ABCD"
         },
         {
           "answer": {
-            "en": "Alt Cunningham",
-            "pl": "Alt Cunningham"
+            "en": "Misty",
+            "pl": "Misty"
           },
           "id": "q_cyberpunk_600",
           "isAnswered": false,
@@ -379,19 +383,19 @@
               "Alt Cunningham",
               "Rogue Amendiares",
               "Panam Palmer",
-              "Judy Alvarez"
+              "Misty"
             ],
             "pl": [
               "Alt Cunningham",
               "Rogue Amendiares",
               "Panam Palmer",
-              "Judy Alvarez"
+              "Misty"
             ]
           },
           "points": 600,
           "question": {
-            "en": "Who created the Soulkiller program and was Johnny Silverhand's partner?",
-            "pl": "Kto stworzyła program Soulkiller i była partnerką Johnny'ego Silverhanda?"
+            "en": "Which character has a family in Warsaw?",
+            "pl": "Jaka postać ma rodzinę w Warszawie?"
           },
           "type": "ABCD"
         }
@@ -569,8 +573,8 @@
           },
           "points": 200,
           "question": {
-            "en": "In which year was the first Battlefield released?",
-            "pl": "W którym roku wyszedł pierwszy Battlefield?"
+            "en": "In which year was the first Battlefield released (+-3 years)?",
+            "pl": "W którym roku wyszedł pierwszy Battlefield (+-3 lata)?"
           },
           "type": "ABCD"
         },
@@ -605,67 +609,88 @@
         },
         {
           "answer": {
-            "en": "Conquest",
-            "pl": "Conquest"
+            "en": "Battlefield 4",
+            "pl": "Battlefield 4"
           },
           "id": "q_battlefield_400",
           "isAnswered": false,
           "options": {
-            "en": ["Conquest", "Domination", "Rush", "Breakthrough"],
-            "pl": ["Conquest", "Domination", "Rush", "Breakthrough"]
+            "en": [
+              "Battlefield 4",
+              "Battlefield 3",
+              "Battlefield 2042",
+              "Battlefield Hardline"
+            ],
+            "pl": [
+              "Battlefield 4",
+              "Battlefield 3",
+              "Battlefield 2042",
+              "Battlefield Hardline"
+            ]
           },
           "points": 400,
           "question": {
-            "en": "What is the classic Battlefield mode with large maps and capture points?",
-            "pl": "Jak nazywa się klasyczny tryb Battlefield z dużą mapą i punktami do przejmowania?"
+            "en": "In which Battlefield can you trigger a hidden megalodon easter egg on the Nansha Strike map?",
+            "pl": "W którym Battlefield można aktywować ukrytego easter egga z megalodonem na mapie Nansha Strike?"
           },
           "type": "ABCD"
         },
         {
           "answer": {
-            "en": "Battlefield 2042",
-            "pl": "Battlefield 2042"
+            "en": "Battlefield 2142",
+            "pl": "Battlefield 2142"
           },
           "id": "q_battlefield_500",
           "isAnswered": false,
           "options": {
             "en": [
-              "Battlefield 2042",
-              "Battlefield V",
-              "Battlefield 4",
-              "Battlefield Hardline"
+              "Battlefield 2142",
+              "Battlefield 2",
+              "Battlefield: Bad Company",
+              "Battlefield Vietnam"
             ],
             "pl": [
-              "Battlefield 2042",
-              "Battlefield V",
-              "Battlefield 4",
-              "Battlefield Hardline"
+              "Battlefield 2142",
+              "Battlefield 2",
+              "Battlefield: Bad Company",
+              "Battlefield Vietnam"
             ]
           },
           "points": 500,
           "question": {
-            "en": "In which Battlefield did Portal mode first appear?",
-            "pl": "W którym Battlefield po raz pierwszy pojawił się tryb Portal?"
+            "en": "Which was the last main Battlefield title on the Refractor engine before Frostbite?",
+            "pl": "Który był ostatnim głównym Battlefieldem na silniku Refractor przed Frostbite?"
           },
           "type": "ABCD"
         },
         {
           "answer": {
-            "en": "Frostbite",
-            "pl": "Frostbite"
+            "en": "Battlefield Vietnam",
+            "pl": "Battlefield Vietnam"
           },
           "id": "q_battlefield_600",
           "isAnswered": false,
+          "mediaUrl": "/preset6/battlefield_vietnam.m4a",
           "options": {
-            "en": ["Frostbite", "Unreal Engine", "Unity", "CryEngine"],
-            "pl": ["Frostbite", "Unreal Engine", "Unity", "CryEngine"]
+            "en": [
+              "Battlefield Vietnam",
+              "Battlefield 1942",
+              "Battlefield: Bad Company 2",
+              "Battlefield 1"
+            ],
+            "pl": [
+              "Battlefield Vietnam",
+              "Battlefield 1942",
+              "Battlefield: Bad Company 2",
+              "Battlefield 1"
+            ]
           },
           "points": 600,
           "question": {
-            "en": "What is the name of the destruction engine used in Battlefield since Bad Company?",
-            "pl": "Jak nazywa się silnik niszczenia otoczenia w Battlefield (od Bad Company)?"
+            "en": "From which Battlefield game does this song come?",
+            "pl": "Z której części Battlefield pochodzi ten utwór?"
           },
-          "type": "ABCD"
+          "type": "AUDIO"
         }
       ]
     },
