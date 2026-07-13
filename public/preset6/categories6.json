@@ -103,19 +103,29 @@
         },
         {
           "answer": {
-            "en": "2020",
-            "pl": "2020"
+            "en": "Henry Stickmin",
+            "pl": "Henry Stickmin"
           },
           "id": "q_amongus_600",
           "isAnswered": false,
           "options": {
-            "en": ["2018", "2019", "2020", "2021"],
-            "pl": ["2018", "2019", "2020", "2021"]
+            "en": [
+              "Henry Stickmin",
+              "Fall Guys",
+              "Deceit",
+              "Project Winter"
+            ],
+            "pl": [
+              "Henry Stickmin",
+              "Fall Guys",
+              "Deceit",
+              "Project Winter"
+            ]
           },
           "points": 600,
           "question": {
-            "en": "In which year did Among Us gain massive popularity during the lockdowns?",
-            "pl": "W którym roku Among Us zyskało masową popularność podczas lockdownów?"
+            "en": "The Airship map in Among Us is based on the airship from which other Innersloth series?",
+            "pl": "Mapa The Airship w Among Us jest oparta na statku powietrznym z której innej serii Innersloth?"
           },
           "type": "ABCD"
         }
